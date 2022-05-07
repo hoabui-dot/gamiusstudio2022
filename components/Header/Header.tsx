@@ -9,7 +9,7 @@ export const Header = (props: HeaderProps) => {
   return (
     <div>
       <S.FooterContainer>
-        <S.FooterText>toan</S.FooterText>
+        <S.FooterText>This is header</S.FooterText>
       </S.FooterContainer>
     </div>
   );
