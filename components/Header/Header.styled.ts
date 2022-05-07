@@ -8,3 +8,7 @@ export const FooterContainer = styled.div`
 export const FooterText = styled.p`
   ${tw`text-black text-3xl font-bold underline`}
 `;
+
+export const FooterButton = styled.button`
+  ${tw`bg-red-500 py-4 px-5 rounded hover:bg-red-600`}
+`;

@@ -10,6 +10,7 @@ export const Header = (props: HeaderProps) => {
     <div>
       <S.FooterContainer>
         <S.FooterText>This is header</S.FooterText>
+        <S.FooterButton> Click </S.FooterButton>
       </S.FooterContainer>
     </div>
   );
