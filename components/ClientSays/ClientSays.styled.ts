@@ -6,7 +6,7 @@ export const ClientSays = styled.div`
 `
 
 export const Slides = styled.div`
-    ${tw`flex items-center mt-[40px] md:w-[500px]`}
+    ${tw`flex items-center mt-[40px]`}
 `
 
 export const Slide = styled.div`
