@@ -2,17 +2,22 @@ import styled from "styled-components";
 import tw from "twin.macro";
 
 export const Header = styled.div`
-  ${tw``}
+  ${tw`bg-gradient-to-l from-[#060910] to-[#070911]`}
 `
 
-export const FooterContainer = styled.div`
-  ${tw`container mx-auto px-4 py-8  flex flex-col lg:flex-row flex-wrap justify-start lg:justify-between lg:items-center text-white`}
+export const HeaderContainer = styled.div`
+  ${tw`container`}
 `;
 
-export const FooterText = styled.p`
-  ${tw`text-black text-3xl font-bold underline`}
+export const HeaderInner = styled.div`
+  ${tw`pt-5 flex justify-between items-center`}
 `;
 
-export const FooterButton = styled.button`
-  ${tw`bg-red-500 py-4 px-5 rounded hover:bg-red-600`}
+export const HeaderLogo = styled.figure`
+  ${tw`max-w-[93px] w-full flex-shrink-0 flex-grow`}
 `;
+
+export const HeaderNav = styled.div`
+${tw`flex`}
+`;
+
