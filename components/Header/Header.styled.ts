@@ -13,8 +13,8 @@ export const HeaderInner = styled.div`
   ${tw`pt-5 flex justify-between items-center`}
 `;
 
-export const HeaderLogo = styled.figure`
-  ${tw`max-w-[93px] w-full flex-shrink-0 flex-grow`}
+export const HeaderLogo = styled.a`
+  ${tw`max-w-[93px] w-full flex-shrink-0 flex-grow cursor-pointer block`}
 `;
 
 export const HeaderNav = styled.div`

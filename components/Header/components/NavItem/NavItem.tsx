@@ -11,6 +11,8 @@ interface NavItemProps {
   };
 }
 
+const active = 'Home';
+
 export const NavItem = (props: NavItemProps) => {
   const { tab } = props;
   return tab.class === 'contact' ? (
@@ -31,9 +33,11 @@ export const NavItem = (props: NavItemProps) => {
       </Link>
     </S.NavItem>
   ) : (
-    <S.NavItem className='group'>
+    <S.NavItem>
       <Link href={tab.url}>
-        <S.NavUrl>{tab.title}</S.NavUrl>
+        <S.NavUrl className={`${active === tab.title && 'active'}`}>
+          {tab.title}
+        </S.NavUrl>
       </Link>
     </S.NavItem>
   );
