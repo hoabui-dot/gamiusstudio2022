@@ -4,8 +4,8 @@ import Document, {
   Main,
   NextScript,
   DocumentContext,
-} from "next/document";
-import {ServerStyleSheet} from "styled-components";
+} from 'next/document';
+import { ServerStyleSheet } from 'styled-components';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -36,10 +36,10 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="en">
+      <Html lang='en'>
         <Head>
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+          <meta name='viewport' content='width=device-width, initial-scale=1' />
+          <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
         </Head>
         <body>
           <Main />
