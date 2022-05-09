@@ -18,7 +18,7 @@ export const ClientSays = (props: ClientSaysProps) => {
       <SectionTitle title="Our customers" />
       <S.Slides>
         {ClientSaysData.map((data, index) => (
-          <S.Slide key={index} className={"h-[54px] w-[160px] relative"}>
+          <S.Slide key={index}>
             <Image
               src={data.image}
               layout="fill"

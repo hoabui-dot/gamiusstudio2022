@@ -10,7 +10,7 @@ export const Slides = styled.div`
 `
 
 export const Slide = styled.div`
-    ${tw`ml-[60px] first:ml-0`}
+    ${tw`h-[54px] w-[160px] relative ml-[60px] first:ml-0`}
 `
 
 export const SizeImage = styled.figure`
