@@ -10,5 +10,5 @@ export const Title = styled.p`
 `
 
 export const description = styled.p`
-  ${tw`text-[16px] font-medium`}
+  ${tw`text-[16px] mt-[16px] text-white font-medium`}
 `

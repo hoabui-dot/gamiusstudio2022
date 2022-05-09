@@ -1,11 +1,7 @@
 import React from "react";
 import * as S from "./ClientSays.styled";
 import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
-import {SectionTitle} from "../SectionTitle/SectionTitle";
-import image1 from "../../public/img/hedima.png"
-import CSS from "csstype"
-import styled from "styled-components";
+import {SectionTitle} from "../SectionTitle/SectionTitle"
 import {ClientSaysData} from "../../utils/DataConfig"
 
 export interface ClientSaysProps {
@@ -13,16 +9,21 @@ export interface ClientSaysProps {
 }
 
 export const ClientSays = (props: ClientSaysProps) => {
+  const handleWidthImage = () => {
+    console.log(123);
+    
+  }
+
   return (
-    <div className="clientSays">
+    <S.ClientSays>
       <SectionTitle title="Our customers"/>
         <S.Slides>
             {ClientSaysData.map((data, index) => (
-                <S.SizeImage key={index}>
-                    <Image src={data.image} alt="ClientSays" width={16} height={9}/>
-                </S.SizeImage>
+              <S.Slide key={index} className={"h-[54px] w-[160px] relative"}>
+                <Image src={data.image} layout='fill' objectFit="contain" alt="ClientSays"/>
+              </S.Slide>
             ))}
         </S.Slides>
-    </div>
+    </S.ClientSays>
   );
 };

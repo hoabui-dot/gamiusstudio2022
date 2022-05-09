@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    screen: {
+      laptopSmall: "992px",
+    },
   },
   plugins: [],
 };
