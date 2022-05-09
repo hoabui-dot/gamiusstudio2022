@@ -14,7 +14,7 @@ export const KeyMessage = (props: KeyMessageProps) => {
         <S.FooterContainer>
           <S.WrapperKeyMessage>
             <S.WrapperImage>
-              <Image src={decor} alt={"decor"} />
+              <Image src={decor} alt={"decor comma"} />
             </S.WrapperImage>
             <S.Text>
               Specialising in diversity, we convey meaningful vision through
