@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 interface FooterProps {}
 
-export const MDFooter = {
+const MDFooter = {
   mainInfo: {
     companyName: 'CÔNG TY TNHH Studio',
     location: '523 Tô Hiến Thành, P.14, Q.10, TP. HCM',
