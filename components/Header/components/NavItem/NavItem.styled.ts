@@ -7,13 +7,11 @@ ${tw`h-[64px] ml-[48px] flex justify-center flex-col items-center`}
 
 export const NavUrl = styled.a`
 ${tw`text-[16px] text-[#F9FAFB]
-  font-medium 
-  hover:text-[#C8FC03]
-  hover:border-b-[#C8FC03]
+  font-medium
   h-full border-b-2 border-b-[#F9FAFB]
   flex justify-center flex-col items-center
   cursor-pointer`}
-  &.active {
+  &.active, &:hover {
     ${tw`border-b-[#C8FC03] text-[#C8FC03]`}
   }
 `;
