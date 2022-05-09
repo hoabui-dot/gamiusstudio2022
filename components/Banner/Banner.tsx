@@ -10,9 +10,8 @@ import TicketLight from '../../public/img/TicketLight.png';
 import * as B from './Banner.styled';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
-import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
-import {Autoplay, Pagination, EffectFade} from 'swiper';
+import {Autoplay, EffectFade} from 'swiper';
 
 export interface BannerProps {}
 
