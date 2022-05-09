@@ -1,8 +1,8 @@
 import type {NextPage} from "next";
 import Head from "next/head";
+import {ClientSays} from "../components/ClientSays/ClientSays";
 // import Image from "next/image";
 import {Layout} from "../components/Layout/Layout";
-import {SectionTitle} from "../components/SectionTitle/SectionTitle";
 
 const Home: NextPage = () => {
   return (
@@ -13,7 +13,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <SectionTitle />
+        <ClientSays />
       </Layout>
     </>
   );

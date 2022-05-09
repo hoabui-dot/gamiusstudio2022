@@ -1,6 +1,6 @@
-import { Header } from '../Header/Header';
-import { Footer } from '../Footer/Footer';
-import * as S from './Layout.styled';
+import {Header} from "../Header/Header";
+import {Footer} from "../Footer/Footer";
+import * as S from "./Layout.styled";
 
 interface LayoutProps {
   children?: React.ReactNode;
