@@ -1,8 +1,9 @@
 import type {NextPage} from "next";
 import Head from "next/head";
 import {ClientSays} from "../components/ClientSays/ClientSays";
-// import Image from "next/image";
 import {Layout} from "../components/Layout/Layout";
+import {KeyMessage} from "../components/KeyMessage/KeyMessage";
+import {OurWork} from "../components/ComponentHome/OurWork/OurWork";
 
 const Home: NextPage = () => {
   return (
@@ -14,6 +15,8 @@ const Home: NextPage = () => {
       </Head>
       <Layout>
         <ClientSays />
+        <KeyMessage />
+        <OurWork />
       </Layout>
     </>
   );
