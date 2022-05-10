@@ -5,8 +5,8 @@ import BannerBackground from '../../public/img/bannerBackground.png';
 import ImageTest1 from '../../public/img/ourWork2.png';
 import ImageTest2 from '../../public/img/ourWork3.png';
 import BannerIcon from '../../public/img/BannerIcon.png';
-import Ticket from "../../public/img/Ticket.png"
-import TicketLight from "../../public/img/TicketLight.png"
+import Ticket from '../../public/img/Ticket.png';
+import TicketLight from '../../public/img/TicketLight.png';
 import * as B from './Banner.styled';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -25,7 +25,7 @@ export const BannerData = [
   },
   {
     titleWhite: 'we',
-    titleGreen: 'create anything',
+    titleGreen: 'create game',
     image: ImageTest1,
     background: ImageTest1,
   },
@@ -65,20 +65,62 @@ export const Banner = (props: BannerProps) => {
               </B.Background>
               <B.BannerItem>
                 <B.BannerContent>
-                <B.BannerStatus>
-                  <B.Sticked>
-                    <Image src={Ticket} layout="responsive" width={1} height={1} alt="Ticket Icon"/>
-                    <B.StickedLight ><Image src={TicketLight} layout="responsive" width={1} height={1} alt="Ticket Icon"/></B.StickedLight>
-                  </B.Sticked>
-                  <B.Sticked>
-                    <Image src={Ticket} layout="responsive" width={1} height={1} alt="Ticket Icon"/>
-                    <B.StickedLight ><Image src={TicketLight} layout="responsive" width={1} height={1} alt="Ticket Icon"/></B.StickedLight>
-                  </B.Sticked>
-                  <B.Sticked>
-                    <Image src={Ticket} layout="responsive" width={1} height={1} alt="Ticket Icon"/>
-                    <B.StickedLight ><Image src={TicketLight} layout="responsive" width={1} height={1} alt="Ticket Icon"/></B.StickedLight>
-                  </B.Sticked>
-              </B.BannerStatus>
+                  <B.BannerStatus>
+                    <B.Sticked>
+                      <Image
+                        src={Ticket}
+                        layout='responsive'
+                        width={1}
+                        height={1}
+                        alt='Ticket Icon'
+                      />
+                      <B.StickedLight className={index === 0 ? 'active' : ''}>
+                        <Image
+                          src={TicketLight}
+                          layout='responsive'
+                          width={1}
+                          height={1}
+                          alt='Ticket Icon'
+                        />
+                      </B.StickedLight>
+                    </B.Sticked>
+                    <B.Sticked>
+                      <Image
+                        src={Ticket}
+                        layout='responsive'
+                        width={1}
+                        height={1}
+                        alt='Ticket Icon'
+                      />
+                      <B.StickedLight className={index === 1 ? 'active' : ''}>
+                        <Image
+                          src={TicketLight}
+                          layout='responsive'
+                          width={1}
+                          height={1}
+                          alt='Ticket Icon'
+                        />
+                      </B.StickedLight>
+                    </B.Sticked>
+                    <B.Sticked>
+                      <Image
+                        src={Ticket}
+                        layout='responsive'
+                        width={1}
+                        height={1}
+                        alt='Ticket Icon'
+                      />
+                      <B.StickedLight className={index === 2 ? 'active' : ''}>
+                        <Image
+                          src={TicketLight}
+                          layout='responsive'
+                          width={1}
+                          height={1}
+                          alt='Ticket Icon'
+                        />
+                      </B.StickedLight>
+                    </B.Sticked>
+                  </B.BannerStatus>
                   <B.BannerIcon>
                     <Image
                       src={BannerIcon}
