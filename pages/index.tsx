@@ -17,10 +17,10 @@ const Home: NextPage = () => {
       </Head>
       <Layout>
         <Banner />
-        <ClientSays />
         <KeyMessage />
         <OurWork />
         <Service />
+        <ClientSays />
       </Layout>
     </>
   );
