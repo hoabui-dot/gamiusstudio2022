@@ -16,9 +16,9 @@ const Home: NextPage = () => {
       </Head>
       <Layout>
         <Banner />
-        <ClientSays />
         <KeyMessage />
         <OurWork />
+        <ClientSays />
       </Layout>
     </>
   );
