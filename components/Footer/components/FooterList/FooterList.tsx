@@ -14,7 +14,7 @@ interface FooterListProps {
 
 export const FooterList = (props: FooterListProps) => {
   const {
-    data: { title, content },
+    data: {title, content},
   } = props;
   return (
     <S.FooterList>
