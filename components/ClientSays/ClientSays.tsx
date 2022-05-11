@@ -4,14 +4,9 @@ import Image from "next/image";
 import {SectionTitle} from "../SectionTitle/SectionTitle";
 import {ClientSaysData} from "../../utils/dataConfig";
 
-export interface ClientSaysProps {
-  color?: string;
-}
+export interface ClientSaysProps {}
 
 export const ClientSays = (props: ClientSaysProps) => {
-  const handleWidthImage = () => {
-    console.log(123);
-  };
 
   return (
     <S.ClientSays>
