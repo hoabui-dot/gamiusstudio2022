@@ -1,7 +1,7 @@
-import React from "react";
-import * as S from "./KeyMessage.styled";
-import Image from "next/image";
-import decor from "../../public/img/Decor.png";
+import React from 'react';
+import * as S from './KeyMessage.styled';
+import Image from 'next/image';
+import decor from '../../public/img/Decor.png';
 
 export interface KeyMessageProps {
   fontSize?: string;
@@ -11,10 +11,10 @@ export const KeyMessage = (props: KeyMessageProps) => {
   return (
     <div>
       <S.BackgroundSquare>
-        <S.FooterContainer>
+        <S.Container>
           <S.WrapperKeyMessage>
             <S.WrapperImage>
-              <Image src={decor} alt={"decor comma"} />
+              <Image src={decor} alt={'decor comma'} />
             </S.WrapperImage>
             <S.Text>
               Specialising in diversity, we convey meaningful vision through
@@ -22,7 +22,7 @@ export const KeyMessage = (props: KeyMessageProps) => {
               in your projects.
             </S.Text>
           </S.WrapperKeyMessage>
-        </S.FooterContainer>
+        </S.Container>
       </S.BackgroundSquare>
     </div>
   );

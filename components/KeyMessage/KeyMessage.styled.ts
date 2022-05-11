@@ -1,15 +1,27 @@
-import styled from "styled-components";
-import tw from "twin.macro";
-
+import styled from 'styled-components';
+import tw from 'twin.macro';
 
 export const BackgroundSquare = styled.div`
   z-index: 2;
   background-size: auto auto;
   background-color: rgba(7, 9, 17, 1);
-  background-image: repeating-linear-gradient(0deg, transparent, transparent 15px, rgba(122, 123, 124, 0.15) 15px, rgba(122, 123, 124, 0.15) 16px ),repeating-linear-gradient(90deg, transparent, transparent 15px, rgba(122, 123, 124, 0.14901960784313725) 15px, rgba(122, 123, 124, 0.14901960784313725) 16px );
+  background-image: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 15px,
+      rgba(122, 123, 124, 0.15) 15px,
+      rgba(122, 123, 124, 0.15) 16px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 15px,
+      rgba(122, 123, 124, 0.14901960784313725) 15px,
+      rgba(122, 123, 124, 0.14901960784313725) 16px
+    );
 `;
 
-export const FooterContainer = styled.div`
+export const Container = styled.div`
   ${tw`container 
   mx-auto   
   px-4 
