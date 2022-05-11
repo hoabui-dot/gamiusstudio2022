@@ -19,6 +19,7 @@ const Home: NextPage = () => {
       </Head>
       <Layout>
         <Banner />
+        <KeyMessage type2={true} />
         <Service />
         <Approach />
         <ClientSays />

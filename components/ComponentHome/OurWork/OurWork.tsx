@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 import { Autoplay, Pagination } from 'swiper';
 import { SectionTitle } from '../../SectionTitle/SectionTitle';
-import { OurWorkData } from '../../../utils/DataConfig';
+import { OurWorkData } from '../../../utils/dataConfig';
 
 export const OurWork = () => {
   return (
