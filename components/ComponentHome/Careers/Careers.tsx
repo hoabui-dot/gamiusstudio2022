@@ -13,8 +13,6 @@ export const Carrers = () => {
       />
       <S.Container>
         <Cards />
-        <Cards />
-        <Cards />
       </S.Container>
       <S.Center>
         <BtnDetail version2={true} />

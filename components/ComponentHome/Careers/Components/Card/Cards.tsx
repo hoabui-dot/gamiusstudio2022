@@ -5,34 +5,81 @@ import calender from '../../../../../public/img/calendar.png';
 import location from '../../../../../public/img/location.png';
 import { BtnDetail } from '../BtnDetail/BtnDetail';
 
+const CardsData = [
+  {
+    title: '3D Modeling',
+    subTitle: '01. 3D',
+    content: [
+      {
+        src: calender,
+        alt: 'calender',
+        content: 'Parttime',
+      },
+      {
+        src: location,
+        alt: 'location',
+        content: 'Hồ Chí Minh',
+      },
+    ],
+  },
+  {
+    title: '3D Modeling',
+    subTitle: '01. 3D',
+    content: [
+      {
+        src: calender,
+        alt: 'calender',
+        content: 'Parttime',
+      },
+      {
+        src: location,
+        alt: 'location',
+        content: 'Hồ Chí Minh',
+      },
+    ],
+  },
+  {
+    title: '3D Modeling',
+    subTitle: '01. 3D',
+    content: [
+      {
+        src: calender,
+        alt: 'calender',
+        content: 'Parttime',
+      },
+      {
+        src: location,
+        alt: 'location',
+        content: 'Hồ Chí Minh',
+      },
+    ],
+  },
+];
+
 export const Cards = () => {
   return (
-    <S.WrapperCard>
-      <S.SubTitle>01. 3D</S.SubTitle>
-      <S.Title>3D Modeling</S.Title>
-      <S.WrapperInfo>
-        <S.Info>
-          <Image
-            className='image'
-            height={20}
-            width={20}
-            src={calender}
-            alt='calender'
-          />
-        </S.Info>
-        <S.P__Info>Parttime</S.P__Info>
-        <S.Info>
-          <Image
-            className='image'
-            height={20}
-            width={20}
-            src={location}
-            alt='location'
-          />
-        </S.Info>
-        <S.P__Info>Hồ Chí Minh</S.P__Info>
-      </S.WrapperInfo>
-      <BtnDetail />
-    </S.WrapperCard>
+    <>
+      {CardsData.map((_data, index) => (
+        <S.WrapperCard key={index}>
+          <S.SubTitle>01. 3D</S.SubTitle>
+          <S.Title>3D Modeling</S.Title>
+          <S.WrapperInfo>
+            {_data.content.map((_data2, index2) => (
+              <S.Info key={index2}>
+                <Image
+                  className='image'
+                  height={20}
+                  width={20}
+                  src={_data2.src}
+                  alt={_data2.alt}
+                />
+                <S.P__Info>{_data2.content}</S.P__Info>
+              </S.Info>
+            ))}
+          </S.WrapperInfo>
+          <BtnDetail />
+        </S.WrapperCard>
+      ))}
+    </>
   );
 };

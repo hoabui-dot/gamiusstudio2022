@@ -20,12 +20,11 @@ export const SubTitle = styled.p`
 `;
 
 export const WrapperInfo = styled.div`
-  ${tw`flex items-center 
-  `}
+  ${tw`flex items-center`}
 `;
 
 export const Info = styled.div`
-  ${tw`mt-2`}
+  ${tw`flex mt-2`}
 `;
 
 export const P__Info = styled.p`

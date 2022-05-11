@@ -22,7 +22,7 @@ const Home: NextPage = () => {
         <Service />
         <Approach />
         <ClientSays />
-        <KeyMessage fontSize='16px' />
+        <KeyMessage type2={false} />
         <OurWork />
         <Carrers />
       </Layout>

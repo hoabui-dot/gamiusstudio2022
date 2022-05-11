@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
+const greenMint = '#C8FC03';
 
 export const BackgroundSquare = styled.div`
   z-index: 2;
@@ -37,5 +38,17 @@ export const WrapperImage = styled.figure`
 `;
 
 export const Text = styled.div`
-  ${tw`mx-auto  max-w-[740px] xl:text-[30px] xl:ml-14 ml-7 text-[20px] mt-4  text-white`}
+  ${tw`mx-auto text-right max-w-[740px] xl:text-[30px] xl:ml-14 ml-7 text-[20px] mt-4  text-white`}
+
+  span {
+    color: ${greenMint};
+  }
+`;
+
+export const Text2 = styled.div`
+  ${tw`mx-auto text-right max-w-[740px] xl:text-[24px] xl:ml-14 ml-7 text-[17 px] mt-4  text-white`}
+
+  span {
+    color: ${greenMint};
+  }
 `;

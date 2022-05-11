@@ -4,26 +4,33 @@ import Image from 'next/image';
 import decor from '../../public/img/Decor.png';
 
 export interface KeyMessageProps {
-  fontSize?: string;
+  type2?: boolean;
 }
 
 export const KeyMessage = (props: KeyMessageProps) => {
   return (
-    <div>
-      <S.BackgroundSquare>
-        <S.Container>
-          <S.WrapperKeyMessage>
-            <S.WrapperImage>
-              <Image src={decor} alt={'decor comma'} />
-            </S.WrapperImage>
+    <S.BackgroundSquare>
+      <S.Container>
+        <S.WrapperKeyMessage>
+          <S.WrapperImage>
+            <Image src={decor} alt={'decor comma'} />
+          </S.WrapperImage>
+          {props.type2 ? (
             <S.Text>
-              Specialising in diversity, we convey meaningful vision through
-              variety of creative and impacful visual solution and support you
-              in your projects.
+              <span>Specialising </span>
+              in diversity, we <span> convey meaningful</span> vision through
+              <span> variety of creative </span> and <span> impacful </span>
+              visual solution and <span>support</span> you in your projects.
             </S.Text>
-          </S.WrapperKeyMessage>
-        </S.Container>
-      </S.BackgroundSquare>
-    </div>
+          ) : (
+            <S.Text2>
+              We are driven by the purpose of <span>connecting reality </span>
+              to your <span>value </span>
+              and conquering <span> customer’s hearts</span>
+            </S.Text2>
+          )}
+        </S.WrapperKeyMessage>
+      </S.Container>
+    </S.BackgroundSquare>
   );
 };
