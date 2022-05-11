@@ -14,7 +14,10 @@ export const FooterAbove = styled.div`
 `;
 
 export const FooterAboveInner = styled.div`
-  ${tw`pt-16 pb-6 flex justify-between`}
+  ${tw`pt-16 pb-6 flex justify-between
+    md:flex-row
+    flex-col
+  `}
 `;
 
 export const FooterBelow = styled.p`
@@ -26,10 +29,16 @@ export const FooterLogo = styled.figure`
 `;
 
 export const MainInfo = styled.div`
-  ${tw`w-1/2`}
+  ${tw`
+    md:w-1/2 md:mb-0
+    w-full mb-5
+  `}
 `;
 export const DetailUrl = styled.div`
-  ${tw`w-1/2 flex justify-between`}
+  ${tw`flex justify-between
+    md:w-1/2
+    w-full
+  `}
 `;
 
 export const FooterItem = styled.p`
