@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import BannerImg from '../../public/img/bannerSlide.png';
+import BannerImg from '../../public/img/bannerSLide.png';
 import BannerBackground from '../../public/img/bannerBackground.png';
 import ImageTest1 from '../../public/img/ourWork2.png';
 import ImageTest2 from '../../public/img/ourWork3.png';
@@ -8,11 +8,11 @@ import BannerIcon from '../../public/img/BannerIcon.png';
 import Ticket from '../../public/img/Ticket.png';
 import TicketLight from '../../public/img/TicketLight.png';
 import * as B from './Banner.styled';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
-import { Autoplay, Pagination, EffectFade } from 'swiper';
+import {Autoplay, Pagination, EffectFade} from 'swiper';
 
 export interface BannerProps {}
 
