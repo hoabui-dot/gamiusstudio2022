@@ -1,10 +1,11 @@
-import type { NextPage } from 'next';
+import type {NextPage} from 'next';
 import Head from 'next/head';
-import { ClientSays } from '../components/ClientSays/ClientSays';
-import { Layout } from '../components/Layout/Layout';
-import { KeyMessage } from '../components/KeyMessage/KeyMessage';
-import { OurWork } from '../components/ComponentHome/OurWork/OurWork';
-import { Service } from '../components/Service/Service';
+import {ClientSays} from '../components/ClientSays/ClientSays';
+import {Service} from '../components/Service/Service';
+import {Banner} from '../components/Banner/Banner';
+import {Layout} from '../components/Layout/Layout';
+import {KeyMessage} from '../components/KeyMessage/KeyMessage';
+import {OurWork} from '../components/ComponentHome/OurWork/OurWork';
 
 const Home: NextPage = () => {
   return (
@@ -15,10 +16,11 @@ const Home: NextPage = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Layout>
-        <ClientSays />
+        <Banner />
         <KeyMessage />
         <OurWork />
         <Service />
+        <ClientSays />
       </Layout>
     </>
   );
