@@ -1,11 +1,11 @@
-import styled from "styled-components";
-import tw from "twin.macro";
+import styled from 'styled-components';
+import tw from 'twin.macro';
 
-export const FooterContainer = styled.div`
+export const Container = styled.div`
   ${tw`container 
   mx-auto 
   px-4 
-  py-8  flex justify-center text-white bg-[#7a7a7a] h-auto `}
+  py-8  flex justify-center text-white h-auto `}
 `;
 
 export const WrapperSwiper = styled.div`
@@ -25,6 +25,10 @@ export const WrapperSwiper = styled.div`
     .swiper-pagination {
       position: absolute;
       bottom: -25px;
+
+      .swiper-pagination-bullet {
+        background: #d1d5db;
+      }
 
       .swiper-pagination-bullet-active {
         background: #c8fc03;

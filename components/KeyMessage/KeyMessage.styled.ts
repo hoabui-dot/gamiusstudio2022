@@ -22,16 +22,11 @@ export const BackgroundSquare = styled.div`
 `;
 
 export const Container = styled.div`
-  ${tw`container 
-  mx-auto   
-  px-4 
-  py-8  flex justify-center text-white `}
+  ${tw`container mx-auto px-4 py-8 flex justify-center `}
 `;
 
 export const WrapperKeyMessage = styled.div`
-  ${tw`
-        flex justify-center
-    `}
+  ${tw`flex justify-center`}
   width: fit-content
 `;
 
@@ -42,5 +37,5 @@ export const WrapperImage = styled.figure`
 `;
 
 export const Text = styled.div`
-  ${tw`mx-auto  max-w-[740px] xl:text-[30px] xl:ml-14 ml-7 text-[20px] mt-4 `}
+  ${tw`mx-auto  max-w-[740px] xl:text-[30px] xl:ml-14 ml-7 text-[20px] mt-4  text-white`}
 `;

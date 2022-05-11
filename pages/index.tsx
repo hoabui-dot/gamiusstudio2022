@@ -7,6 +7,7 @@ import { Layout } from '../components/Layout/Layout';
 import { KeyMessage } from '../components/KeyMessage/KeyMessage';
 import { OurWork } from '../components/ComponentHome/OurWork/OurWork';
 import { Approach } from '../components/Approach/Approach';
+import { Carrers } from '../components/ComponentHome/Careers/Careers';
 
 const Home: NextPage = () => {
   return (
@@ -18,11 +19,12 @@ const Home: NextPage = () => {
       </Head>
       <Layout>
         <Banner />
-        <KeyMessage />
         <Service />
-        <OurWork />
-        <ClientSays />
         <Approach />
+        <ClientSays />
+        <KeyMessage fontSize='16px' />
+        <OurWork />
+        <Carrers />
       </Layout>
     </>
   );
