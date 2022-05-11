@@ -26,13 +26,10 @@ export const FooterLogo = styled.figure`
 `;
 
 export const MainInfo = styled.div`
-  ${tw``}
+  ${tw`w-1/2`}
 `;
-export const AboutUs = styled.div`
-  ${tw``}
-`;
-export const Works = styled.div`
-  ${tw``}
+export const DetailUrl = styled.div`
+  ${tw`w-1/2 flex justify-between`}
 `;
 
 export const FooterItem = styled.p`

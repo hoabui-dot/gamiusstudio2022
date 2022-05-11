@@ -1,4 +1,3 @@
-import React from 'react';
 import * as S from './NavItem.styled';
 import Image from 'next/image';
 import Link from 'next/link';
