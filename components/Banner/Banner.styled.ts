@@ -2,11 +2,12 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 export const Banner = styled.div`
-  ${tw`relative flex justify-center items-center xl:h-[623px] lg:h-[540px] md:h-[680px] sm:h-[570px] h-[550px]`}
+  ${tw`relative flex justify-center items-center 
+  xl:h-[623px] lg:h-[540px] md:h-[700px] h-[580px]`}
 `;
 
 export const Background = styled.div`
-  ${tw`absolute w-full xl:h-[632px] lg:h-[540px] md:h-[680px] sm:h-[570px] h-[550px] overflow-hidden`};
+  ${tw`absolute w-full h-full overflow-hidden`};
 `;
 export const BackgroundDark = styled.div`
   ${tw`absolute top-0 left-0 z-[1] w-full h-full`} background-color: rgba(0,0,0,0.85)
@@ -24,7 +25,7 @@ export const BannerContent = styled.div`
 `;
 
 export const BannerImage = styled.div`
-  ${tw`relative xl:w-[50%] lg:w-[56%] h-auto sm:w-[80%] w-[90%] z-10`}
+  ${tw`relative xl:w-[50%] lg:w-[56%] h-auto w-[85%] z-10`}
 `;
 
 export const TitleGreen = styled.div`
@@ -36,7 +37,9 @@ export const TitleWhite = styled.div`
 `;
 
 export const BannerSubTitle = styled.div`
-  ${tw`relative lg:text-left text-center md:text-2xl text-xl lg:mt-[60px] mt-[20px] w-full xl:max-w-[525px] lg:max-w-[447px] max-w-[525px]`}
+  ${tw`relative lg:text-left text-center md:text-2xl text-xl 
+  lg:mt-[60px] mt-[20px] w-full xl:max-w-[525px] lg:max-w-[447px] 
+  max-w-[525px]`}
 `;
 
 export const BannerStatus = styled.ul`
