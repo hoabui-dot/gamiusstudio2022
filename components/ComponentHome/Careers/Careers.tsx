@@ -1,9 +1,9 @@
 import React from 'react';
 import * as S from './Carrers.styled';
 import Image from 'next/image';
-import { SectionTitle } from '../../SectionTitle/SectionTitle';
-import { Cards } from './Components/Card/Cards';
-import { BtnDetail } from './Components/BtnDetail/BtnDetail';
+import {SectionTitle} from '../../SectionTitle/SectionTitle';
+import {Cards} from './Components/Card/Cards';
+import {BtnDetail} from './Components/BtnDetail/BtnDetail';
 import background from '../../../public/img/bg-carrer.png';
 
 export const Careers = () => {
@@ -22,7 +22,7 @@ export const Careers = () => {
       </S.Background>
       <S.ContentCarrer>
         <SectionTitle
-          title='Carrers'
+          title='Careers'
           subTitle='No matter how quirky you are, our multi-talented team needs you!'
         />
         <S.Container>
