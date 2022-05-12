@@ -2,29 +2,29 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 export const Banner = styled.div`
-  ${tw`relative xl:h-[623px] lg:h-[540px] h-[800px]`}
+  ${tw`relative flex justify-center items-center xl:h-[623px] lg:h-[540px] md:h-[680px] sm:h-[570px] h-[550px]`}
 `;
 
 export const Background = styled.div`
-  ${tw`absolute w-full xl:h-[632px] lg:h-[540px] h-[800px] overflow-hidden`};
+  ${tw`absolute w-full xl:h-[632px] lg:h-[540px] md:h-[680px] sm:h-[570px] h-[550px] overflow-hidden`};
 `;
 export const BackgroundDark = styled.div`
   ${tw`absolute top-0 left-0 z-[1] w-full h-full`} background-color: rgba(0,0,0,0.85)
 `;
 
 export const BannerItem = styled.div`
-  ${tw`container flex h-full w-full justify-center items-center`}
+  ${tw`container flex lg:flex-row flex-col-reverse justify-center items-center`}
 `;
 
 export const BannerTitle = styled.div`
-  ${tw`flex text-5xl font-bold sm:mt-[-35px]`}
+  ${tw`flex lg:justify-start justify-center md:text-5xl sm:text-4xl text-3xl font-bold`}
 `;
 export const BannerContent = styled.div`
-  ${tw`relative z-10 lg:w-[50%] text-white tracking-tight`}
+  ${tw`relative z-10 lg:w-[50%] lg:mt-0 mt-[10px] text-white tracking-tight`}
 `;
 
 export const BannerImage = styled.div`
-  ${tw`relative xl:w-[50%] lg:w-[56%] w-full mb-auto pt-[60px] h-[280px] z-10`}
+  ${tw`relative xl:w-[50%] lg:w-[56%] h-auto sm:w-[80%] w-[90%] z-10`}
 `;
 
 export const TitleGreen = styled.div`
@@ -35,12 +35,12 @@ export const TitleWhite = styled.div`
   ${tw`text-white capitalize `}
 `;
 
-export const BannerSubTitle = styled.p`
-  ${tw`relative text-2xl mt-[60px] xl:w-[508px] lg:w-[430px] w-[508px]`}
+export const BannerSubTitle = styled.div`
+  ${tw`relative lg:text-left text-center md:text-2xl text-xl lg:mt-[60px] mt-[20px] w-full xl:max-w-[525px] lg:max-w-[447px] max-w-[525px]`}
 `;
 
 export const BannerStatus = styled.ul`
-  ${tw`absolute flex top-[-15px] right-[-17px] z-[70]`}
+  ${tw`absolute flex top-[-15px] right-0 z-[70]`}
 `;
 
 export const Sticked = styled.li`
