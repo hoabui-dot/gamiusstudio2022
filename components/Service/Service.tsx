@@ -9,28 +9,28 @@ const MDService = {
   subTitle: 'You can find your own solution with our expertise',
   mainContent: [
     {
-      imgSrc: '/img/Rectangle856.png',
+      imgSrc: '/img/Shooting1.png',
       imgAlt: 'gaming',
       title: 'Illustration',
       description:
         'Digital painting and illustrations for posters, advertising campaigns, magazines, book covers,...',
     },
     {
-      imgSrc: '/img/3DModeling.png',
+      imgSrc: '/img/Shooting2.png',
       imgAlt: 'gaming',
       title: 'Shooting',
       description:
         'Concept definition, art direction, photo processing for artistic, commercial or corporate photo.',
     },
     {
-      imgSrc: '/img/Rectangle856.png',
+      imgSrc: '/img/3DModeling.png',
       imgAlt: 'gaming',
       title: '3D Modeling',
       description:
         '3D characters, eviroments, creature for games, movies and 3D printing technologies.',
     },
     {
-      imgSrc: '/img/3DModeling.png',
+      imgSrc: '/img/Animation.png',
       imgAlt: 'gaming',
       title: 'Animation - VFX',
       description:

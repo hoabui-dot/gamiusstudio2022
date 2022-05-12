@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import React from 'react';
 import * as S from './FooterList.styled';
 
 interface FooterListProps {
@@ -14,7 +13,7 @@ interface FooterListProps {
 
 export const FooterList = (props: FooterListProps) => {
   const {
-    data: {title, content},
+    data: { title, content },
   } = props;
   return (
     <S.FooterList>

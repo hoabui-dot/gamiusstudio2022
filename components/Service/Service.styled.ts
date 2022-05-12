@@ -24,6 +24,8 @@ export const Service = styled.div`
 export const FlashTheme = styled.figure`
   ${tw`max-w-[134px] min-h-[180px] w-full
   absolute
+  md:block
+  hidden
   `}
 
   &.first {
@@ -42,7 +44,7 @@ export const SectionTitle = styled.div`
 `;
 
 export const Title = styled.h2`
-  ${tw`text-4xl font-bold text-[#C8FC03]`}
+  ${tw`text-4xl font-bold text-[#C8FC03] mb-4`}
 `;
 
 export const SubTitle = styled.h3`
@@ -56,14 +58,25 @@ export const ServiceContainer = styled.div`
 export const ServiceInner = styled.div``;
 
 export const ServiceContent = styled.div`
-  ${tw`flex justify-between items-center`}
+  ${tw`flex justify-between items-center
+    lg:flex-row lg:gap-0
+    flex-col-reverse
+    gap-5
+  `}
 `;
 
 export const ServiceImageWrap = styled.div`
-  ${tw`relative w-1/2 min-h-[600px]
-  flex-shrink-0 flex-grow`}
+  ${tw`relative
+    flex-shrink-0 flex-grow
+    lg:w-1/2 lg:min-h-[600px]
+    sm:min-h-[500px]
+    w-full min-h-[400px]
+  `}
 `;
 
 export const ServiceList = styled.div`
-  ${tw`w-1/2`}
+  ${tw`
+    lg:w-1/2
+    w-full
+  `}
 `;

@@ -1,7 +1,7 @@
 import React from 'react';
 import * as S from './Footer.styled';
 import Image from 'next/image';
-import {FooterList} from './components/FooterList/FooterList';
+import { FooterList } from './components/FooterList/FooterList';
 
 interface FooterProps {}
 
@@ -48,7 +48,7 @@ const MDFooter = {
 
 export const Footer = (props: FooterProps) => {
   const {
-    mainInfo: {companyName, location, phone, openingHours},
+    mainInfo: { companyName, location, phone, openingHours },
     listContents,
   } = MDFooter;
   return (
