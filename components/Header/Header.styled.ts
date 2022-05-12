@@ -11,7 +11,7 @@ export const HeaderContainer = styled.div`
 
 export const HeaderInner = styled.div`
   ${tw`py-5 flex justify-between items-center
-    lg:pt-5 lg:pb-0
+    md:pt-5 md:pb-0
   `}
 `;
 
@@ -24,8 +24,8 @@ export const HeaderLogo = styled.a`
 export const HeaderNav = styled.div`
   ${tw`
     flex
-    lg:static lg:flex-row lg:bg-transparent lg:h-auto lg:p-0 lg:items-center lg:w-auto
-    fixed top-0 left-[-270px] flex-col h-screen bg-[#070911] z-[99999] pt-[60px] px-[20px] items-start w-[270px]
+    md:static md:flex-row md:bg-transparent md:h-auto md:p-0 md:items-center md:w-auto
+    fixed top-0 left-[-100%] flex-col h-screen bg-[#070911] z-[99999] pt-[60px] px-[20px] items-start w-full
     duration-300
   `}
   &.show {
@@ -37,13 +37,14 @@ export const HeaderNav = styled.div`
 
 export const IconWrap = styled.div`
   ${tw`
-    lg:hidden
+    duration-[250ms]
+    md:hidden
     block
   `}
   &.show {
     ${tw`
       fixed
-      left-[230px]
+      right-5
       z-[999999]
     `}
   }
@@ -57,7 +58,7 @@ export const ContactButton = styled.a`
   ${tw`bg-none text-[14px] leading-[17px] text-[#A5D10A] border-[#A5D10A] border-2
     rounded-[4px] py-2 px-[14px] font-bold justify-between items-center gap-2
     cursor-pointer hover:bg-[#A5D10A] hover:text-[#111827] duration-[250ms]
-    lg:hidden
+    md:hidden
     w-auto
     flex
   `}
