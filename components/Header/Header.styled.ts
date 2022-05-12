@@ -37,7 +37,8 @@ export const HeaderNav = styled.div`
 
 export const IconWrap = styled.div`
   ${tw`
-  md:hidden
+    duration-[250ms]
+    md:hidden
     block
   `}
   &.show {

@@ -23,9 +23,9 @@ const MDService = {
         'Concept definition, art direction, photo processing for artistic, commercial or corporate photo.',
     },
     {
-      imgSrc: '/img/3DModeling.png',
+      imgSrc: '/img/3DModelling.png',
       imgAlt: 'gaming',
-      title: '3D Modeling',
+      title: '3D Modelling',
       description:
         '3D characters, eviroments, creature for games, movies and 3D printing technologies.',
     },
