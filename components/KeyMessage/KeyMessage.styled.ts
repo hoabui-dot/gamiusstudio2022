@@ -1,34 +1,53 @@
-import styled from "styled-components";
-import tw from "twin.macro";
-
+import styled from 'styled-components';
+import tw from 'twin.macro';
+const greenMint = '#C8FC03';
 
 export const BackgroundSquare = styled.div`
   z-index: 2;
+  position: relative;
   background-size: auto auto;
   background-color: rgba(7, 9, 17, 1);
-  background-image: repeating-linear-gradient(0deg, transparent, transparent 15px, rgba(122, 123, 124, 0.15) 15px, rgba(122, 123, 124, 0.15) 16px ),repeating-linear-gradient(90deg, transparent, transparent 15px, rgba(122, 123, 124, 0.14901960784313725) 15px, rgba(122, 123, 124, 0.14901960784313725) 16px );
+  background-image: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 15px,
+      rgba(122, 123, 124, 0.15) 15px,
+      rgba(122, 123, 124, 0.15) 16px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 15px,
+      rgba(122, 123, 124, 0.14901960784313725) 15px,
+      rgba(122, 123, 124, 0.14901960784313725) 16px
+    );
 `;
 
-export const FooterContainer = styled.div`
-  ${tw`container 
-  mx-auto   
-  px-4 
-  py-8  flex justify-center text-white `}
+export const Container = styled.div`
+  ${tw`container mx-auto px-4 py-8 flex justify-center `}
 `;
 
 export const WrapperKeyMessage = styled.div`
-  ${tw`
-        flex justify-center
-    `}
+  ${tw`flex justify-center`}
   width: fit-content
 `;
 
 export const WrapperImage = styled.figure`
-  ${tw`
-        xl:min-w-[70px] min-w-[45px]
-        `}
+  ${tw`xl:min-w-[70px] min-w-[45px]`}
 `;
 
 export const Text = styled.div`
-  ${tw`mx-auto  max-w-[740px] xl:text-[30px] xl:ml-14 ml-7 text-[20px] mt-4 `}
+  ${tw`mx-auto text-right max-w-[740px] xl:text-[30px] xl:ml-14 ml-7 text-[20px] mt-4  text-white`}
+
+  span {
+    color: ${greenMint};
+  }
+`;
+
+export const Text2 = styled.div`
+  ${tw`mx-auto text-right max-w-[740px] xl:text-[24px] xl:ml-14 ml-7 text-[17 px] mt-4  text-white`}
+
+  span {
+    color: ${greenMint};
+  }
 `;

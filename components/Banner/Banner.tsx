@@ -10,10 +10,10 @@ import BannerIcon from '../../public/img/BannerIcon.png';
 import Ticket from '../../public/img/Ticket.png';
 import TicketLight from '../../public/img/TicketLight.png';
 import * as B from './Banner.styled';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
-import { Autoplay, EffectFade } from 'swiper';
+import {Autoplay, EffectFade} from 'swiper';
 
 export interface BannerProps {}
 
@@ -43,10 +43,10 @@ export const Banner = (props: BannerProps) => {
     <Swiper
       loop={true}
       effect={'fade'}
-      autoplay={{
-        delay: 2000,
-        disableOnInteraction: false,
-      }}
+      // autoplay={{
+      //   delay: 2000,
+      //   disableOnInteraction: false,
+      // }}
       modules={[Autoplay, EffectFade]}
       className='mySwiper'
     >
@@ -55,7 +55,7 @@ export const Banner = (props: BannerProps) => {
         BannerData.map((data, index) => (
           <SwiperSlide key={index}>
             <B.Banner>
-            <B.Linear></B.Linear>
+              <B.Linear></B.Linear>
               <B.Background>
                 <B.BackgroundDark />
                 <Image

@@ -1,4 +1,4 @@
-import type { NextPage } from 'next';
+import type {NextPage} from 'next';
 import Head from 'next/head';
 import {Service} from '../components/Service/Service';
 import {Banner} from '../components/Banner/Banner';
@@ -7,6 +7,7 @@ import {Layout} from '../components/Layout/Layout';
 import {KeyMessage} from '../components/KeyMessage/KeyMessage';
 import {OurWork} from '../components/ComponentHome/OurWork/OurWork';
 import {Approach} from '../components/Approach/Approach';
+import {Careers} from '../components/ComponentHome/Careers/Careers';
 
 const Home: NextPage = () => {
   return (
@@ -18,11 +19,14 @@ const Home: NextPage = () => {
       </Head>
       <Layout>
         <Banner />
-        <KeyMessage />
+        <KeyMessage type2={true} />
         <Service />
+        <Approach />
+        <KeyMessage type2={false} />
         <OurWork />
         <OurCustomer />
         <Approach />
+        <Careers />
       </Layout>
     </>
   );

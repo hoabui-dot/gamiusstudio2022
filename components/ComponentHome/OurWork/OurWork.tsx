@@ -1,52 +1,55 @@
-import React from "react";
-import * as S from "./OurWork.styled";
-import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/effect-fade";
-import { Autoplay, Pagination, EffectFade } from "swiper";
+import React from 'react';
+import * as S from './OurWork.styled';
+import * as SG from '../../KeyMessage/KeyMessage.styled';
+import Image from 'next/image';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/effect-fade';
+import { Autoplay, Pagination } from 'swiper';
+import { SectionTitle } from '../../SectionTitle/SectionTitle';
+import { OurWorkData } from '../../../utils/dataConfig';
+import { FlashBackground } from './Components/Flash/Flash';
 
-import work1 from '../../../public/img/ourWork1.png';
-import work2 from '../../../public/img/ourWork2.png';
-import work3 from '../../../public/img/ourWork3.png';
+export interface IOurWork {}
 
-export const OurWork = () => {
+export const OurWork = (props: IOurWork) => {
   return (
-    <div>
-      <S.FooterContainer>
+    <SG.BackgroundSquare>
+      <FlashBackground />
+      <SectionTitle
+        title='Recent works'
+        subTitle='Follow our journey of bringging bold ideas to life in the real world'
+      />
+      <S.Container>
         <S.WrapperSwiper>
           <Swiper
             pagination={true}
-            effect={'fade'}
             autoplay={{
               delay: 2500,
               disableOnInteraction: false,
             }}
-            modules={[Autoplay, Pagination, EffectFade]}
+            modules={[Autoplay, Pagination]}
             className='mySwiper'
           >
-            <SwiperSlide>
-              <S.WrapperImage>
-                <Image src={work1} alt={'ourWork1'} width={16} height={9} layout={'responsive'}/>
-              </S.WrapperImage>
-            </SwiperSlide>
-            <SwiperSlide>
-            <S.WrapperImage>
-            <Image src={work2} alt={'ourWork1'} width={16} height={9} layout={'responsive'}/>
-              </S.WrapperImage>
-            </SwiperSlide>
-            <SwiperSlide>
-            <S.WrapperImage>
-            <Image src={work3} alt={'ourWork1'} width={16} height={9} layout={'responsive'}/>
-              </S.WrapperImage>
-            </SwiperSlide>
+            {OurWorkData.map((_data, index) => (
+              <SwiperSlide key={index}>
+                <S.WrapperImage>
+                  <Image
+                    src={_data.image}
+                    alt={_data.alt}
+                    width={2}
+                    height={1}
+                    layout={'responsive'}
+                    objectFit={'fill'}
+                  />
+                </S.WrapperImage>
+              </SwiperSlide>
+            ))}
           </Swiper>
-          <S.TitleSwiper>
-            UI Design
-          </S.TitleSwiper>
+          <S.TitleSwiper>UI Design</S.TitleSwiper>
         </S.WrapperSwiper>
-      </S.FooterContainer>
-    </div>
+      </S.Container>
+    </SG.BackgroundSquare>
   );
 };

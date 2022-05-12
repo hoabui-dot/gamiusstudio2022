@@ -4,6 +4,9 @@ import OurCustomer3 from '../public/img/OurCustomer3.png';
 import OurCustomer4 from '../public/img/OurCustomer4.png';
 import OurCustomer5 from '../public/img/OurCustomer5.png';
 import OurCustomer6 from '../public/img/OurCustomer6.png';
+import work1 from '../public/img/ourWork1.png';
+import work2 from '../public/img/ourWork2.png';
+import work3 from '../public/img/ourWork3.png';
 
 export const OurCustomerData = [
   {
@@ -23,5 +26,20 @@ export const OurCustomerData = [
   },
   {
     image: OurCustomer6,
+  },
+];
+
+export const OurWorkData = [
+  {
+    image: work1,
+    alt: 'work1',
+  },
+  {
+    image: work2,
+    alt: 'work2',
+  },
+  {
+    image: work3,
+    alt: 'work3',
   },
 ];
