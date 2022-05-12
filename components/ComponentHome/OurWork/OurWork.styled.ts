@@ -1,12 +1,8 @@
-
 import styled from 'styled-components';
 import tw from 'twin.macro';
 
 export const Container = styled.div`
-  ${tw`container 
-  mx-auto 
-  px-4 
-  py-8  flex justify-center text-white h-auto `}
+  ${tw`container mx-auto px-4 py-8 flex justify-center text-white h-auto `}
 `;
 
 export const WrapperSwiper = styled.div`
@@ -15,7 +11,7 @@ export const WrapperSwiper = styled.div`
   .mySwiper {
     height: auto;
     width: 70vw;
-    max-width: 1064px;
+    max-width: 1065px;
     border: 3px solid #c8fc03;
     box-shadow: 0px 45.9087px 45.9087px rgba(69, 42, 124, 0.15);
     border-top-left-radius: 30px;
@@ -35,22 +31,11 @@ export const WrapperSwiper = styled.div`
         background: #c8fc03;
       }
     }
-
-    .swiper-wrapper {
-      .swiper-slide {
-        width: 100%;
-
-        span {
-          border-top-left-radius: 30px;
-          border-top-right-radius: 30px;
-        }
-      }
-    }
   }
 `;
 
 export const WrapperImage = styled.figure`
-  ${tw`relative `}
+  ${tw`relative`}
 `;
 
 export const TitleSwiper = styled.div`

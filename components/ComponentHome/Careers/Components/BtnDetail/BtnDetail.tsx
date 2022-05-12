@@ -1,8 +1,5 @@
 import React from 'react';
 import * as S from './BtnDetail.styled';
-import Image from 'next/image';
-
-import vector from '../../../../../public/img/vector.png';
 
 export interface IBtnDetail {
   version2?: boolean;

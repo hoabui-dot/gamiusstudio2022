@@ -9,10 +9,14 @@ import 'swiper/css/effect-fade';
 import { Autoplay, Pagination } from 'swiper';
 import { SectionTitle } from '../../SectionTitle/SectionTitle';
 import { OurWorkData } from '../../../utils/dataConfig';
+import { FlashBackground } from './Components/Flash/Flash';
 
-export const OurWork = () => {
+export interface IOurWork {}
+
+export const OurWork = (props: IOurWork) => {
   return (
     <SG.BackgroundSquare>
+      <FlashBackground />
       <SectionTitle
         title='Recent works'
         subTitle='Follow our journey of bringging bold ideas to life in the real world'
@@ -29,14 +33,15 @@ export const OurWork = () => {
             className='mySwiper'
           >
             {OurWorkData.map((_data, index) => (
-              <SwiperSlide>
+              <SwiperSlide key={index}>
                 <S.WrapperImage>
                   <Image
                     src={_data.image}
                     alt={_data.alt}
-                    width={16}
-                    height={9}
+                    width={2}
+                    height={1}
                     layout={'responsive'}
+                    objectFit={'fill'}
                   />
                 </S.WrapperImage>
               </SwiperSlide>

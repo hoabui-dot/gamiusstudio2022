@@ -5,7 +5,11 @@ const greenMint = '#C8FC03';
 const boxWidth = '395px';
 const textGray = '#F3F4F6';
 export const WrapperCard = styled.div`
-  ${tw`duration-200 border rounded-[6px] border-[${greenMint}] w-[${boxWidth}] text-[white] p-4`}
+  ${tw`bg-[#070911BF] duration-200 border rounded-[6px] border-[${greenMint}]
+    md:w-[${boxWidth}] 
+    sm:w-[350px]
+  text-[white] p-4`}
+
   &:hover {
     background: #ffffff73;
   }

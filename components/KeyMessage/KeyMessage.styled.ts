@@ -4,6 +4,7 @@ const greenMint = '#C8FC03';
 
 export const BackgroundSquare = styled.div`
   z-index: 2;
+  position: relative;
   background-size: auto auto;
   background-color: rgba(7, 9, 17, 1);
   background-image: repeating-linear-gradient(
@@ -32,9 +33,7 @@ export const WrapperKeyMessage = styled.div`
 `;
 
 export const WrapperImage = styled.figure`
-  ${tw`
-        xl:min-w-[70px] min-w-[45px]
-        `}
+  ${tw`xl:min-w-[70px] min-w-[45px]`}
 `;
 
 export const Text = styled.div`

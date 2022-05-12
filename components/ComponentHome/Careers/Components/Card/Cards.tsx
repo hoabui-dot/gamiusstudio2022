@@ -56,7 +56,9 @@ const CardsData = [
   },
 ];
 
-export const Cards = () => {
+export interface ICards {}
+
+export const Cards = (props: ICards) => {
   return (
     <>
       {CardsData.map((_data, index) => (
