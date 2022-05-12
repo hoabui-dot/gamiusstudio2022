@@ -22,10 +22,10 @@ export const Service = styled.div`
 `;
 
 export const FlashTheme = styled.figure`
-  ${tw`max-w-[134px] min-h-[180px] w-full
+  ${tw`w-full
   absolute
-  md:block
-  hidden
+  md:max-w-[134px] md:min-h-[180px]
+  max-w-[67px] min-h-[90px]
   `}
 
   &.first {
