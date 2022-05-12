@@ -10,7 +10,8 @@ export const Slides = styled.div`
 `
 
 export const Slide = styled.div`
-    ${tw`h-[50px] w-[134px] relative mx-[30px] my-[10px]`}
+    ${tw`h-[50px] w-[134px] relative mx-[30px] my-[10px] hover:filter-none`}
+    filter: grayscale(100%);
 `
 
 export const SizeImage = styled.figure`
