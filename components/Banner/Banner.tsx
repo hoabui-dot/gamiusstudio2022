@@ -1,17 +1,19 @@
 import React from 'react';
 import Image from 'next/image';
-import BannerImg from '../../public/img/bannerSLide.png';
-import BannerBackground from '../../public/img/bannerBackground.png';
-import ImageTest1 from '../../public/img/ourWork2.png';
-import ImageTest2 from '../../public/img/ourWork3.png';
+import BannerImg1 from '../../public/img/BannerImg1.png';
+import BannerBackground1 from '../../public/img/BannerBackground1.png';
+import BannerBackground2 from '../../public/img/BannerBackground2.png';
+import BannerBackground3 from '../../public/img/BannerBackground3.png';
+import BannerImg2 from '../../public/img/BannerImg2.png';
+import BannerImg3 from '../../public/img/BannerImg3.png';
 import BannerIcon from '../../public/img/BannerIcon.png';
 import Ticket from '../../public/img/Ticket.png';
 import TicketLight from '../../public/img/TicketLight.png';
 import * as B from './Banner.styled';
-import {Swiper, SwiperSlide} from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
-import {Autoplay, EffectFade} from 'swiper';
+import { Autoplay, EffectFade } from 'swiper';
 
 export interface BannerProps {}
 
@@ -19,20 +21,20 @@ export const BannerData = [
   {
     titleWhite: 'we',
     titleGreen: 'design game',
-    image: BannerImg,
-    background: BannerBackground,
+    image: BannerImg1,
+    background: BannerBackground1,
   },
   {
     titleWhite: 'we',
     titleGreen: 'create game',
-    image: ImageTest1,
-    background: ImageTest1,
+    image: BannerImg2,
+    background: BannerBackground2,
   },
   {
     titleWhite: 'we',
     titleGreen: 'test game',
-    image: ImageTest2,
-    background: ImageTest2,
+    image: BannerImg3,
+    background: BannerBackground3,
   },
 ];
 
@@ -53,6 +55,7 @@ export const Banner = (props: BannerProps) => {
         BannerData.map((data, index) => (
           <SwiperSlide key={index}>
             <B.Banner>
+            <B.Linear></B.Linear>
               <B.Background>
                 <B.BackgroundDark />
                 <Image
