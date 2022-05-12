@@ -25,7 +25,7 @@ export const HeaderNav = styled.div`
   ${tw`
     flex
     lg:static lg:flex-row lg:bg-transparent lg:h-auto lg:p-0 lg:items-center lg:w-auto
-    fixed top-0 left-[-270px] flex-col h-screen bg-[#070911] z-[999999] pt-[60px] px-[20px] items-start w-[270px]
+    fixed top-0 left-[-270px] flex-col h-screen bg-[#070911] z-[99999] pt-[60px] px-[20px] items-start w-[270px]
     duration-300
   `}
   &.show {
@@ -40,6 +40,13 @@ export const IconWrap = styled.div`
     lg:hidden
     block
   `}
+  &.show {
+    ${tw`
+      fixed
+      left-[230px]
+      z-[999999]
+    `}
+  }
 `;
 
 export const LeftContentWrap = styled.div`

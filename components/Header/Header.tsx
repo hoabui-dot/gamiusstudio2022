@@ -17,7 +17,7 @@ const MDHeader = {
 };
 
 export const Header = (props: HeaderProps) => {
-  const [mobileNav, setMobileNav] = useState(true);
+  const [mobileNav, setMobileNav] = useState(false);
   const { navigation } = MDHeader;
 
   return (
@@ -25,7 +25,10 @@ export const Header = (props: HeaderProps) => {
       <S.HeaderContainer>
         <S.HeaderInner>
           <S.LeftContentWrap>
-            <S.IconWrap onClick={() => setMobileNav(!mobileNav)}>
+            <S.IconWrap
+              onClick={() => setMobileNav(!mobileNav)}
+              className={mobileNav ? 'show' : 'hide'}
+            >
               <MenuIcon change={mobileNav} />
             </S.IconWrap>
             <Link href='/'>

@@ -14,7 +14,7 @@ export const NavUrl = styled.a`
     font-medium
     h-full border-b-2 border-b-[#F9FAFB]
     flex justify-center flex-col items-center
-    cursor-pointer
+    cursor-pointer duration-[250ms]
     lg:w-auto
     w-full
   `}
