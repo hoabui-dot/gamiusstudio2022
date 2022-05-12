@@ -12,7 +12,7 @@ export const KeyMessage = (props: KeyMessageProps) => {
     <S.Container>
       <S.WrapperKeyMessage>
         <S.WrapperImage>
-          <Image src={decor} alt={'decor comma'} />
+          <Image src={decor} alt={'decor'} />
         </S.WrapperImage>
         {props.type2 ? (
           <S.Text>

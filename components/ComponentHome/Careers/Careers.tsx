@@ -6,7 +6,7 @@ import { Cards } from './Components/Card/Cards';
 import { BtnDetail } from './Components/BtnDetail/BtnDetail';
 import background from '../../../public/img/bg-carrer.png';
 
-export const Carrers = () => {
+export const Careers = () => {
   return (
     <S.Carrers>
       <S.Background>
