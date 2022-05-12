@@ -1,18 +1,15 @@
 import React from "react";
-import * as S from "./ClientSays.styled";
+import * as S from "./OurCustomer.styled";
 import Image from "next/image";
 import {SectionTitle} from "../SectionTitle/SectionTitle";
-import {ClientSaysData} from "../../utils/dataConfig";
+import {OurCustomerData} from "../../utils/dataConfig";
 
-export interface ClientSaysProps {}
-
-export const ClientSays = (props: ClientSaysProps) => {
-
+export const OurCustomer = () => {
   return (
-    <S.ClientSays>
+    <S.OurCustomer>
       <SectionTitle title="Our customers" />
       <S.Slides>
-        {ClientSaysData.map((data, index) => (
+        {OurCustomerData.map((data, index) => (
           <S.Slide key={index}>
             <Image
               src={data.image}
@@ -23,6 +20,6 @@ export const ClientSays = (props: ClientSaysProps) => {
           </S.Slide>
         ))}
       </S.Slides>
-    </S.ClientSays>
+    </S.OurCustomer>
   );
 };

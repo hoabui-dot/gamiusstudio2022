@@ -1,19 +1,27 @@
-import ClientSaysImage1 from '../public/img/vn_express.png';
-import ClientSaysImage2 from '../public/img/thanh-nien.png';
-import ClientSaysImage3 from '../public/img/zingnew.png';
-import ClientSaysImage4 from '../public/img/hedima.png';
+import OurCustomer1 from '../public/img/OurCustomer1.png';
+import OurCustomer2 from '../public/img/OurCustomer2.png';
+import OurCustomer3 from '../public/img/OurCustomer3.png';
+import OurCustomer4 from '../public/img/OurCustomer4.png';
+import OurCustomer5 from '../public/img/OurCustomer5.png';
+import OurCustomer6 from '../public/img/OurCustomer6.png';
 
-export const ClientSaysData = [
+export const OurCustomerData = [
   {
-    image: ClientSaysImage1,
+    image: OurCustomer1,
   },
   {
-    image: ClientSaysImage2,
+    image: OurCustomer2,
   },
   {
-    image: ClientSaysImage3,
+    image: OurCustomer3,
   },
   {
-    image: ClientSaysImage4,
+    image: OurCustomer4,
+  },
+  {
+    image: OurCustomer5,
+  },
+  {
+    image: OurCustomer6,
   },
 ];

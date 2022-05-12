@@ -1,12 +1,12 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { Service } from '../components/Service/Service';
-import { Banner } from '../components/Banner/Banner';
-import { ClientSays } from '../components/ClientSays/ClientSays';
-import { Layout } from '../components/Layout/Layout';
-import { KeyMessage } from '../components/KeyMessage/KeyMessage';
-import { OurWork } from '../components/ComponentHome/OurWork/OurWork';
-import { Approach } from '../components/Approach/Approach';
+import {Service} from '../components/Service/Service';
+import {Banner} from '../components/Banner/Banner';
+import {OurCustomer} from '../components/OurCustomer/OurCustomer';
+import {Layout} from '../components/Layout/Layout';
+import {KeyMessage} from '../components/KeyMessage/KeyMessage';
+import {OurWork} from '../components/ComponentHome/OurWork/OurWork';
+import {Approach} from '../components/Approach/Approach';
 
 const Home: NextPage = () => {
   return (
@@ -21,7 +21,7 @@ const Home: NextPage = () => {
         <KeyMessage />
         <Service />
         <OurWork />
-        <ClientSays />
+        <OurCustomer />
         <Approach />
       </Layout>
     </>
