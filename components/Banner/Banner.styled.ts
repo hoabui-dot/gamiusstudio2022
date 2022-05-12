@@ -3,7 +3,7 @@ import tw from 'twin.macro';
 
 export const Banner = styled.div`
   ${tw`relative flex justify-center items-center 
-  xl:h-[623px] lg:h-[540px] md:h-[700px] h-[580px]`}
+  xl:h-[623px] lg:h-[540px] md:h-[720px] h-[620px]`}
 `;
 
 export const Background = styled.div`
@@ -21,7 +21,7 @@ export const BannerTitle = styled.div`
   ${tw`flex lg:justify-start justify-center md:text-5xl sm:text-4xl text-3xl font-bold`}
 `;
 export const BannerContent = styled.div`
-  ${tw`relative z-10 lg:w-[50%] lg:mt-0 mt-[10px] text-white tracking-tight`}
+  ${tw`relative z-10 lg:w-[50%] lg:mt-0 mt-[20px] text-white tracking-tight`}
 `;
 
 export const BannerImage = styled.div`
