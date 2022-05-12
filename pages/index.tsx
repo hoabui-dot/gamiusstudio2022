@@ -21,8 +21,6 @@ const Home: NextPage = () => {
         <Banner />
         <KeyMessage type2={true} />
         <Service />
-        <Approach />
-        <KeyMessage type2={false} />
         <OurWork />
         <OurCustomer />
         <Approach />
