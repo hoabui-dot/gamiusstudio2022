@@ -37,7 +37,7 @@ export const WrapperImage = styled.figure`
 `;
 
 export const Text = styled.div`
-  ${tw`mx-auto text-right max-w-[740px] xl:text-[30px] xl:ml-14 ml-7 text-[20px] mt-4  text-white`}
+  ${tw`mx-auto text-right max-w-[740px] xl:text-[30px] xl:ml-14 sm:ml-7 text-[20px] mt-4  text-white`}
 
   span {
     color: ${greenMint};
@@ -45,7 +45,7 @@ export const Text = styled.div`
 `;
 
 export const Text2 = styled.div`
-  ${tw`mx-auto text-right max-w-[740px] xl:text-[24px] xl:ml-14 ml-7 text-[17 px] mt-4  text-white`}
+  ${tw`mx-auto text-right max-w-[740px] xl:text-[24px] xl:ml-14 ml-3 sm:ml-7 text-[17 px] mt-4  text-white`}
 
   span {
     color: ${greenMint};
