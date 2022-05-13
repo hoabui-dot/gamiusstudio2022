@@ -22,7 +22,7 @@ export const Container = styled.div`
 `;
 
 export const CenterDiv = styled.div`
-  ${tw`flex lg:flex-row flex-wrap justify-center gap-x-6 gap-y-6 mt-9`}
+  ${tw`grid 2xl:grid-cols-3 md:grid-cols-2 gap-x-6 gap-y-6 mt-9`}
 `;
 
 export const Center = styled.div`
