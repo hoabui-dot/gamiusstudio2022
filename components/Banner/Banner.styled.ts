@@ -38,7 +38,7 @@ export const TitleWhite = styled.div`
 
 export const BannerSubTitle = styled.div`
   ${tw`relative lg:text-left text-center md:text-2xl text-xl 
-  lg:mt-[60px] mt-[20px] w-full xl:max-w-[525px] lg:max-w-[447px] 
+  lg:mt-[60px] mt-[20px] w-full xl:max-w-[525px] lg:max-w-[408px] 
   max-w-[525px]`}
 `;
 
@@ -68,5 +68,5 @@ export const Linear = styled.div`
 `;
 
 export const BannerIcon = styled.div`
-  ${tw`absolute w-[93px] h-[123px] left-[-75px] top-[-20px]`}
+  ${tw`absolute w-[93px] h-[123px] left-[-75px] top-[-30px]`}
 `;
