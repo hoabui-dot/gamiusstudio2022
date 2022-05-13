@@ -12,3 +12,6 @@ export const Title = styled.p`
 export const description = styled.p`
   ${tw`text-[16px] mt-[16px] text-white font-medium`}
 `
+export const descriptionColor = styled.p`
+  ${tw`text-[16px] mt-[16px] text-[#9CA3AF] font-medium`}
+`
