@@ -137,9 +137,11 @@ export const Banner = (props: BannerProps) => {
                         </B.StickedLight>
                       </B.Sticked>
                     </B.BannerStatus>
-                    We embrace <B.GreenColor>challenges</B.GreenColor>, incite{' '}
-                    <B.GreenColor>creativity</B.GreenColor> & deliver{' '}
-                    <B.GreenColor>powerful designs.</B.GreenColor>
+                    <B.SubTitleWrap>
+                      We embrace <B.GreenWord>challenges</B.GreenWord>, incite{' '}
+                      <B.GreenWord>creativity</B.GreenWord> & deliver{' '}
+                      <B.GreenWord>powerful designs.</B.GreenWord>
+                    </B.SubTitleWrap>
                   </B.BannerSubTitle>
                 </B.BannerContent>
                 <B.BannerImage>
