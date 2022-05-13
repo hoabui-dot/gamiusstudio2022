@@ -9,7 +9,7 @@ export const ApproachWrap = styled.div`
     background-image: repeating-linear-gradient(0deg, transparent, transparent 15px, rgba(122, 123, 124, 0.15) 15px, rgba(122, 123, 124, 0.15) 16px ),repeating-linear-gradient(90deg, transparent, transparent 15px, rgba(122, 123, 124, 0.14901960784313725) 15px, rgba(122, 123, 124, 0.14901960784313725) 16px );
 `
 export const Grid = styled.div`
-    ${tw`container grid xl:grid-cols-3 xl:grid-rows-2 md:grid-cols-2 md:grid-rows-3 gap-12`}
+    ${tw`container grid xl:grid-cols-3 xl:grid-rows-2 md:grid-cols-2 md:grid-rows-3 gap-[74px]`}
 `
 export const Item = styled.div`
     ${tw`text-left border-b-[2px]`}
