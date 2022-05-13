@@ -1,14 +1,14 @@
 import React from 'react';
 import * as S from './Carrers.styled';
 import Image from 'next/image';
-import {SectionTitle} from '../../SectionTitle/SectionTitle';
-import {Cards} from './Components/Card/Cards';
-import {BtnDetail} from './Components/BtnDetail/BtnDetail';
+import { SectionTitle } from '../../SectionTitle/SectionTitle';
+import { Cards } from './Components/Card/Cards';
+import { BtnDetail } from './Components/BtnDetail/BtnDetail';
 import background from '../../../public/img/bg-carrer.png';
 
 export const Careers = () => {
   return (
-    <S.Carrers>
+    <S.Carrers className='section'>
       <S.Background>
         <S.WrapperImage>
           <Image
@@ -16,6 +16,7 @@ export const Careers = () => {
             src={background}
             layout='fill'
             objectFit='cover'
+            objectPosition='top'
             alt='Banner Slide'
           />
         </S.WrapperImage>
@@ -26,7 +27,9 @@ export const Careers = () => {
           subTitle='No matter how quirky you are, our multi-talented team needs you!'
         />
         <S.Container>
-          <Cards />
+          <S.CenterDiv>
+            <Cards />
+          </S.CenterDiv>
         </S.Container>
         <S.Center>
           <BtnDetail version2={true} />

@@ -24,7 +24,7 @@ export const BackgroundSquare = styled.div`
 `;
 
 export const Container = styled.div`
-  ${tw`container mx-auto px-4 py-8 flex justify-center `}
+  ${tw`container mx-auto px-12 flex justify-center `}
 `;
 
 export const WrapperKeyMessage = styled.div`
