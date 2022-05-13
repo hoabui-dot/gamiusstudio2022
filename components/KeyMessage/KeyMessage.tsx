@@ -9,7 +9,7 @@ export interface KeyMessageProps {
 
 export const KeyMessage = (props: KeyMessageProps) => {
   return (
-    <S.Container>
+    <S.Container className='section'>
       <S.WrapperKeyMessage>
         <S.WrapperImage>
           <Image src={decor} alt={'decor'} />

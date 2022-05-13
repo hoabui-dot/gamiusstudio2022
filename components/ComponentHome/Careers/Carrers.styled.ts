@@ -6,7 +6,7 @@ export const Carrers = styled.div`
 `;
 
 export const Background = styled.div`
-  ${tw`absolute top-0 left-0 right-0 bottom-0 w-full h-full`};
+  ${tw`absolute  bottom-0 top-0 w-full h-full`};
 `;
 
 export const WrapperImage = styled.figure`
@@ -18,7 +18,11 @@ export const ContentCarrer = styled.div`
 `;
 
 export const Container = styled.div`
-  ${tw`container flex lg:flex-row flex-wrap justify-center gap-x-6 gap-y-6 mt-9`}
+  ${tw`container`}
+`;
+
+export const CenterDiv = styled.div`
+  ${tw`grid 2xl:grid-cols-3 md:grid-cols-2 gap-x-6 gap-y-6 mt-9`}
 `;
 
 export const Center = styled.div`
