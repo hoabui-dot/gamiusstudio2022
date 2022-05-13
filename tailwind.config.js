@@ -15,7 +15,7 @@ module.exports = {
         zoomIn: 'zoomIn 250ms',
       },
       colors: {
-        green: 'A5D10A',
+        green: '#A5D10A',
       },
     },
     screens: {

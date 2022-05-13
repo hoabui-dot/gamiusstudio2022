@@ -17,10 +17,6 @@ export const ContentCarrer = styled.div`
   ${tw`relative z-30 pt-11`}
 `;
 
-export const Container = styled.div`
-  ${tw`container`}
-`;
-
 export const CenterDiv = styled.div`
   ${tw`grid 2xl:grid-cols-3 md:grid-cols-2 gap-x-6 gap-y-6 mt-9`}
 `;
