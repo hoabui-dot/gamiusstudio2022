@@ -17,39 +17,41 @@ export const OurWork = (props: IOurWork) => {
   return (
     <SG.BackgroundSquare>
       <FlashBackground />
-      <SectionTitle
-        title='Recent works'
-        subTitle='Follow our journey of bringging bold ideas to life in the real world'
-      />
-      <S.Container>
-        <S.WrapperSwiper>
-          <Swiper
-            pagination={true}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-            }}
-            modules={[Autoplay, Pagination]}
-            className='mySwiper'
-          >
-            {OurWorkData.map((_data, index) => (
-              <SwiperSlide key={index}>
-                <S.WrapperImage>
-                  <Image
-                    src={_data.image}
-                    alt={_data.alt}
-                    width={2}
-                    height={1}
-                    layout={'responsive'}
-                    objectFit={'fill'}
-                  />
-                </S.WrapperImage>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-          <S.TitleSwiper>UI Design</S.TitleSwiper>
-        </S.WrapperSwiper>
-      </S.Container>
+      <div className='section'>
+        <SectionTitle
+          title='Recent works'
+          subTitle='Follow our journey of bringging bold ideas to life in the real world'
+        />
+        <S.Container>
+          <S.WrapperSwiper>
+            <Swiper
+              pagination={true}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              modules={[Autoplay, Pagination]}
+              className='mySwiper'
+            >
+              {OurWorkData.map((_data, index) => (
+                <SwiperSlide key={index}>
+                  <S.WrapperImage>
+                    <Image
+                      src={_data.image}
+                      alt={_data.alt}
+                      width={2}
+                      height={1}
+                      layout={'responsive'}
+                      objectFit={'fill'}
+                    />
+                  </S.WrapperImage>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+            <S.TitleSwiper>3D Modeling</S.TitleSwiper>
+          </S.WrapperSwiper>
+        </S.Container>
+      </div>
     </SG.BackgroundSquare>
   );
 };

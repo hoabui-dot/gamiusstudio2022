@@ -8,18 +8,9 @@ export interface IBtnDetail {
 export const BtnDetail = (props: IBtnDetail) => {
   const version2 = props.version2;
   return (
-    <>
-      {version2 ? (
-        <S.BtnDetailRevert>
-          See all &nbsp;
-          <i className='fa-solid fa-angle-right' />
-        </S.BtnDetailRevert>
-      ) : (
-        <S.BtnDetail>
-          Detail &nbsp;
-          <i className='fa-solid fa-angle-right' />
-        </S.BtnDetail>
-      )}
-    </>
+    <S.BtnDetail>
+      {version2 ? 'See all' : 'Detail'} &nbsp;
+      <i className='fa-solid fa-angle-right' />
+    </S.BtnDetail>
   );
 };
