@@ -38,12 +38,15 @@ export const TitleWhite = styled.div`
 
 export const BannerSubTitle = styled.div`
   ${tw`relative lg:text-left text-center xl:text-2xl text-xl 
-  lg:mt-[55px] mt-[20px] w-full xl:max-w-[525px] lg:max-w-[408px] 
-  max-w-[525px]`}
+  lg:mt-[55px] mt-[20px] w-full`}
 `;
 
+export const SubTitleWrap = styled.div`
+  ${tw`w-full xl:max-w-[525px] lg:max-w-[408px] max-w-[525px]`}
+`
+
 export const BannerStatus = styled.ul`
-  ${tw`absolute flex top-[-15px] xl:right-0 lg:right-[20px] right-0 z-[70]`}
+  ${tw`absolute flex top-[-15px] xl:right-[18px] lg:right-[40px] right-0 z-[70]`}
 `;
 
 export const Sticked = styled.li`
@@ -58,7 +61,7 @@ export const StickedLight = styled.div`
   }
 `;
 
-export const GreenColor = styled.span`
+export const GreenWord = styled.span`
   ${tw`text-[#C8FC03]`}
 `;
 
