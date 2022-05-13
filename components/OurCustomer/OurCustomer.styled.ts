@@ -10,30 +10,14 @@ export const Slides = styled.div`
 `;
 
 export const Slide = styled.div`
-  ${tw`flex justify-center items-center h-[50px] w-[134px] my-[5px] relative mx-[30px]`}
-
-  .setHidden {
-    ${tw`invisible`}
-  }
+  ${tw`flex cursor-pointer duration-[250ms] justify-center items-center h-[50px] w-[134px] my-[5px] relative mx-[30px] hover:filter-none`}
+  filter: grayscale(100%);
 `;
 
 export const ChangeImg = styled.div`
-  ${tw`absolute top-0 left-0 h-[50px ] w-[134px]`}
-
-  .visible {
-    ${tw`z-50`}
-  }
+  ${tw`absolute top-0 left-0 h-[50px ] w-[134px] filter-none`}
 `;
 
 export const SizeImage = styled.figure`
   ${tw`h-[32px]`}
-`;
-
-export const Item = styled.div`
-  ${tw`absolute h-[50px] w-[134px] mx-[30px] hover:filter-none`}
-  filter: grayscale(100%);
-
-  &.active {
-    ${tw`filter-none`}
-  }
 `;
