@@ -7,13 +7,12 @@ module.exports = {
     extend: {
       keyframes: {
         zoomIn: {
-          '0%': {transform: 'scale(0.5)'},
-          '100%': {transform: 'scale(1)'},
+          '0%': { transform: 'scale(0.5)' },
+          '100%': { transform: 'scale(1)' },
         },
       },
       animation: {
         zoomIn: 'zoomIn 250ms',
-        fadeIn: 'fadeIn 2500ms',
       },
     },
     screens: {
@@ -25,9 +24,13 @@ module.exports = {
     },
     container: {
       center: true,
-      padding: '15px',
-      '2xl': '1200px',
-      xl: '1200px',
+      padding: {
+        DEFAULT: '1rem',
+        sm: '2rem',
+        lg: '4rem',
+        xl: '5rem',
+        '2xl': '6rem',
+      },
     },
   },
 };
