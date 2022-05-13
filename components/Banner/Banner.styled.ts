@@ -18,7 +18,7 @@ export const BannerItem = styled.div`
 `;
 
 export const BannerTitle = styled.div`
-  ${tw`flex lg:justify-start justify-center md:text-5xl sm:text-4xl text-3xl font-bold`}
+  ${tw`flex lg:justify-start justify-center xl:text-5xl sm:text-4xl text-3xl font-bold`}
 `;
 export const BannerContent = styled.div`
   ${tw`relative z-10 lg:w-[50%] lg:mt-0 mt-[20px] text-white tracking-tight`}
@@ -37,13 +37,13 @@ export const TitleWhite = styled.div`
 `;
 
 export const BannerSubTitle = styled.div`
-  ${tw`relative lg:text-left text-center md:text-2xl text-xl 
-  lg:mt-[60px] mt-[20px] w-full xl:max-w-[525px] lg:max-w-[447px] 
+  ${tw`relative lg:text-left text-center xl:text-2xl text-xl 
+  lg:mt-[55px] mt-[20px] w-full xl:max-w-[525px] lg:max-w-[408px] 
   max-w-[525px]`}
 `;
 
 export const BannerStatus = styled.ul`
-  ${tw`absolute flex top-[-15px] right-0 z-[70]`}
+  ${tw`absolute flex top-[-15px] xl:right-0 lg:right-[20px] right-0 z-[70]`}
 `;
 
 export const Sticked = styled.li`
@@ -68,5 +68,5 @@ export const Linear = styled.div`
 `;
 
 export const BannerIcon = styled.div`
-  ${tw`absolute w-[93px] h-[123px] left-[-75px] top-[-20px]`}
+  ${tw`absolute w-[93px] h-[123px] left-[-75px] top-[-30px]`}
 `;

@@ -76,7 +76,7 @@ export const Banner = (props: BannerProps) => {
                       <Image
                         src={BannerIcon}
                         layout='responsive'
-                        width={1}
+                        width={0.8}
                         height={1}
                         alt='Banner Icon'
                       />
