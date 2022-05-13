@@ -8,7 +8,7 @@ import background from '../../../public/img/bg-carrer.png';
 
 export const Careers = () => {
   return (
-    <S.Carrers className='section'>
+    <S.Carrers>
       <S.Background>
         <S.WrapperImage>
           <Image

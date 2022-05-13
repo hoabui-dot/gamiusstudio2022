@@ -22,9 +22,9 @@ export const Container = styled.div`
 `;
 
 export const CenterDiv = styled.div`
-  ${tw`flex lg:flex-row flex-wrap justify-center lg:justify-between    gap-x-6 gap-y-6 mt-9`}
+  ${tw`flex lg:flex-row flex-wrap justify-center gap-x-6 gap-y-6 mt-9`}
 `;
 
 export const Center = styled.div`
-  ${tw`text-center`}
+  ${tw`text-center pb-10`}
 `;

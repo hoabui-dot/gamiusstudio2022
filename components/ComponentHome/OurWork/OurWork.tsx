@@ -16,13 +16,13 @@ export interface IOurWork {}
 export const OurWork = (props: IOurWork) => {
   return (
     <SG.BackgroundSquare>
-      <FlashBackground />
       <div className='section'>
         <SectionTitle
           title='Recent works'
           subTitle='Follow our journey of bringging bold ideas to life in the real world'
         />
         <S.Container>
+          <FlashBackground />
           <S.WrapperSwiper>
             <Swiper
               pagination={true}
