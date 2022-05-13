@@ -24,6 +24,7 @@ export const Careers = () => {
         <SectionTitle
           title='Careers'
           subTitle='No matter how quirky you are, our multi-talented team needs you!'
+          descriptionColor={true}
         />
         <S.Container>
           <Cards />
