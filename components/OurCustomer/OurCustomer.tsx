@@ -1,32 +1,23 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import * as S from './OurCustomer.styled';
 import Image from 'next/image';
 import { SectionTitle } from '../SectionTitle/SectionTitle';
 import ChangeImg from '../../public/img/OurCustomerChange.png';
-import { Item } from './Item';
-// import { OurCustomerData } from '../../utils/dataConfig';
+import { OurCustomerData } from '../../utils/dataConfig';
 
 export const OurCustomer = () => {
-  const [filter, setFilter] = useState(false);
-
-  const ItemData = [
-    { image: '/img/OurCustomer1.png' },
-    { image: '/img/OurCustomer2.png' },
-    { image: '/img/OurCustomer3.png' },
-    { image: '/img/OurCustomer4.png' },
-    { image: '/img/OurCustomer5.png' },
-    { image: '/img/OurCustomer6.png' },
-  ];
+  const [state, setState] = useState(false)
 
   return (
     <S.OurCustomer>
       <SectionTitle title='Our customers' />
       <S.Slides>
-        {ItemData.map((data, index) => (
-          <S.Slide key={index}>
+        {OurCustomerData.map((data, index) => (
+          <S.Slide key={index} onMouseOver={() => {index===0 ? setState(true) : setState(false)}} onMouseOut={() => setState(false)}> 
+          
             {index === 0 && (
-              <S.ChangeImg className={filter ? "visible" : ""}>
-                <Image onMouseEnter={() => setFilter(true)}
+              <S.ChangeImg>
+                <Image
                   src={ChangeImg}
                   layout='fill'
                   objectFit='contain'
@@ -34,7 +25,12 @@ export const OurCustomer = () => {
                 />
               </S.ChangeImg>
             )}
-            <Item data={data} index={index}/>
+            <Image className={index === 0 && state ? "invisible" : ""}
+              src={data.image}
+              layout='fill'
+              objectFit='contain'
+              alt='ClientSays'
+            />
           </S.Slide>
         ))}
       </S.Slides>
