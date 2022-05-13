@@ -1,15 +1,46 @@
-import type { NextPage } from 'next';
+import type {NextPage} from 'next';
 import Head from 'next/head';
-import { Service } from '../components/Service/Service';
-import { Banner } from '../components/Banner/Banner';
-import { OurCustomer } from '../components/OurCustomer/OurCustomer';
-import { Layout } from '../components/Layout/Layout';
-import { KeyMessage } from '../components/KeyMessage/KeyMessage';
-import { OurWork } from '../components/ComponentHome/OurWork/OurWork';
-import { Approach } from '../components/Approach/Approach';
-import { Careers } from '../components/ComponentHome/Careers/Careers';
+import {Service} from '../components/Service/Service';
+import {Banner} from '../components/Banner/Banner';
+import {OurCustomer} from '../components/OurCustomer/OurCustomer';
+import {Layout} from '../components/Layout/Layout';
+import {KeyMessage} from '../components/KeyMessage/KeyMessage';
+import {OurWork} from '../components/ComponentHome/OurWork/OurWork';
+import {Approach} from '../components/Approach/Approach';
+import {Careers} from '../components/ComponentHome/Careers/Careers';
+import styled, {keyframes} from 'styled-components';
+import {bounceInUp} from 'react-animations';
+import {useEffect} from 'react';
+
+const bounceAnimation = keyframes`${bounceInUp}`;
+
+const BouncyDiv = styled.div`
+  animation: 2s ${bounceAnimation};
+`;
+
+const BounceInUpDiv = styled.div`
+  animation: 1s ${bounceAnimation};
+`;
 
 const Home: NextPage = () => {
+  useEffect(() => {
+    const inViewport = (entries: any, observer: any) => {
+      entries.forEach((entry: any) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active', entry.isIntersecting);
+        }
+      });
+    };
+
+    const Obs = new IntersectionObserver(inViewport);
+
+    // Attach observer to every [data-inviewport] element:
+    const ELs_inViewport = document.querySelectorAll('[data-inviewport]');
+    ELs_inViewport.forEach(EL => {
+      Obs.observe(EL);
+    });
+  }, []);
+
   return (
     <>
       <Head>
@@ -19,12 +50,44 @@ const Home: NextPage = () => {
       </Head>
       <Layout>
         <Banner />
-        <KeyMessage type2={true} />
-        <Service />
-        <OurWork />
-        <OurCustomer />
-        <Approach />
-        <Careers />
+        <BouncyDiv>
+          <KeyMessage type2={true} />
+        </BouncyDiv>
+        <div className='load-lazy' data-inviewport>
+          <div className='service'>
+            <BounceInUpDiv>
+              <Service />
+            </BounceInUpDiv>
+          </div>
+        </div>
+        <div className='load-lazy' data-inviewport>
+          <div className='our-work'>
+            <BounceInUpDiv>
+              <OurWork />
+            </BounceInUpDiv>
+          </div>
+        </div>
+        <div className='load-lazy' data-inviewport>
+          <div className='our-customer'>
+            <BounceInUpDiv>
+              <OurCustomer />
+            </BounceInUpDiv>
+          </div>
+        </div>
+        <div className='load-lazy' data-inviewport>
+          <div className='approach'>
+            <BounceInUpDiv>
+              <Approach />
+            </BounceInUpDiv>
+          </div>
+        </div>
+        <div className='load-lazy' data-inviewport>
+          <div className='career'>
+            <BounceInUpDiv>
+              <Careers />
+            </BounceInUpDiv>
+          </div>
+        </div>
       </Layout>
     </>
   );
