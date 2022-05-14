@@ -20,6 +20,7 @@ module.exports = {
         'black-light': '#111827',
         gray: '#9CA3AF',
         'gray-light': '#F9FAFB',
+        'gray-dark': '#1F2937',
       },
       transitionDuration: {
         250: '250ms',
