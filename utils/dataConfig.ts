@@ -8,6 +8,15 @@ import work1 from '../public/img/ourWork1.png';
 import work2 from '../public/img/ourWork2.png';
 import work3 from '../public/img/ourWork3.png';
 
+export const MDHeader = {
+  navigation: [
+    { title: 'Home', url: '/', name: 'home' },
+    { title: 'Works', url: '/', name: 'works' },
+    { title: 'About Us', url: '/', name: 'about' },
+    { title: 'Contact Now', url: '/', name: 'contact' },
+  ],
+};
+
 export const OurCustomerData = [
   {
     image: OurCustomer1,
