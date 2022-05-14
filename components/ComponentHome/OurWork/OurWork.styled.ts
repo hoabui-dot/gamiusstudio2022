@@ -10,7 +10,7 @@ export const WrapperSwiper = styled.div`
 
   .mySwiper {
     height: auto;
-    width: 70vw;
+    width: 90vw;
     max-width: 1065px;
     border: 3px solid #c8fc03;
     box-shadow: 0px 45.9087px 45.9087px rgba(69, 42, 124, 0.15);
@@ -18,6 +18,7 @@ export const WrapperSwiper = styled.div`
     border-top-right-radius: 30px;
     border-bottom: none;
     position: unset;
+    ${tw`sm:w-[70vw]`}
 
     .swiper-pagination {
       position: absolute;

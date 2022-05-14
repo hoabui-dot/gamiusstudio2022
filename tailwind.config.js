@@ -7,12 +7,15 @@ module.exports = {
     extend: {
       keyframes: {
         zoomIn: {
-          '0%': { transform: 'scale(0.5)' },
-          '100%': { transform: 'scale(1)' },
+          '0%': {transform: 'scale(0.5)'},
+          '100%': {transform: 'scale(1)'},
         },
       },
       animation: {
         zoomIn: 'zoomIn 250ms',
+      },
+      colors: {
+        green: '#A5D10A',
       },
     },
     screens: {

@@ -46,6 +46,13 @@ export const Text = styled.div<{ type2?: boolean }>`
   ${tw`xl:text-[24px] text-[17px]`}
     `}
   ${tw`mx-auto text-right max-w-[740px]  xl:ml-14 ml-7  mt-4  text-white`}
+  span {
+    color: ${greenMint};
+  }
+`;
+
+export const Text2 = styled.div`
+  ${tw`mx-auto text-right max-w-[740px] xl:text-[24px] xl:ml-14 ml-3 sm:ml-7 text-[17 px] mt-4  text-white`}
 
   span {
     color: ${greenMint};

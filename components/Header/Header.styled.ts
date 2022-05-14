@@ -55,9 +55,9 @@ export const LeftContentWrap = styled.div`
 `;
 
 export const ContactButton = styled.a`
-  ${tw`bg-none text-[14px] leading-[17px] text-[#A5D10A] border-[#A5D10A] border-2
+  ${tw`bg-none text-[14px] leading-[17px] text-green border-green border-2
     rounded-[4px] py-2 px-[14px] font-bold justify-between items-center gap-2
-    cursor-pointer hover:bg-[#A5D10A] hover:text-[#111827] duration-[250ms]
+    cursor-pointer hover:bg-green hover:text-[#111827] duration-[250ms]
     md:hidden
     w-auto
     flex
