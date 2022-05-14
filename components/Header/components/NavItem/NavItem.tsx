@@ -6,37 +6,36 @@ interface NavItemProps {
   tab: {
     title: string;
     url: string;
-    class?: string;
+    name?: string;
   };
+  active: string;
 }
 
-const active = 'Home';
-
-export const NavItem = (props: NavItemProps) => {
-  const { tab } = props;
-  return tab.class === 'contact' ? (
+export const NavItem = ({
+  tab: { title, url, name },
+  active,
+}: NavItemProps) => {
+  return (
     <S.NavItem>
-      <Link href={tab.url}>
-        <S.NavContact>
-          CONTACT NOW
-          <S.FlashIcon>
-            <Image
-              src='/img/flash.png'
-              alt='Gaming Logo'
-              width='1'
-              height='1'
-              layout='responsive'
-            />
-          </S.FlashIcon>
-        </S.NavContact>
-      </Link>
-    </S.NavItem>
-  ) : (
-    <S.NavItem>
-      <Link href={tab.url}>
-        <S.NavUrl className={`${active === tab.title && 'active'}`}>
-          {tab.title}
-        </S.NavUrl>
+      <Link href={url}>
+        {name === 'contact' ? (
+          <S.NavContact>
+            {title}
+            <S.FlashIcon>
+              <Image
+                src='/img/flash.png'
+                alt='Gaming Logo'
+                width='1'
+                height='1'
+                layout='responsive'
+              />
+            </S.FlashIcon>
+          </S.NavContact>
+        ) : (
+          <S.NavUrl className={`${active === name && 'active'}`}>
+            {title}
+          </S.NavUrl>
+        )}
       </Link>
     </S.NavItem>
   );

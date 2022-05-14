@@ -10,6 +10,54 @@ import work3 from '../public/img/ourWork3.png';
 import calender from '../public/img/calendar.png';
 import location from '../public/img/location.png';
 
+export const MDHeader = {
+  navigation: [
+    { title: 'Home', url: '/', name: 'home' },
+    { title: 'Works', url: '/', name: 'works' },
+    { title: 'About Us', url: '/', name: 'about' },
+    { title: 'Contact Now', url: '/', name: 'contact' },
+  ],
+};
+
+export const MDService = {
+  title: 'Our Service',
+  subTitle: 'You can find your own solution with our expertise',
+  mainContent: [
+    {
+      imgSrc: '/img/Shooting1.png',
+      imgAlt: 'gaming',
+      title: 'Illustration',
+      description:
+        'Digital painting and illustrations for posters, advertising campaigns, magazines, book covers,...',
+      url: '/',
+    },
+    {
+      imgSrc: '/img/Shooting2.png',
+      imgAlt: 'gaming',
+      title: 'Shooting',
+      description:
+        'Concept definition, art direction, photo processing for artistic, commercial or corporate photo.',
+      url: '/',
+    },
+    {
+      imgSrc: '/img/3DModelling.png',
+      imgAlt: 'gaming',
+      title: '3D Modelling',
+      description:
+        '3D characters, eviroments, creature for games, movies and 3D printing technologies.',
+      url: '/',
+    },
+    {
+      imgSrc: '/img/Animation.png',
+      imgAlt: 'gaming',
+      title: 'Animation - VFX',
+      description:
+        'Animation and visual effects for feature films and television.',
+      url: '/',
+    },
+  ],
+};
+
 export const OurCustomerData = [
   {
     image: OurCustomer1,
