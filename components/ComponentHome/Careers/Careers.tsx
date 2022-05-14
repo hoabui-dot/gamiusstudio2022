@@ -1,14 +1,14 @@
 import React from 'react';
-import * as S from './Carrers.styled';
+import * as S from './Careers.styled';
 import Image from 'next/image';
 import { SectionTitle } from '../../SectionTitle/SectionTitle';
 import { Cards } from './Components/Card/Cards';
 import { BtnDetail } from './Components/BtnDetail/BtnDetail';
-import background from '../../../public/img/bg-carrer.png';
+import background from '../../../public/img/bg-career.png';
 
 export const Careers = () => {
   return (
-    <S.Carrers>
+    <S.Careers>
       <S.Background>
         <S.WrapperImage>
           <Image
@@ -21,7 +21,7 @@ export const Careers = () => {
           />
         </S.WrapperImage>
       </S.Background>
-      <S.ContentCarrer>
+      <S.ContentCareer>
         <SectionTitle
           title='Careers'
           subTitle='No matter how quirky you are, our multi-talented team needs you!'
@@ -35,7 +35,7 @@ export const Careers = () => {
         <S.Center>
           <BtnDetail version2={true} />
         </S.Center>
-      </S.ContentCarrer>
-    </S.Carrers>
+      </S.ContentCareer>
+    </S.Careers>
   );
 };

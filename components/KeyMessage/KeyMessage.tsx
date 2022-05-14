@@ -15,18 +15,18 @@ export const KeyMessage = (props: KeyMessageProps) => {
           <Image src={decor} alt={'decor'} />
         </S.WrapperImage>
         {props.type2 ? (
-          <S.Text>
-            <span>Specialising </span>
+          <S.Text type2={false}>
+            <span>Specializing </span>
             in diversity, we <span> convey meaningful</span> vision through
             <span> variety of creative </span> and <span> impacful </span>
             visual solution and <span>support</span> you in your projects.
           </S.Text>
         ) : (
-          <S.Text2>
+          <S.Text type2={true}>
             We are driven by the purpose of <span>connecting reality </span>
             to your <span>value </span>
             and conquering <span> customer’s hearts</span>
-          </S.Text2>
+          </S.Text>
         )}
       </S.WrapperKeyMessage>
     </S.Container>

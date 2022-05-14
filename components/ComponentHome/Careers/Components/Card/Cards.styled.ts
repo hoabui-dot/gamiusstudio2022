@@ -2,14 +2,10 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 const greenMint = '#C8FC03';
-const boxWidth = '345px';
 const textGray = '#F3F4F6';
 
 export const WrapperCard = styled.div`
-  ${tw`bg-[#070911BF] duration-200 border rounded-[6px] border-[${greenMint}]
-    
-  text-[white] p-6
-  `}
+  ${tw`bg-[#070911BF] duration-200 border rounded-[6px] border-[${greenMint}] text-[white] p-6`}
 
   &:hover {
     background: #ffffff73;
