@@ -2,24 +2,27 @@ import React from 'react';
 import * as S from './SectionTitle.styled';
 
 export interface SectionTitleProps {
-  title?: string;
+  title: string;
   subTitle?: string;
   descriptionColor?: boolean;
 }
 
-export const SectionTitle = (props: SectionTitleProps) => {
+export const SectionTitle = ({
+  title,
+  subTitle,
+  descriptionColor,
+}: SectionTitleProps) => {
   return (
     <S.titleSection>
-      {props.descriptionColor ? (
-        <S.Title2>{props.title}</S.Title2>
+      {descriptionColor ? (
+        <S.Title2>{title}</S.Title2>
       ) : (
-        <S.Title>{props.title}</S.Title>
+        <S.Title>{title}</S.Title>
       )}
-
-      {props.descriptionColor ? (
-        <S.descriptionColor>{props.subTitle}</S.descriptionColor>
+      {descriptionColor ? (
+        <S.DescriptionColor>{subTitle}</S.DescriptionColor>
       ) : (
-        <S.description>{props.subTitle}</S.description>
+        <S.Description>{subTitle}</S.Description>
       )}
     </S.titleSection>
   );
