@@ -1,15 +1,15 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
 
-export const ServiceItem = styled.div`
+export const ServiceItem = styled.a`
   ${tw`my-5 flex items-center justify-between gap-5 cursor-pointer`}
   &:hover, &.active {
     .textWrap {
       .title {
-        ${tw`text-[#C8FC03]`}
+        ${tw`text-green`}
       }
       .description {
-        ${tw`text-[#FFFFFF]`}
+        ${tw`text-white`}
       }
     }
     .flashFillWrap {
@@ -26,11 +26,11 @@ export const TextWrap = styled.div`
 `;
 
 export const Title = styled.h2`
-  ${tw`text-[#FFFFFF] text-lg font-bold duration-[250ms]`}
+  ${tw`text-white text-lg font-bold duration-[250ms]`}
 `;
 
 export const Description = styled.p`
-  ${tw`text-[#9CA3AF] text-base font-normal duration-[250ms]`}
+  ${tw`text-gray text-base font-normal duration-[250ms]`}
 `;
 
 export const FlashWrap = styled.figure`
