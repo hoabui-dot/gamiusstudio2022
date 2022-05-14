@@ -46,6 +46,7 @@
 .load-lazy.active .career {
   display: block;
 }
+
 @layer components {
   .background-net {
     background-size: auto auto;
