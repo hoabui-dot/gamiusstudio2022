@@ -3,29 +3,14 @@ import tw from 'twin.macro';
 
 export const Service = styled.div`
   ${tw`pt-[80px] pb-[60px] relative`}
-  background-size: auto auto;
-  background-color: rgba(7, 9, 17, 1);
-  background-image: repeating-linear-gradient(
-      0deg,
-      transparent,
-      transparent 15px,
-      rgba(122, 123, 124, 0.15) 15px,
-      rgba(122, 123, 124, 0.15) 16px
-    ),
-    repeating-linear-gradient(
-      90deg,
-      transparent,
-      transparent 15px,
-      rgba(122, 123, 124, 0.14901960784313725) 15px,
-      rgba(122, 123, 124, 0.14901960784313725) 16px
-    );
 `;
 
 export const FlashTheme = styled.figure`
-  ${tw`w-full
-  absolute
-  md:max-w-[134px] md:min-h-[180px]
-  max-w-[67px] min-h-[90px]
+  ${tw`
+    w-full
+    absolute
+    md:max-w-[134px] md:min-h-[180px]
+    max-w-[67px] min-h-[90px]
   `}
 
   &.first {
@@ -44,24 +29,17 @@ export const SectionTitle = styled.div`
 `;
 
 export const Title = styled.h2`
-  ${tw`text-4xl font-bold text-[#C8FC03] mb-4`}
+  ${tw`text-4xl font-bold text-green mb-4`}
 `;
 
 export const SubTitle = styled.h3`
-  ${tw`text-base font-medium text-[#FFFFFF]`}
+  ${tw`text-base font-medium text-white`}
 `;
 
-export const ServiceContainer = styled.div`
-  ${tw`container`}
-`;
-
-export const ServiceInner = styled.div``;
-
-export const ServiceContent = styled.div`
+export const ServiceInner = styled.div`
   ${tw`flex justify-between items-center
-    lg:flex-row lg:gap-0
-    flex-col-reverse
-    gap-5
+    lg:flex-row lg:gap-5
+    flex-col-reverse gap-0
   `}
 `;
 
