@@ -31,7 +31,9 @@ export const OurCustomer = () => {
               </S.ChangeImg>
             )}
             <Image
-              className={index === 0 && state ? 'invisible' : ''}
+              className={
+                index === 0 && state ? 'opacity-0 duration-[250ms]' : ''
+              }
               src={data.image}
               layout='fill'
               objectFit='contain'
