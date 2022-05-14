@@ -21,5 +21,5 @@ export const Background = styled.div`
     );
 `;
 export const Grid = styled.div`
-  ${tw`grid xl:grid-cols-3 xl:grid-rows-2 md:grid-cols-2 md:grid-rows-3 gap-[74px]`}
+  ${tw`grid xl:grid-cols-3 xl:grid-rows-2 md:grid-cols-2 md:grid-rows-3 gap-[60px]`}
 `;
