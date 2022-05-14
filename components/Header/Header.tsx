@@ -1,33 +1,25 @@
 import * as S from './Header.styled';
+import * as G from '../../styles/global.styled';
 import Image from 'next/image';
 import Link from 'next/link';
 import { NavItem } from './components/NavItem/NavItem';
 import { useState } from 'react';
 import { MenuIcon } from '../MenuIcon/MenuIcon';
+import { MDHeader } from '../../utils/dataConfig';
+const active = 'home';
 
-interface HeaderProps {}
-
-const MDHeader = {
-  navigation: [
-    { title: 'Home', url: '/' },
-    { title: 'Works', url: '/' },
-    { title: 'About Us', url: '/' },
-    { title: 'Contact', url: '/contact', class: 'contact' },
-  ],
-};
-
-export const Header = (props: HeaderProps) => {
+export const Header = () => {
   const [mobileNav, setMobileNav] = useState(false);
   const { navigation } = MDHeader;
 
   return (
     <S.Header>
-      <S.HeaderContainer>
+      <G.Container>
         <S.HeaderInner>
           <S.LeftContentWrap>
             <S.IconWrap
               onClick={() => setMobileNav(!mobileNav)}
-              className={mobileNav ? 'show' : 'hide'}
+              relocate={mobileNav}
             >
               <MenuIcon change={mobileNav} />
             </S.IconWrap>
@@ -36,21 +28,20 @@ export const Header = (props: HeaderProps) => {
                 <Image
                   src='/img/LogoStudio.png'
                   alt='Gaming Logo'
-                  width='93'
-                  height='32'
-                  layout='responsive'
+                  layout='fill'
+                  objectFit='contain'
                 />
               </S.HeaderLogo>
             </Link>
           </S.LeftContentWrap>
-          <S.HeaderNav className={mobileNav ? 'show' : 'hide'}>
+          <S.HeaderNav show={mobileNav}>
             {navigation.map((item, index) => (
-              <NavItem tab={item} key={index} />
+              <NavItem tab={item} key={index} active={active} />
             ))}
           </S.HeaderNav>
           <S.ContactButton>CONTACT NOW</S.ContactButton>
         </S.HeaderInner>
-      </S.HeaderContainer>
+      </G.Container>
     </S.Header>
   );
 };
