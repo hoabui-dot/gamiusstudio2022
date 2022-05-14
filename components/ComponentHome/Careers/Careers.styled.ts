@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
 
-export const Carrers = styled.div`
+export const Careers = styled.div`
   ${tw`relative min-w-full h-full`}
 `;
 
@@ -13,16 +13,12 @@ export const WrapperImage = styled.figure`
   ${tw``}
 `;
 
-export const ContentCarrer = styled.div`
+export const ContentCareer = styled.div`
   ${tw`relative z-30 pt-11`}
 `;
 
-export const Container = styled.div`
-  ${tw`container`}
-`;
-
 export const CenterDiv = styled.div`
-  ${tw`flex lg:flex-row flex-wrap justify-center lg:justify-between    gap-x-6 gap-y-6 mt-9`}
+  ${tw`grid 2xl:grid-cols-3 md:grid-cols-2 gap-x-6 gap-y-6 mt-9`}
 `;
 
 export const Center = styled.div`

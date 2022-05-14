@@ -25,3 +25,27 @@ a {
 .section {
   padding: 35px 0;
 }
+
+.service,
+.our-work,
+.our-customer,
+.approach,
+.career {
+  display: none;
+}
+
+.load-lazy {
+  min-height: 500px;
+}
+
+.load-lazy.active {
+  min-height: unset;
+}
+
+.load-lazy.active .service,
+.load-lazy.active .our-work,
+.load-lazy.active .our-customer,
+.load-lazy.active .approach,
+.load-lazy.active .career {
+  display: block;
+}

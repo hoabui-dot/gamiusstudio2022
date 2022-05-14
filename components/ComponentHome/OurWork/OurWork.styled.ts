@@ -1,34 +1,32 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
+const greenMint = '#C8FC03';
 
 export const Container = styled.div`
-  ${tw`container mx-auto px-4 py-8 flex justify-center text-white h-auto `}
+  ${tw`container`}
+`;
+
+export const InnerSwiper = styled.div`
+  ${tw`mx-auto px-4 py-8 flex justify-center text-white h-auto`}
 `;
 
 export const WrapperSwiper = styled.div`
-  ${tw`relative`}
+  ${tw`relative `}
 
   .mySwiper {
-    height: auto;
-    width: 70vw;
-    max-width: 1065px;
-    border: 3px solid #c8fc03;
     box-shadow: 0px 45.9087px 45.9087px rgba(69, 42, 124, 0.15);
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    border-bottom: none;
     position: unset;
+    ${tw`sm:w-[70vw] w-[90vw] max-w-[1065px] h-auto border-[3px] border-[${greenMint}] rounded-t-[30px] border-b-0`}
 
     .swiper-pagination {
-      position: absolute;
-      bottom: -25px;
+      ${tw`absolute bottom-[-25px]`}
 
       .swiper-pagination-bullet {
-        background: #d1d5db;
+        ${tw`bg-[#d1d5db]`}
       }
 
       .swiper-pagination-bullet-active {
-        background: #c8fc03;
+        ${tw`bg-[${greenMint}]`}
       }
     }
   }

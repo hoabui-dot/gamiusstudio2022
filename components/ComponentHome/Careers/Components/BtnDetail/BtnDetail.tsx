@@ -5,8 +5,7 @@ export interface IBtnDetail {
   version2?: boolean;
 }
 
-export const BtnDetail = (props: IBtnDetail) => {
-  const version2 = props.version2;
+export const BtnDetail = ({ version2 }: IBtnDetail) => {
   return (
     <S.BtnDetail>
       {version2 ? 'See all' : 'Detail'} &nbsp;

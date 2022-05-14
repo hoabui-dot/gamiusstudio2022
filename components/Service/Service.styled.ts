@@ -3,13 +3,29 @@ import tw from 'twin.macro';
 
 export const Service = styled.div`
   ${tw`pt-[80px] pb-[60px] relative`}
+  background-size: auto auto;
+  background-color: rgba(7, 9, 17, 1);
+  background-image: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 15px,
+      rgba(122, 123, 124, 0.15) 15px,
+      rgba(122, 123, 124, 0.15) 16px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 15px,
+      rgba(122, 123, 124, 0.14901960784313725) 15px,
+      rgba(122, 123, 124, 0.14901960784313725) 16px
+    );
 `;
 
 export const FlashTheme = styled.figure`
-  ${tw`max-w-[134px] min-h-[180px] w-full
+  ${tw`w-full
   absolute
-  md:block
-  hidden
+  md:max-w-[134px] md:min-h-[180px]
+  max-w-[67px] min-h-[90px]
   `}
 
   &.first {
