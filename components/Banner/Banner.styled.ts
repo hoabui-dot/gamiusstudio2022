@@ -63,7 +63,7 @@ export const GreenWord = styled.span`
 `;
 
 export const BannerIcon = styled.div`
-  ${tw`absolute w-[93px] h-[123px] left-[-75px] top-[-30px]`}
+  ${tw`absolute sm:w-[93px] w-[70px] sm:left-[-75px] left-[-54px] sm:top-[-30px] top-[-20px]`}
 `;
 
 //Slide Image

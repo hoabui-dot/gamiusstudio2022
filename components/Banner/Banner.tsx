@@ -104,7 +104,7 @@ export const Banner = () => {
                 <Image
                   src='/img/BannerIcon.png'
                   layout='responsive'
-                  width={0.8}
+                  width={0.76}
                   height={1}
                   alt='Banner Icon'
                 />
