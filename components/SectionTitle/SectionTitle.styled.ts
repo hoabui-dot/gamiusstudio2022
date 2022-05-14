@@ -13,9 +13,10 @@ export const Title2 = styled.p`
   ${tw`text-[36px] text-[white] font-bold`}
 `;
 
-export const description = styled.p`
+export const Description = styled.p`
   ${tw`text-[16px] mt-[16px] text-white font-medium`}
 `;
-export const descriptionColor = styled.p`
+
+export const DescriptionColor = styled.p`
   ${tw`text-[16px] mt-[16px] text-[#9CA3AF] font-medium`}
 `;
