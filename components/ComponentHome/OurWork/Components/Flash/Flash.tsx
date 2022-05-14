@@ -3,9 +3,7 @@ import * as S from './Flash.styled';
 import Image from 'next/image';
 import flash from '../../../../../public/img/bigFlash.png';
 
-export interface IFlash {}
-
-export const FlashBackground = (props: IFlash) => {
+export const FlashBackground = () => {
   return (
     <>
       <S.WrapperImageUpLeft>

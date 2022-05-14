@@ -7,6 +7,8 @@ import OurCustomer6 from '../public/img/OurCustomer6.png';
 import work1 from '../public/img/ourWork1.png';
 import work2 from '../public/img/ourWork2.png';
 import work3 from '../public/img/ourWork3.png';
+import calender from '../public/img/calendar.png';
+import location from '../public/img/location.png';
 
 export const OurCustomerData = [
   {
@@ -97,5 +99,56 @@ export const OurWorkData = [
   {
     image: work3,
     alt: 'work3',
+  },
+];
+
+export const CardsData = [
+  {
+    title: '3D Modeling',
+    subTitle: '01. 3D',
+    content: [
+      {
+        src: calender,
+        alt: 'calender',
+        content: 'Parttime',
+      },
+      {
+        src: location,
+        alt: 'location',
+        content: 'Hồ Chí Minh',
+      },
+    ],
+  },
+  {
+    title: '3D Modeling',
+    subTitle: '01. 3D',
+    content: [
+      {
+        src: calender,
+        alt: 'calender',
+        content: 'Parttime',
+      },
+      {
+        src: location,
+        alt: 'location',
+        content: 'Hồ Chí Minh',
+      },
+    ],
+  },
+  {
+    title: '3D Modeling',
+    subTitle: '01. 3D',
+    content: [
+      {
+        src: calender,
+        alt: 'calender',
+        content: 'Parttime',
+      },
+      {
+        src: location,
+        alt: 'location',
+        content: 'Hồ Chí Minh',
+      },
+    ],
   },
 ];

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
 
-export const Carrers = styled.div`
+export const Careers = styled.div`
   ${tw`relative min-w-full h-full`}
 `;
 
@@ -13,7 +13,7 @@ export const WrapperImage = styled.figure`
   ${tw``}
 `;
 
-export const ContentCarrer = styled.div`
+export const ContentCareer = styled.div`
   ${tw`relative z-30 pt-11`}
 `;
 
@@ -22,5 +22,5 @@ export const CenterDiv = styled.div`
 `;
 
 export const Center = styled.div`
-  ${tw`text-center pb-10`}
+  ${tw`text-center`}
 `;
