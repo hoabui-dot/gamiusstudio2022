@@ -8,7 +8,7 @@ export const WrapperCard = styled.div`
   ${tw`bg-[#070911BF] duration-200 border rounded-[6px] border-[${greenMint}] text-[white] p-6`}
 
   &:hover {
-    background: #ffffff73;
+    ${tw`bg-[#ffffff73]`}
   }
 `;
 

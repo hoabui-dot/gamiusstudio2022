@@ -1,6 +1,7 @@
 import React from 'react';
 import * as S from './OurWork.styled';
 import * as SG from '../../KeyMessage/KeyMessage.styled';
+import * as G from '../../../styles/global.styled';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -11,17 +12,15 @@ import { SectionTitle } from '../../SectionTitle/SectionTitle';
 import { OurWorkData } from '../../../utils/dataConfig';
 import { FlashBackground } from './Components/Flash/Flash';
 
-export interface IOurWork {}
-
-export const OurWork = (props: IOurWork) => {
+export const OurWork = () => {
   return (
     <SG.BackgroundSquare>
-      <div className='section'>
-        <SectionTitle
-          title='Recent works'
-          subTitle='Follow our journey of bringging bold ideas to life in the real world'
-        />
-        <S.Container>
+      <SectionTitle
+        title='Recent works'
+        subTitle='Follow our journey of bringing bold ideas to life in the real world'
+      />
+      <G.Container className='section'>
+        <S.InnerSwiper>
           <FlashBackground />
           <S.WrapperSwiper>
             <Swiper
@@ -50,8 +49,8 @@ export const OurWork = (props: IOurWork) => {
             </Swiper>
             <S.TitleSwiper>3D Modeling</S.TitleSwiper>
           </S.WrapperSwiper>
-        </S.Container>
-      </div>
+        </S.InnerSwiper>
+      </G.Container>
     </SG.BackgroundSquare>
   );
 };
