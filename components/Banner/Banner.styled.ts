@@ -4,6 +4,7 @@ import tw from 'twin.macro';
 //Background
 export const Background = styled.figure`
   ${tw`absolute top-0 bottom-0 duration-[250ms] opacity-0 w-full h-full overflow-hidden`}
+
   &.active {
     ${tw`opacity-[1]`}
   }
@@ -20,7 +21,7 @@ export const Linear = styled.div`
 
 //Slide wrap
 export const BannerWrap = styled.div`
-  ${tw`relative flex justify-center items-center h-full xl:py-[94px] lg:py-[50px] py-[35px]`}
+  ${tw`relative flex justify-center items-center xl:py-[94px] lg:py-[50px] py-[35px]`}
 `;
 
 export const Item = styled.div`
@@ -28,12 +29,12 @@ export const Item = styled.div`
 `;
 
 export const Content = styled.div`
-  ${tw`relative z-10 lg:w-[50%] lg:mt-0 mt-[20px] text-white tracking-tight`}
+  ${tw`relative z-10 md:w-[56%] w-full lg:mt-0 mt-[20px] text-white tracking-tight`}
 `;
 
 //Title
 export const Title = styled.h1`
-  ${tw`flex xs:flex-row flex-col lg:justify-start justify-center text-center xl:text-[44px] lg:text-[34px] sm:text-4xl text-3xl font-bold`}
+  ${tw`flex flex-wrap lg:justify-start items-center justify-center text-center xl:text-[44px] lg:text-[34px] sm:text-4xl text-3xl font-bold`}
 `;
 
 export const WhiteTitle = styled.p`
@@ -50,12 +51,11 @@ export const GreenTitle = styled.p`
 
 //Subtitle
 export const SubTitleWrap = styled.div`
-  ${tw`w-full xl:max-w-[525px] lg:max-w-[408px] max-w-[525px]`}
+  ${tw`w-full`}
 `;
 
 export const SubTitle = styled.div`
-  ${tw`relative lg:text-left text-center xl:text-2xl text-xl 
-  lg:mt-[55px] mt-[20px] w-full`}
+  ${tw`relative lg:text-left text-center xl:text-2xl text-xl lg:mt-[55px] mt-[20px]`}
 `;
 
 export const GreenWord = styled.span`
@@ -63,12 +63,12 @@ export const GreenWord = styled.span`
 `;
 
 export const BannerIcon = styled.div`
-  ${tw`absolute sm:w-[93px] w-[70px] sm:left-[-75px] left-[-54px] sm:top-[-30px] top-[-20px]`}
+  ${tw`absolute lg:w-[93px] w-[70px] lg:left-[-75px] left-[-57px] sm:top-[-30px] top-[-20px]`}
 `;
 
 //Slide Image
 export const Image = styled.figure`
-  ${tw`relative duration-[250ms] xl:w-[50%] lg:w-[56%] h-auto w-[85%] z-10  opacity-0 hidden`}
+  ${tw`relative duration-[250ms] lg:w-[50%] w-full h-auto z-10  opacity-0 hidden`}
 
   &.active {
     ${tw`block opacity-[1]`}
@@ -76,15 +76,15 @@ export const Image = styled.figure`
 `;
 
 export const BannerStatus = styled.ul`
-  ${tw`absolute flex top-[-15px] xl:right-[18px] lg:right-[40px] right-0 z-[70]`}
+  ${tw`absolute flex top-[-15px] xl:right-[50px] lg:right-[30px] right-0 z-[70]`}
 `;
 
 export const StatusIcon = styled.li`
-  ${tw`relative w-[17.76px] h-[23px] z-[90]`}
+  ${tw`relative w-[17.76px] z-[90]`}
 `;
 
 export const StatusIconLight = styled.div`
-  ${tw`absolute top-0 left-0 w-[17.76px] h-[23px] hidden`}
+  ${tw`absolute top-0 left-0 w-[17.76px] hidden`}
 
   &.active {
     ${tw`block`}
