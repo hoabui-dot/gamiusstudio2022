@@ -3,7 +3,7 @@ import tw from 'twin.macro';
 
 //Background
 export const Background = styled.figure`
-  ${tw` absolute top-[-2px] duration-[250ms] opacity-0 w-full h-full overflow-hidden`}
+  ${tw`absolute top-0 bottom-0 duration-[250ms] opacity-0 w-full h-full overflow-hidden`}
   &.active {
     ${tw`opacity-[1]`}
   }
@@ -14,13 +14,13 @@ export const BackgroundDark = styled.div`
 `;
 
 export const Linear = styled.div`
-  ${tw`absolute bottom-[-1px] w-full h-[60px] z-[100]`}
+  ${tw`absolute bottom-0 w-full h-[60px] z-[100]`}
   background: linear-gradient(180deg, rgba(7, 9, 17, 0) 0%, #070911 100%);
 `;
 
 //Slide wrap
 export const BannerWrap = styled.div`
-  ${tw`relative flex justify-center items-center h-full xl:py-[94px] lg:py-[50px] py-[30px]`}
+  ${tw`relative flex justify-center items-center h-full xl:py-[94px] lg:py-[50px] py-[35px]`}
 `;
 
 export const Item = styled.div`
@@ -33,7 +33,7 @@ export const Content = styled.div`
 
 //Title
 export const Title = styled.h1`
-  ${tw`flex sp:flex-row flex-col lg:justify-start justify-center text-center xl:text-[44px] lg:text-[34px] sm:text-4xl text-3xl font-bold`}
+  ${tw`flex xs:flex-row flex-col lg:justify-start justify-center text-center xl:text-[44px] lg:text-[34px] sm:text-4xl text-3xl font-bold`}
 `;
 
 export const WhiteTitle = styled.p`
@@ -62,6 +62,10 @@ export const GreenWord = styled.span`
   ${tw`text-green`}
 `;
 
+export const BannerIcon = styled.div`
+  ${tw`absolute w-[93px] h-[123px] left-[-75px] top-[-30px]`}
+`;
+
 //Slide Image
 export const Image = styled.figure`
   ${tw`relative duration-[250ms] xl:w-[50%] lg:w-[56%] h-auto w-[85%] z-10  opacity-0 hidden`}
@@ -75,11 +79,11 @@ export const BannerStatus = styled.ul`
   ${tw`absolute flex top-[-15px] xl:right-[18px] lg:right-[40px] right-0 z-[70]`}
 `;
 
-export const Sticked = styled.li`
+export const StatusIcon = styled.li`
   ${tw`relative w-[17.76px] h-[23px] z-[90]`}
 `;
 
-export const StickedLight = styled.div`
+export const StatusIconLight = styled.div`
   ${tw`absolute top-0 left-0 w-[17.76px] h-[23px] hidden`}
 
   &.active {

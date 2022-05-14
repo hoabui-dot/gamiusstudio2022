@@ -29,6 +29,30 @@ export const OurCustomerData = [
   },
 ];
 
+export const BannerData = [
+  {
+    title: 'design game',
+    image: '/img/BannerImg1.png',
+    subImage: 'Product',
+    background: '/img/BannerBackground1.png',
+    subBackground: 'Background',
+  },
+  {
+    title: 'create 3d modeling',
+    image: '/img/BannerImg2.png',
+    subImage: 'Product',
+    background: '/img/BannerBackground2.png',
+    subBackground: 'Background',
+  },
+  {
+    title: 'create animation',
+    image: '/img/BannerImg3.png',
+    subImage: 'Product',
+    background: '/img/BannerBackground3.png',
+    subBackground: 'Background',
+  },
+];
+
 export const OurWorkData = [
   {
     image: work1,
