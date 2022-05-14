@@ -1,16 +1,16 @@
-import type {NextPage} from 'next';
+import type { NextPage } from 'next';
 import Head from 'next/head';
-import {Service} from '../components/Service/Service';
-import {Banner} from '../components/Banner/Banner';
-import {OurCustomer} from '../components/OurCustomer/OurCustomer';
-import {Layout} from '../components/Layout/Layout';
-import {KeyMessage} from '../components/KeyMessage/KeyMessage';
-import {OurWork} from '../components/ComponentHome/OurWork/OurWork';
-import {Approach} from '../components/Approach/Approach';
-import {Careers} from '../components/ComponentHome/Careers/Careers';
-import styled, {keyframes} from 'styled-components';
-import {bounceInUp} from 'react-animations';
-import {useEffect} from 'react';
+import { Service } from '../components/Service/Service';
+import { Banner } from '../components/Banner/Banner';
+import { OurCustomer } from '../components/OurCustomer/OurCustomer';
+import { Layout } from '../components/Layout/Layout';
+import { KeyMessage } from '../components/KeyMessage/KeyMessage';
+import { OurWork } from '../components/ComponentHome/OurWork/OurWork';
+import { Approach } from '../components/Approach/Approach';
+import { Careers } from '../components/ComponentHome/Careers/Careers';
+import styled, { keyframes } from 'styled-components';
+import { bounceInUp } from 'react-animations';
+import { useEffect } from 'react';
 
 const bounceAnimation = keyframes`${bounceInUp}`;
 
@@ -23,6 +23,7 @@ const BounceInUpDiv = styled.div`
 `;
 
 const Home: NextPage = () => {
+  2;
   useEffect(() => {
     const inViewport = (entries: any, observer: any) => {
       entries.forEach((entry: any) => {
@@ -36,7 +37,7 @@ const Home: NextPage = () => {
 
     // Attach observer to every [data-inviewport] element:
     const ELs_inViewport = document.querySelectorAll('[data-inviewport]');
-    ELs_inViewport.forEach(EL => {
+    ELs_inViewport.forEach((EL) => {
       Obs.observe(EL);
     });
   }, []);

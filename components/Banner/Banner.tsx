@@ -1,162 +1,136 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
-import BannerImg1 from '../../public/img/BannerImg1.png';
-import BannerBackground1 from '../../public/img/BannerBackground1.png';
-import BannerBackground2 from '../../public/img/BannerBackground2.png';
-import BannerBackground3 from '../../public/img/BannerBackground3.png';
-import BannerImg2 from '../../public/img/BannerImg2.png';
-import BannerImg3 from '../../public/img/BannerImg3.png';
-import BannerIcon from '../../public/img/BannerIcon.png';
-import Ticket from '../../public/img/Ticket.png';
-import TicketLight from '../../public/img/TicketLight.png';
-import * as B from './Banner.styled';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/effect-fade';
-import { Autoplay, EffectFade } from 'swiper';
+import * as S from './Banner.styled';
+import * as G from '../../styles/global.styled';
+import { BannerData } from '../../utils/dataConfig';
 
-export interface BannerProps {}
+export const Banner = () => {
+  const [state, setState] = useState(0);
 
-export const BannerData = [
-  {
-    titleWhite: 'we',
-    titleGreen: 'design game',
-    image: BannerImg1,
-    background: BannerBackground1,
-  },
-  {
-    titleWhite: 'we',
-    titleGreen: 'create game',
-    image: BannerImg2,
-    background: BannerBackground2,
-  },
-  {
-    titleWhite: 'we',
-    titleGreen: 'test game',
-    image: BannerImg3,
-    background: BannerBackground3,
-  },
-];
+  setTimeout(() => {
+    state >= BannerData.length - 1 ? setState(0) : setState(state + 1);
+  }, 2000);
 
-export const Banner = (props: BannerProps) => {
   return (
-    <Swiper
-      loop={true}
-      effect={'fade'}
-      autoplay={{
-        delay: 2000,
-        disableOnInteraction: false,
-      }}
-      modules={[Autoplay, EffectFade]}
-      className='mySwiper'
-    >
+    <S.BannerWrap>
+      <S.Linear></S.Linear>
       {BannerData &&
         !!BannerData.length &&
         BannerData.map((data, index) => (
-          <SwiperSlide key={index}>
-            <B.Banner>
-              <B.Linear></B.Linear>
-              <B.Background>
-                <B.BackgroundDark />
-                <Image
-                  src={data.background}
-                  layout='fill'
-                  objectFit='cover'
-                  alt='Banner Slide'
-                />
-              </B.Background>
-              <B.BannerItem>
-                <B.BannerContent>
-                  <B.BannerTitle>
-                    <B.TitleWhite>{data.titleWhite}</B.TitleWhite>
-                    <B.TitleGreen>{data.titleGreen}</B.TitleGreen>
-                  </B.BannerTitle>
-                  <B.BannerSubTitle>
-                    <B.BannerIcon>
-                      <Image
-                        src={BannerIcon}
-                        layout='responsive'
-                        width={0.8}
-                        height={1}
-                        alt='Banner Icon'
-                      />
-                    </B.BannerIcon>
-                    <B.BannerStatus>
-                      <B.Sticked>
-                        <Image
-                          src={Ticket}
-                          layout='responsive'
-                          width={1}
-                          height={1}
-                          alt='Ticket Icon'
-                        />
-                        <B.StickedLight className={index === 0 ? 'active' : ''}>
-                          <Image
-                            src={TicketLight}
-                            layout='responsive'
-                            width={1}
-                            height={1}
-                            alt='Ticket Icon'
-                          />
-                        </B.StickedLight>
-                      </B.Sticked>
-                      <B.Sticked>
-                        <Image
-                          src={Ticket}
-                          layout='responsive'
-                          width={1}
-                          height={1}
-                          alt='Ticket Icon'
-                        />
-                        <B.StickedLight className={index === 1 ? 'active' : ''}>
-                          <Image
-                            src={TicketLight}
-                            layout='responsive'
-                            width={1}
-                            height={1}
-                            alt='Ticket Icon'
-                          />
-                        </B.StickedLight>
-                      </B.Sticked>
-                      <B.Sticked>
-                        <Image
-                          src={Ticket}
-                          layout='responsive'
-                          width={1}
-                          height={1}
-                          alt='Ticket Icon'
-                        />
-                        <B.StickedLight className={index === 2 ? 'active' : ''}>
-                          <Image
-                            src={TicketLight}
-                            layout='responsive'
-                            width={1}
-                            height={1}
-                            alt='Ticket Icon'
-                          />
-                        </B.StickedLight>
-                      </B.Sticked>
-                    </B.BannerStatus>
-                    <B.SubTitleWrap>
-                      We embrace <B.GreenWord>challenges</B.GreenWord>, incite{' '}
-                      <B.GreenWord>creativity</B.GreenWord> & deliver{' '}
-                      <B.GreenWord>powerful designs.</B.GreenWord>
-                    </B.SubTitleWrap>
-                  </B.BannerSubTitle>
-                </B.BannerContent>
-                <B.BannerImage>
+          <S.Background key={index} className={state === index ? 'active' : ''}>
+            <S.BackgroundDark />
+            <Image
+              src={data.background}
+              layout='fill'
+              objectFit='cover'
+              alt={data.subBackground}
+            />
+          </S.Background>
+        ))}
+      <G.Container>
+        <S.Item>
+          <S.Content>
+            <S.Title>
+              <S.WhiteTitle>we</S.WhiteTitle>
+              {BannerData &&
+                !!BannerData.length &&
+                BannerData.map((data, index) => (
+                  <S.GreenTitle
+                    key={index}
+                    className={state === index ? 'active' : ''}
+                  >
+                    {data.title}
+                  </S.GreenTitle>
+                ))}
+            </S.Title>
+            <S.SubTitle>
+              <S.BannerStatus>
+                <S.StatusIcon>
                   <Image
-                    src={data.image}
+                    src='/img/Ticket.png'
                     layout='responsive'
                     width={1}
-                    height={0.8}
-                    alt='Banner Slide'
+                    height={1}
+                    alt='Ticket Icon'
                   />
-                </B.BannerImage>
-              </B.BannerItem>
-            </B.Banner>
-          </SwiperSlide>
-        ))}
-    </Swiper>
+                  <S.StatusIconLight className={state === 0 ? 'active' : ''}>
+                    <Image
+                      src='/img/TicketLight.png'
+                      layout='responsive'
+                      width={1}
+                      height={1}
+                      alt='Ticket Icon'
+                    />
+                  </S.StatusIconLight>
+                </S.StatusIcon>
+                <S.StatusIcon>
+                  <Image
+                    src='/img/Ticket.png'
+                    layout='responsive'
+                    width={1}
+                    height={1}
+                    alt='Ticket Icon'
+                  />
+                  <S.StatusIconLight className={state === 1 ? 'active' : ''}>
+                    <Image
+                      src='/img/TicketLight.png'
+                      layout='responsive'
+                      width={1}
+                      height={1}
+                      alt='Ticket Icon'
+                    />
+                  </S.StatusIconLight>
+                </S.StatusIcon>
+                <S.StatusIcon>
+                  <Image
+                    src='/img/Ticket.png'
+                    layout='responsive'
+                    width={1}
+                    height={1}
+                    alt='Ticket Icon'
+                  />
+                  <S.StatusIconLight className={state === 2 ? 'active' : ''}>
+                    <Image
+                      src='/img/TicketLight.png'
+                      layout='responsive'
+                      width={1}
+                      height={1}
+                      alt='Ticket Icon'
+                    />
+                  </S.StatusIconLight>
+                </S.StatusIcon>
+              </S.BannerStatus>
+              <S.BannerIcon>
+                <Image
+                  src='/img/BannerIcon.png'
+                  layout='responsive'
+                  width={0.76}
+                  height={1}
+                  alt='Banner Icon'
+                />
+              </S.BannerIcon>
+              <S.SubTitleWrap>
+                We embrace <S.GreenWord>challenges</S.GreenWord>, incite{' '}
+                <S.GreenWord>creativity</S.GreenWord> & deliver{' '}
+                <S.GreenWord>powerful designs.</S.GreenWord>
+              </S.SubTitleWrap>
+            </S.SubTitle>
+          </S.Content>
+          {BannerData &&
+            !!BannerData.length &&
+            BannerData.map((data, index) => (
+              <S.Image key={index} className={state === index ? 'active' : ''}>
+                <Image
+                  layout='responsive'
+                  width={1}
+                  height={0.8}
+                  src={data.image}
+                  alt={data.subImage}
+                />
+              </S.Image>
+            ))}
+        </S.Item>
+      </G.Container>
+    </S.BannerWrap>
   );
 };
