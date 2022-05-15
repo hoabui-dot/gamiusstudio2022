@@ -16,8 +16,8 @@ export const Cards = () => {
               <S.Info key={index2}>
                 <Image
                   className='image'
-                  height={20}
-                  width={20}
+                  height={22}
+                  width={22}
                   src={_data2.src}
                   alt={_data2.alt}
                 />

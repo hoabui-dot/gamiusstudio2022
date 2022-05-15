@@ -11,8 +11,7 @@ export const Approach = () => {
     <S.Background>
       <G.Container>
         <SectionTitle title='The approach' />
-        <KeyMessage type2={false} />
-
+        <KeyMessage type={false} />
         <S.Grid>
           {ApproachData.map((data, index) => (
             <ApproachItem

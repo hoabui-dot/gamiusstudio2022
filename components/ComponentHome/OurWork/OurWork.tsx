@@ -1,25 +1,24 @@
 import React from 'react';
 import * as S from './OurWork.styled';
-import * as SG from '../../KeyMessage/KeyMessage.styled';
 import * as G from '../../../styles/global.styled';
 import Image from 'next/image';
-import {Swiper, SwiperSlide} from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
-import {Autoplay, Pagination} from 'swiper';
-import {SectionTitle} from '../../SectionTitle/SectionTitle';
-import {OurWorkData} from '../../../utils/dataConfig';
-import {FlashBackground} from './Components/Flash/Flash';
+import { Autoplay, Pagination } from 'swiper';
+import { SectionTitle } from '../../SectionTitle/SectionTitle';
+import { OurWorkData } from '../../../utils/dataConfig';
+import { FlashBackground } from './Components/Flash/Flash';
 
 export const OurWork = () => {
   return (
-    <SG.BackgroundSquare>
-      <SectionTitle
-        title='Recent works'
-        subTitle='Follow our journey of bringing bold ideas to life in the real world'
-      />
-      <G.Container className='section'>
+    <S.OurWork className='background-net'>
+      <G.Container>
+        <SectionTitle
+          title='Recent works'
+          subTitle='Follow our journey of bringing bold ideas to life in the real world'
+        />
         <S.InnerSwiper>
           <FlashBackground />
           <S.WrapperSwiper>
@@ -29,6 +28,7 @@ export const OurWork = () => {
                 delay: 2500,
                 disableOnInteraction: false,
               }}
+              loop={true}
               modules={[Autoplay, Pagination]}
               className='mySwiper'
             >
@@ -51,6 +51,6 @@ export const OurWork = () => {
           </S.WrapperSwiper>
         </S.InnerSwiper>
       </G.Container>
-    </SG.BackgroundSquare>
+    </S.OurWork>
   );
 };

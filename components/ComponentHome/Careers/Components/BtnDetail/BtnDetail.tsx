@@ -2,13 +2,13 @@ import React from 'react';
 import * as S from './BtnDetail.styled';
 
 export interface IBtnDetail {
-  version2?: boolean;
+  version?: boolean;
 }
 
-export const BtnDetail = ({ version2 }: IBtnDetail) => {
+export const BtnDetail = ({ version }: IBtnDetail) => {
   return (
     <S.BtnDetail>
-      {version2 ? 'See all' : 'Detail'} &nbsp;
+      {version ? 'See all' : 'Detail'} &nbsp;
       <i className='fa-solid fa-angle-right' />
     </S.BtnDetail>
   );

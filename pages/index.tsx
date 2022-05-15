@@ -52,7 +52,7 @@ const Home: NextPage = () => {
       <Layout>
         <Banner />
         <BouncyDiv>
-          <KeyMessage type2={true} />
+          <KeyMessage type={true} />
         </BouncyDiv>
         <div className='load-lazy' data-inviewport>
           <div className='service'>
