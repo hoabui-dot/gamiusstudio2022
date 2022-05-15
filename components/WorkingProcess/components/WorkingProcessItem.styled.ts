@@ -5,7 +5,7 @@ export const Item = styled.div`
   ${tw`flex mb-auto w-[217.6px] flex-col`}
 `;
 export const Image = styled.div`
-  ${tw`w-[207px]`}
+  ${tw`w-[207px] mb-[-60px]`}
 `;
 export const Content = styled.div`
   ${tw`px-[20px]`}

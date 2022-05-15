@@ -22,7 +22,7 @@ export const WorkingProcessItem = ({
           src={image}
           layout='responsive'
           width={1}
-          height={1}
+          height={1.5}
           alt={subImage}
         />
       </S.Image>
