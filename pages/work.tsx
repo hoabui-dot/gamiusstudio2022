@@ -1,7 +1,8 @@
-import {NextPage} from 'next';
+import { NextPage } from 'next';
 import Head from 'next/head';
 import React from 'react';
-import {Layout} from '../components/Layout/Layout';
+import { Layout } from '../components/Layout/Layout';
+import { WorkingProcess } from '../components/WorkingProcess/WorkingProcess';
 
 const Work: NextPage = () => {
   return (
@@ -13,6 +14,7 @@ const Work: NextPage = () => {
       </Head>
       <Layout>
         <h1>Work Page</h1>
+        <WorkingProcess />
       </Layout>
     </>
   );
