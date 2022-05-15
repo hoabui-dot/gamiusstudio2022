@@ -147,7 +147,7 @@ export const ApproachData = [
   {
     title: 'Through line',
     subTitle:
-      'All ideas have a narratives to tell. It is core to build depth, dimension and distinctiveness.',
+      'All ideas have narratives to tell. It is core to build depth, dimension and distinctiveness.',
   },
   {
     title: 'Strong connection',
