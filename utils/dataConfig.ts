@@ -121,20 +121,20 @@ export const OurCustomerData = [
 ];
 
 export const BannerData = [
-  // {
-  //   title: 'design game',
-  //   image: '/img/BannerImg1.png',
-  //   subImage: 'Product',
-  //   background: '/img/BannerBackground1.png',
-  //   subBackground: 'Background',
-  // },
-  // {
-  //   title: 'create character',
-  //   image: '/img/BannerImg2.png',
-  //   subImage: 'Product',
-  //   background: '/img/BannerBackground2.png',
-  //   subBackground: 'Background',
-  // },
+  {
+    title: 'design game',
+    image: '/img/BannerImg1.png',
+    subImage: 'Product',
+    background: '/img/BannerBackground1.png',
+    subBackground: 'Background',
+  },
+  {
+    title: 'create character',
+    image: '/img/BannerImg2.png',
+    subImage: 'Product',
+    background: '/img/BannerBackground2.png',
+    subBackground: 'Background',
+  },
   {
     title: 'create animation/vfx',
     image: '/img/BannerImg3.png',
