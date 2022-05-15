@@ -29,12 +29,12 @@ export const Item = styled.div`
 `;
 
 export const Content = styled.div`
-  ${tw`relative z-10 md:w-[56%] w-full lg:mt-0 mt-[20px] text-white tracking-tight`}
+  ${tw`relative z-10 md:w-[57%] w-full lg:mt-0 mt-[20px] text-white tracking-tight`}
 `;
 
 //Title
 export const Title = styled.h1`
-  ${tw`flex flex-wrap lg:justify-start items-center justify-center text-center xl:text-[44px] lg:text-[34px] sm:text-4xl text-3xl font-bold`}
+  ${tw`flex flex-wrap lg:justify-start items-center justify-center text-center xl:text-[43px] lg:text-[34px] sm:text-3xl text-3xl font-bold`}
 `;
 
 export const WhiteTitle = styled.p`
@@ -68,7 +68,7 @@ export const BannerIcon = styled.div`
 
 //Slide Image
 export const Image = styled.figure`
-  ${tw`relative duration-[250ms] lg:w-[50%] w-full h-auto z-10  opacity-0 hidden`}
+  ${tw`relative duration-[250ms] lg:w-[47%] w-full h-auto z-10  opacity-0 hidden`}
 
   &.active {
     ${tw`block opacity-[1]`}
@@ -76,7 +76,7 @@ export const Image = styled.figure`
 `;
 
 export const BannerStatus = styled.ul`
-  ${tw`absolute flex top-[-15px] xl:right-[50px] lg:right-[30px] right-0 z-[70]`}
+  ${tw`absolute flex top-[-15px] xl:right-[70px] lg:right-[50px] right-0 z-[70]`}
 `;
 
 export const StatusIcon = styled.li`
