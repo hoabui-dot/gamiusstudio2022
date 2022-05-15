@@ -1,17 +1,22 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
+
 const greenMint = '#C8FC03';
+
+export const OurWork = styled.div`
+  ${tw`md:py-[70px] py-[50px]`}
+`;
 
 export const Container = styled.div`
   ${tw`container`}
 `;
 
 export const InnerSwiper = styled.div`
-  ${tw`mx-auto px-4 py-8 flex justify-center text-white h-auto`}
+  ${tw`relative mx-auto mt-7 flex justify-center text-white h-auto`}
 `;
 
 export const WrapperSwiper = styled.div`
-  ${tw`relative `}
+  ${tw`relative`}
 
   .mySwiper {
     box-shadow: 0px 45.9087px 45.9087px rgba(69, 42, 124, 0.15);

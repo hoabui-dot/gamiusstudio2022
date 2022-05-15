@@ -1,26 +1,10 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
+
 const greenMint = '#C8FC03';
 
-export const BackgroundSquare = styled.div`
-  z-index: 2;
-  position: relative;
-  background-size: auto auto;
-  background-color: rgba(7, 9, 17, 1);
-  background-image: repeating-linear-gradient(
-      0deg,
-      transparent,
-      transparent 15px,
-      rgba(122, 123, 124, 0.15) 15px,
-      rgba(122, 123, 124, 0.15) 16px
-    ),
-    repeating-linear-gradient(
-      90deg,
-      transparent,
-      transparent 15px,
-      rgba(122, 123, 124, 0.14901960784313725) 15px,
-      rgba(122, 123, 124, 0.14901960784313725) 16px
-    );
+export const KeyMessage = styled.div`
+  ${tw`py-[40px]`}
 `;
 
 export const WrapperKeyMessage = styled.div`
@@ -32,13 +16,13 @@ export const WrapperImage = styled.figure`
   ${tw`xl:min-w-[70px] min-w-[45px]`}
 `;
 
-export const Text = styled.div<{type2?: boolean}>`
-  ${({type2}) => {
-    return type2
+export const Text = styled.div<{ type?: boolean }>`
+  ${({ type }) => {
+    return type
       ? tw`xl:text-[30px] text-[20px]`
       : tw`xl:text-[24px] text-[17px]`;
   }}
-  ${tw`mx-auto text-right max-w-[740px]  xl:ml-14 ml-7  mt-4  text-white`}
+  ${tw`mx-auto text-right max-w-[740px] xl:ml-14 ml-7 mt-4 text-white`}
   
   span {
     ${tw`text-[${greenMint}] `}

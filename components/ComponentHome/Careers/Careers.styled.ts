@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 export const Careers = styled.div`
-  ${tw`relative min-w-full h-full`}
+  ${tw`relative min-w-full h-full md:py-[70px] py-[50px]`}
 `;
 
 export const Background = styled.div`
@@ -14,7 +14,7 @@ export const WrapperImage = styled.figure`
 `;
 
 export const ContentCareer = styled.div`
-  ${tw`relative z-30 pt-11`}
+  ${tw`relative z-30`}
 `;
 
 export const CenterDiv = styled.div`
