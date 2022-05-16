@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import tw from "twin.macro";
+import styled from 'styled-components';
+import tw from 'twin.macro';
 
 //Background
 export const WrapBackground = styled.div`
@@ -20,7 +20,7 @@ export const BackgroundDark = styled.div`
 export const Linear = styled.div<{ activeLinear: boolean }>`
   ${tw`absolute bottom-[-1px] w-full h-[60px] z-[100]`}
   ${({ activeLinear }) => {
-    return activeLinear ? tw`hidden` : "";
+    return activeLinear ? tw`hidden` : '';
   }}
   background: linear-gradient(180deg, rgba(7, 9, 17, 0) 0%, #070911 100%);
 `;
@@ -35,19 +35,19 @@ export const Item = styled.div`
 `;
 
 export const Content = styled.div`
-  ${tw`relative z-10 md:w-[57%] w-full lg:mt-0 mt-[20px] text-white tracking-tight`}
+  ${tw`relative z-10 md:w-[55%] w-full lg:mt-0 mt-[20px] text-white tracking-tight`}
 `;
 
 //Title
 export const Title = styled.h1<{ textCenterTitle: boolean }>`
   ${tw`flex flex-wrap justify-center items-center text-center xl:text-[43px] lg:text-[34px] sm:text-3xl text-3xl font-bold`}
   ${({ textCenterTitle }) => {
-    return textCenterTitle ? "" : tw`lg:justify-start`;
+    return textCenterTitle ? '' : tw`lg:justify-start`;
   }}
 `;
 
 export const WhiteTitle = styled.p`
-  ${tw`text-white capitalize `}
+  ${tw`text-white uppercase `}
 `;
 
 export const GreenTitle = styled.p<{ activeTitle: boolean }>`
@@ -59,9 +59,9 @@ export const GreenTitle = styled.p<{ activeTitle: boolean }>`
 
 //Subtitle
 export const SubTitleWrap = styled.div<{ textCenter: boolean }>`
-  ${tw`w-full`}
+  ${tw`w-full lg:flex lg:flex-col`}
   ${({ textCenter }) => {
-    return textCenter ? `${tw`text-center`}` : "";
+    return textCenter ? `${tw`text-center`}` : '';
   }}
 `;
 
@@ -79,22 +79,24 @@ export const GreenWord = styled.span`
 export const BannerIcon = styled.div<{ hiddenIcon: boolean }>`
   ${tw`absolute lg:w-[93px] w-[70px] lg:left-[-75px] left-[-57px] sm:top-[-30px] top-[-20px]`}
   ${({ hiddenIcon }) => {
-    return hiddenIcon ? tw`hidden` : "";
+    return hiddenIcon ? tw`hidden` : '';
   }}
 `;
 
+export const SubTitleLine = styled.span``;
+
 //Slide Image
 export const Image = styled.figure<{ activeImage: boolean }>`
-  ${tw`relative duration-[250ms] lg:w-[47%] w-full h-auto z-10`}
+  ${tw`relative duration-[250ms] lg:w-[45%] w-full h-auto z-10`}
   ${({ activeImage }) => {
     return activeImage ? tw`block opacity-100` : tw`opacity-0 hidden`;
   }}
 `;
 
 export const BannerStatus = styled.ul<{ hiddenStatus: boolean }>`
-  ${tw`absolute flex top-[-15px] xl:right-[70px] lg:right-[50px] right-0 z-[70]`}
+  ${tw`absolute flex top-[-15px] xl:right-[85px] lg:right-[60px] right-0 z-[70]`}
   ${({ hiddenStatus }) => {
-    return hiddenStatus ? tw`invisible` : "";
+    return hiddenStatus ? tw`invisible` : '';
   }}
 `;
 
@@ -105,7 +107,7 @@ export const StatusIcon = styled.li`
 export const StatusIconLight = styled.div<{ activeIconLight: boolean }>`
   ${tw`absolute top-0 left-0 w-[17.76px] hidden`}
   ${({ activeIconLight }) => {
-    return activeIconLight ? tw`block` : "";
+    return activeIconLight ? tw`block` : '';
   }}
   &.active {
     ${tw`block`}

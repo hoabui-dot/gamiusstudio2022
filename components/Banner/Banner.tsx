@@ -151,9 +151,11 @@ export const Banner = ({ Banner, SubTitle }: BannerProps) => {
                 <S.SubTitleWrap textCenter={Banner}>{SubTitle}</S.SubTitleWrap>
               ) : (
                 <S.SubTitleWrap textCenter={false}>
-                  We embrace <S.GreenWord>challenges</S.GreenWord>, incite{' '}
-                  <S.GreenWord>creativity</S.GreenWord> & deliver{' '}
-                  <S.GreenWord>powerful designs.</S.GreenWord>
+                  <S.SubTitleLine>
+                    We embrace <S.GreenWord>challenges</S.GreenWord>, incite{' '}
+                    <S.GreenWord>creativity</S.GreenWord> & deliver{' '}
+                  </S.SubTitleLine>
+                  <S.SubTitleLine><S.GreenWord>powerful designs.</S.GreenWord></S.SubTitleLine>
                 </S.SubTitleWrap>
               )}
             </S.SubTitle>
