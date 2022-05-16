@@ -69,7 +69,6 @@ export const BannerIcon = styled.div`
 //Slide Image
 export const Image = styled.figure`
   ${tw`relative duration-[250ms] lg:w-[47%] w-full h-auto z-10  opacity-0 hidden`}
-
   &.active {
     ${tw`block opacity-[1]`}
   }
