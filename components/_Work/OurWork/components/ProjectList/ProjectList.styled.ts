@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 export const ProjectList = styled.div`
-  ${tw`grid md:gap-12 grid-cols-1 md:grid-cols-2 mt-12`}
+  ${tw`grid md:gap-x-12 grid-cols-1 md:grid-cols-2 mt-12`}
 `;
 
 export const Project = styled.figure`
