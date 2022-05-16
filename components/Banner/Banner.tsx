@@ -2,22 +2,42 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import * as S from './Banner.styled';
 import * as G from '../../styles/global.styled';
-import { BannerData } from '../../utils/dataConfig';
+import { HomeBannerData } from '../../utils/dataConfig';
+import { WorkBannerData } from '../../utils/dataConfig';
+import Home from '../../pages';
 
-export const Banner = () => {
+export interface BannerProps {
+  Banner?: boolean;
+  SubTitle?: string;
+}
+
+export const Banner = ({ Banner, SubTitle }: BannerProps) => {
   const [state, setState] = useState(0);
 
   setTimeout(() => {
-    state >= BannerData.length - 1 ? setState(0) : setState(state + 1);
+    state >= HomeBannerData.length - 1 ? setState(0) : setState(state + 1);
   }, 2000);
 
   return (
     <S.BannerWrap>
-      <S.Linear></S.Linear>
-      {BannerData &&
-        !!BannerData.length &&
-        BannerData.map((data, index) => (
-          <S.Background key={index} className={state === index ? 'active' : ''}>
+      <S.Linear activeLinear={Banner ? true : false}></S.Linear>
+      {Banner ? (
+        <S.WrapBackground>
+          <S.Background activeBg={Banner ? true : false}>
+            <S.BackgroundDark />
+            <Image
+              src='/img/WorkBg.png'
+              layout='fill'
+              objectFit='cover'
+              alt='Work Background'
+            />
+          </S.Background>
+        </S.WrapBackground>
+      ) : (
+        HomeBannerData &&
+        !!HomeBannerData.length &&
+        HomeBannerData.map((data, index) => (
+          <S.Background key={index} activeBg={state === index ? true : false}>
             <S.BackgroundDark />
             <Image
               src={data.background}
@@ -26,25 +46,37 @@ export const Banner = () => {
               alt={data.subBackground}
             />
           </S.Background>
-        ))}
+        ))
+      )}
       <G.Container>
         <S.Item>
           <S.Content>
-            <S.Title>
+            <S.Title textCenterTitle={Banner ? true : false}>
               <S.WhiteTitle>we</S.WhiteTitle>
-              {BannerData &&
-                !!BannerData.length &&
-                BannerData.map((data, index) => (
-                  <S.GreenTitle
-                    key={index}
-                    className={state === index ? 'active' : ''}
-                  >
-                    {data.title}
-                  </S.GreenTitle>
-                ))}
+              {Banner
+                ? WorkBannerData &&
+                  !!WorkBannerData.length &&
+                  WorkBannerData.map((data, index) => (
+                    <S.GreenTitle
+                      key={index}
+                      activeTitle={state === index ? true : false}
+                    >
+                      {data.title}
+                    </S.GreenTitle>
+                  ))
+                : HomeBannerData &&
+                  !!HomeBannerData.length &&
+                  HomeBannerData.map((data, index) => (
+                    <S.GreenTitle
+                      key={index}
+                      activeTitle={state === index ? true : false}
+                    >
+                      {data.title}
+                    </S.GreenTitle>
+                  ))}
             </S.Title>
-            <S.SubTitle>
-              <S.BannerStatus>
+            <S.SubTitle textCenter={Banner ? true : false}>
+              <S.BannerStatus hiddenStatus={Banner ? true : false}>
                 <S.StatusIcon>
                   <Image
                     src='/img/Ticket.png'
@@ -53,7 +85,9 @@ export const Banner = () => {
                     height={1}
                     alt='Ticket Icon'
                   />
-                  <S.StatusIconLight className={state === 0 ? 'active' : ''}>
+                  <S.StatusIconLight
+                    activeIconLight={state === 0 ? true : false}
+                  >
                     <Image
                       src='/img/TicketLight.png'
                       layout='responsive'
@@ -71,7 +105,9 @@ export const Banner = () => {
                     height={1}
                     alt='Ticket Icon'
                   />
-                  <S.StatusIconLight className={state === 1 ? 'active' : ''}>
+                  <S.StatusIconLight
+                    activeIconLight={state === 1 ? true : false}
+                  >
                     <Image
                       src='/img/TicketLight.png'
                       layout='responsive'
@@ -89,7 +125,9 @@ export const Banner = () => {
                     height={1}
                     alt='Ticket Icon'
                   />
-                  <S.StatusIconLight className={state === 2 ? 'active' : ''}>
+                  <S.StatusIconLight
+                    activeIconLight={state === 2 ? true : false}
+                  >
                     <Image
                       src='/img/TicketLight.png'
                       layout='responsive'
@@ -100,7 +138,7 @@ export const Banner = () => {
                   </S.StatusIconLight>
                 </S.StatusIcon>
               </S.BannerStatus>
-              <S.BannerIcon>
+              <S.BannerIcon hiddenIcon={Banner ? true : false}>
                 <Image
                   src='/img/BannerIcon.png'
                   layout='responsive'
@@ -109,26 +147,37 @@ export const Banner = () => {
                   alt='Banner Icon'
                 />
               </S.BannerIcon>
-              <S.SubTitleWrap>
-                We embrace <S.GreenWord>challenges</S.GreenWord>, incite{' '}
-                <S.GreenWord>creativity</S.GreenWord> & deliver{' '}
-                <S.GreenWord>powerful designs.</S.GreenWord>
-              </S.SubTitleWrap>
+              {Banner ? (
+                <S.SubTitleWrap textCenter={Banner}>{SubTitle}</S.SubTitleWrap>
+              ) : (
+                <S.SubTitleWrap textCenter={false}>
+                  <S.SubTitleLine>
+                    We embrace <S.GreenWord>challenges</S.GreenWord>, incite{' '}
+                    <S.GreenWord>creativity</S.GreenWord> & deliver{' '}
+                  </S.SubTitleLine>
+                  <S.SubTitleLine><S.GreenWord>powerful designs.</S.GreenWord></S.SubTitleLine>
+                </S.SubTitleWrap>
+              )}
             </S.SubTitle>
           </S.Content>
-          {BannerData &&
-            !!BannerData.length &&
-            BannerData.map((data, index) => (
-              <S.Image key={index} className={state === index ? 'active' : ''}>
-                <Image
-                  layout='responsive'
-                  width={1}
-                  height={0.8}
-                  src={data.image}
-                  alt={data.subImage}
-                />
-              </S.Image>
-            ))}
+          {Banner
+            ? ''
+            : HomeBannerData &&
+              !!HomeBannerData.length &&
+              HomeBannerData.map((data, index) => (
+                <S.Image
+                  key={index}
+                  activeImage={state === index ? true : false}
+                >
+                  <Image
+                    layout='responsive'
+                    width={1}
+                    height={0.8}
+                    src={data.image}
+                    alt={data.subImage}
+                  />
+                </S.Image>
+              ))}
         </S.Item>
       </G.Container>
     </S.BannerWrap>
