@@ -9,13 +9,23 @@ import work2 from '../public/img/ourWork2.png';
 import work3 from '../public/img/ourWork3.png';
 import calender from '../public/img/calendar.png';
 import location from '../public/img/location.png';
+import projectList1 from '../public/img/ProjectList1.png';
+import projectList2 from '../public/img/ProjectList2.png';
+import projectList3 from '../public/img/ProjectList3.png';
+import projectList4 from '../public/img/ProjectList4.png';
+import projectList5 from '../public/img/ProjectList5.png';
+import projectList6 from '../public/img/ProjectList6.png';
+import projectList7 from '../public/img/ProjectList7.png';
+import projectList8 from '../public/img/ProjectList8.png';
+import projectList9 from '../public/img/ProjectList9.png';
+import projectList10 from '../public/img/ProjectList10.png';
 
 export const MDHeader = {
   navigation: [
-    { title: 'Home', url: '/', name: 'home' },
-    { title: 'Works', url: '/work', name: 'works' },
-    { title: 'About Us', url: '/about', name: 'about' },
-    { title: 'Contact Now', url: '/contact', name: 'contact' },
+    {title: 'Home', url: '/', name: 'home'},
+    {title: 'Works', url: '/work', name: 'works'},
+    {title: 'About Us', url: '/about', name: 'about'},
+    {title: 'Contact Now', url: '/contact', name: 'contact'},
   ],
 };
 
@@ -145,11 +155,11 @@ export const HomeBannerData = [
 ];
 
 export const WorkBannerData = [
-  { title: 'illustration' },
-  { title: 'shooting' },
-  { title: 'create 3d modeling' },
-  { title: 'animation/vfx' },
-  { title: 'ui/ux' },
+  {title: 'illustration'},
+  {title: 'shooting'},
+  {title: 'create 3d modeling'},
+  {title: 'animation/vfx'},
+  {title: 'ui/ux'},
 ];
 
 export const ApproachData = [
@@ -286,5 +296,67 @@ export const WorkingProcessData = [
     title: 'Aftercare',
     subTitle:
       'We provides support throughout and after each project for your greatest satisfaction and experience.',
+  },
+];
+export const ProjectListData = [
+  {
+    src: projectList1,
+    alt: 'project 1',
+    title: 'Brand name',
+    subTitle: 'Illustration - Storyboard',
+  },
+  {
+    src: projectList2,
+    alt: 'project 2',
+    title: 'Brand name',
+    subTitle: 'Illustration - Keyvisual',
+  },
+  {
+    src: projectList3,
+    alt: 'project 3',
+    title: 'Brand name',
+    subTitle: 'Illustration - Storyboard',
+  },
+  {
+    src: projectList4,
+    alt: 'project 4',
+    title: 'Brand name',
+    subTitle: 'Art concept',
+  },
+  {
+    src: projectList5,
+    alt: 'project 5',
+    title: 'Brand name',
+    subTitle: 'Art concept - Game',
+  },
+  {
+    src: projectList6,
+    alt: 'project 6',
+    title: 'Brand name',
+    subTitle: 'Game concept - 3D modeling',
+  },
+  {
+    src: projectList7,
+    alt: 'project 7',
+    title: 'Brand name',
+    subTitle: 'Game concept - 3D modeling',
+  },
+  {
+    src: projectList8,
+    alt: 'project 8',
+    title: 'Brand name',
+    subTitle: 'Game concept - 3D modeling',
+  },
+  {
+    src: projectList9,
+    alt: 'project 9',
+    title: 'Brand name',
+    subTitle: 'Illustration - Artwork',
+  },
+  {
+    src: projectList10,
+    alt: 'project 10',
+    title: 'Brand name',
+    subTitle: 'Illustration - Comic character',
   },
 ];
