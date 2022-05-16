@@ -11,17 +11,16 @@ export const ProjectList = ({}: ProjectListProps) => {
         <S.Project key={index}>
           <S.WrapperImage>
             <Image
-              className='image'
-              //   width={600}
-              //   height={700}
-              //   layout='fill'
-              //   objectFit='contain'
+              width={600}
+              height={700}
+              layout='responsive'
+              objectFit='contain'
               src={_data.src}
               alt={_data.alt}
             />
-            <S.Title>{_data.title}</S.Title>
-            <S.SubTitle>{_data.subTitle}</S.SubTitle>
           </S.WrapperImage>
+          <S.Title>{_data.title}</S.Title>
+          <S.SubTitle>{_data.subTitle}</S.SubTitle>
         </S.Project>
       ))}
     </S.ProjectList>
