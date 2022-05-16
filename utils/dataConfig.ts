@@ -120,7 +120,7 @@ export const OurCustomerData = [
   },
 ];
 
-export const BannerData = [
+export const HomeBannerData = [
   {
     title: 'design game',
     image: '/img/BannerImg1.png',
@@ -143,6 +143,15 @@ export const BannerData = [
     subBackground: 'Background',
   },
 ];
+
+export const WorkBannerData = [
+  { title: 'illustration' },
+  { title: 'shooting' },
+  { title: 'create 3d modeling' },
+  { title: 'animation/vfx' },
+  { title: 'ui/ux' },
+];
+
 export const ApproachData = [
   {
     title: 'Through line',

@@ -1,7 +1,8 @@
-import {NextPage} from 'next';
+import { NextPage } from 'next';
 import Head from 'next/head';
 import React from 'react';
-import {Layout} from '../components/Layout/Layout';
+import { Banner } from '../components/Banner/Banner';
+import { Layout } from '../components/Layout/Layout';
 
 const Work: NextPage = () => {
   return (
@@ -13,6 +14,10 @@ const Work: NextPage = () => {
       </Head>
       <Layout>
         <h1>Work Page</h1>
+        <Banner
+          Banner={true}
+          SubTitle='A diversity of expertise to solve challenges in a unique way with creative courage'
+        />
       </Layout>
     </>
   );
