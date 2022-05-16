@@ -26,11 +26,11 @@ export const TextWrap = styled.div`
 `;
 
 export const Title = styled.h2`
-  ${tw`text-white text-lg font-bold duration-[1000ms]`}
+  ${tw`text-white text-lg font-bold duration-[250ms]`}
 `;
 
 export const Description = styled.p`
-  ${tw`text-gray text-base font-normal duration-[1000ms]`}
+  ${tw`text-gray text-base font-normal duration-[250ms]`}
 `;
 
 export const FlashWrap = styled.figure`
