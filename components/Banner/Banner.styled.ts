@@ -17,11 +17,8 @@ export const BackgroundDark = styled.div`
   ${tw`absolute top-0 left-0 z-[1] w-full h-full bg-[rgba(0,0,0,0.85)]`}
 `;
 
-export const Linear = styled.div<{ activeLinear: boolean }>`
+export const Linear = styled.div`
   ${tw`absolute bottom-[-1px] w-full h-[60px] z-[100]`}
-  ${({ activeLinear }) => {
-    return activeLinear ? tw`hidden` : '';
-  }}
   background: linear-gradient(180deg, rgba(7, 9, 17, 0) 0%, #070911 100%);
 `;
 

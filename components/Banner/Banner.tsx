@@ -20,7 +20,7 @@ export const Banner = ({ Banner, SubTitle }: BannerProps) => {
 
   return (
     <S.BannerWrap>
-      <S.Linear activeLinear={Banner ? true : false}></S.Linear>
+      <S.Linear></S.Linear>
       {Banner ? (
         <S.WrapBackground>
           <S.Background activeBg={Banner ? true : false}>
@@ -155,7 +155,9 @@ export const Banner = ({ Banner, SubTitle }: BannerProps) => {
                     We embrace <S.GreenWord>challenges</S.GreenWord>, incite{' '}
                     <S.GreenWord>creativity</S.GreenWord> & deliver{' '}
                   </S.SubTitleLine>
-                  <S.SubTitleLine><S.GreenWord>powerful designs.</S.GreenWord></S.SubTitleLine>
+                  <S.SubTitleLine>
+                    <S.GreenWord>powerful designs.</S.GreenWord>
+                  </S.SubTitleLine>
                 </S.SubTitleWrap>
               )}
             </S.SubTitle>
