@@ -19,6 +19,16 @@ import projectList7 from '../public/img/ProjectList7.png';
 import projectList8 from '../public/img/ProjectList8.png';
 import projectList9 from '../public/img/ProjectList9.png';
 import projectList10 from '../public/img/ProjectList10.png';
+import BigProjectList1 from '../public/img/BigProjectList1.png';
+import BigProjectList2 from '../public/img/BigProjectList2.png';
+import BigProjectList3 from '../public/img/BigProjectList3.png';
+import BigProjectList4 from '../public/img/BigProjectList4.png';
+import BigProjectList5 from '../public/img/BigProjectList5.png';
+import BigProjectList6 from '../public/img/BigProjectList6.png';
+import BigProjectList7 from '../public/img/BigProjectList7.png';
+import BigProjectList8 from '../public/img/BigProjectList8.png';
+import BigProjectList9 from '../public/img/BigProjectList9.png';
+import BigProjectList10 from '../public/img/BigProjectList10.png';
 
 export const MDHeader = {
   navigation: [
@@ -300,62 +310,82 @@ export const WorkingProcessData = [
 ];
 export const ProjectListData = [
   {
-    src: projectList1,
-    alt: 'project 1',
+    imgSrc: projectList1,
+    imgAlt: 'project 1',
+    BigImgSrc: BigProjectList1,
+    BigImgAlt: 'Big project 1',
     title: 'Brand name',
     subTitle: 'Illustration - Storyboard',
   },
   {
-    src: projectList2,
-    alt: 'project 2',
+    imgSrc: projectList2,
+    imgAlt: 'project 2',
+    BigImgSrc: BigProjectList2,
+    BigImgAlt: 'Big project 2',
     title: 'Brand name',
     subTitle: 'Illustration - Keyvisual',
   },
   {
-    src: projectList3,
-    alt: 'project 3',
+    imgSrc: projectList3,
+    imgAlt: 'project 3',
+    BigImgSrc: BigProjectList3,
+    BigImgAlt: 'Big project 3',
     title: 'Brand name',
     subTitle: 'Illustration - Storyboard',
   },
   {
-    src: projectList4,
-    alt: 'project 4',
+    imgSrc: projectList4,
+    imgAlt: 'project 4',
+    BigImgSrc: BigProjectList4,
+    BigImgAlt: 'Big project 4',
     title: 'Brand name',
     subTitle: 'Art concept',
   },
   {
-    src: projectList5,
-    alt: 'project 5',
+    imgSrc: projectList5,
+    imgAlt: 'project 5',
+    BigImgSrc: BigProjectList5,
+    BigImgAlt: 'Big project 5',
     title: 'Brand name',
     subTitle: 'Art concept - Game',
   },
   {
-    src: projectList6,
-    alt: 'project 6',
+    imgSrc: projectList6,
+    imgAlt: 'project 6',
+    BigImgSrc: BigProjectList6,
+    BigImgAlt: 'Big project 6',
     title: 'Brand name',
     subTitle: 'Game concept - 3D modeling',
   },
   {
-    src: projectList7,
-    alt: 'project 7',
+    imgSrc: projectList7,
+    imgAlt: 'project 7',
+    BigImgSrc: BigProjectList7,
+    BigImgAlt: 'Big project 7',
     title: 'Brand name',
     subTitle: 'Game concept - 3D modeling',
   },
   {
-    src: projectList8,
-    alt: 'project 8',
+    imgSrc: projectList8,
+    imgAlt: 'project 8',
+    BigImgSrc: BigProjectList8,
+    BigImgAlt: 'Big project 8',
     title: 'Brand name',
     subTitle: 'Game concept - 3D modeling',
   },
   {
-    src: projectList9,
-    alt: 'project 9',
+    imgSrc: projectList9,
+    imgAlt: 'project 9',
+    BigImgSrc: BigProjectList9,
+    BigImgAlt: 'Big project 9',
     title: 'Brand name',
     subTitle: 'Illustration - Artwork',
   },
   {
-    src: projectList10,
-    alt: 'project 10',
+    imgSrc: projectList10,
+    imgAlt: 'project 10',
+    BigImgSrc: BigProjectList10,
+    BigImgAlt: 'Big project 10',
     title: 'Brand name',
     subTitle: 'Illustration - Comic character',
   },
