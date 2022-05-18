@@ -15,7 +15,7 @@ export const ModalBox = styled.div`
 `;
 
 export const ModalContent = styled.figure`
-  ${tw`w-3/5 mx-auto duration-250
+  ${tw`w-4/5 mx-auto duration-250 md:w-3/5
     relative top-[-1000px] ease-in-out
   `}
 `;
