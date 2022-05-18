@@ -15,8 +15,8 @@ export const ProjectList = ({}: ProjectListProps) => {
               height={700}
               layout='responsive'
               objectFit='contain'
-              src={_data.src}
-              alt={_data.alt}
+              src={_data.imgSrc}
+              alt={_data.imgAlt}
             />
           </S.WrapperImage>
           <S.Title>{_data.title}</S.Title>
