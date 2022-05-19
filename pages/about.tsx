@@ -1,9 +1,9 @@
-import { NextPage } from 'next';
+import {NextPage} from 'next';
 import Head from 'next/head';
 import React from 'react';
-import { Story } from '../components/_About/Story/Story';
-import { CoreTeam } from '../components/CoreTeam/CoreTeam';
-import { Layout } from '../components/Layout/Layout';
+import {Story} from '../components/_About/Story/Story';
+import {CoreTeam} from '../components/CoreTeam/CoreTeam';
+import {Layout} from '../components/Layout/Layout';
 
 const About: NextPage = () => {
   return (

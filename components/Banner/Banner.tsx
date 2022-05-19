@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import Image from 'next/image';
 import * as S from './Banner.styled';
 import * as G from '../../styles/global.styled';
-import { HomeBannerData } from '../../utils/dataConfig';
-import { StatusIcon } from './components/StatusIcon/StatusIcon';
+import {HomeBannerData} from '../../utils/dataConfig';
+import {StatusIcon} from './components/StatusIcon/StatusIcon';
 
 export const Banner = () => {
   const [state, setState] = useState(0);
