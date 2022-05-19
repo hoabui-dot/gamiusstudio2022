@@ -27,7 +27,7 @@ export const WrapperSwiper = styled.div`
       ${tw`absolute bottom-[-25px]`}
 
       .swiper-pagination-bullet {
-        ${tw`bg-[{${pagination}]`}
+        ${tw`bg-[${pagination}]`}
       }
 
       .swiper-pagination-bullet-active {
