@@ -2,15 +2,15 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 export const Contact = styled.div`
-  ${tw`flex justify-center items-center relative w-full h-[881px]`}
+  ${tw`flex justify-center items-center relative w-full h-full lg:py-[209px] py-[50px]`}
 `;
 
 export const Background = styled.div`
-  ${tw`absolute w-full h-[881px] top-0 left-0 z-0`}
+  ${tw`absolute w-full h-full top-0 left-0 z-0`}
 `;
 
 export const ContentWrap = styled.div`
-  ${tw`relative flex lg:flex-row flex-col-reverse w-full h-full z-10`}
+  ${tw`relative flex lg:flex-row flex-col w-full h-full z-10`}
 `;
 
 export const Content = styled.div`
