@@ -1,7 +1,8 @@
-import {NextPage} from 'next';
+import { NextPage } from 'next';
 import Head from 'next/head';
 import React from 'react';
-import {Layout} from '../components/Layout/Layout';
+import { Layout } from '../components/Layout/Layout';
+import { ContactPage } from '../components/Contact/Contact';
 
 const Contact: NextPage = () => {
   return (
@@ -12,7 +13,7 @@ const Contact: NextPage = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Layout>
-        <h1>Contact Page</h1>
+        <ContactPage />
       </Layout>
     </>
   );
