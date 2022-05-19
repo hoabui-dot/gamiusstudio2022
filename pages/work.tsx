@@ -1,6 +1,7 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
 import React from 'react';
+import { WorkingProcess } from '../components/WorkingProcess/WorkingProcess';
 import { Banner } from '../components/Banner/Banner';
 import { Layout } from '../components/Layout/Layout';
 
@@ -18,6 +19,7 @@ const Work: NextPage = () => {
           Banner={true}
           SubTitle='A diversity of expertise to solve challenges in a unique way with creative courage'
         />
+        <WorkingProcess />
       </Layout>
     </>
   );
