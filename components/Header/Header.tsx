@@ -6,7 +6,6 @@ import { NavItem } from './components/NavItem/NavItem';
 import { useState } from 'react';
 import { MenuIcon } from '../MenuIcon/MenuIcon';
 import { MDHeader } from '../../utils/dataConfig';
-const active = 'home';
 
 export const Header = () => {
   const [mobileNav, setMobileNav] = useState(false);
@@ -36,7 +35,7 @@ export const Header = () => {
           </S.LeftContentWrap>
           <S.HeaderNav show={mobileNav}>
             {navigation.map((item, index) => (
-              <NavItem tab={item} key={index} active={active} />
+              <NavItem tab={item} key={index} />
             ))}
           </S.HeaderNav>
           <S.ContactButton>CONTACT NOW</S.ContactButton>
