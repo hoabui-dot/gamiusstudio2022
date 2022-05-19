@@ -3,8 +3,8 @@ import * as S from './Careers.styled';
 import * as G from '../../../styles/global.styled';
 import Image from 'next/image';
 import { SectionTitle } from '../../SectionTitle/SectionTitle';
-import { Cards } from './Components/Card/Cards';
-import { BtnDetail } from './Components/BtnDetail/BtnDetail';
+import { Cards } from './components/Card/Cards';
+import { BtnDetail } from './components/BtnDetail/BtnDetail';
 import background from '../../../public/img/bg-career.png';
 
 export const Careers = () => {
@@ -33,7 +33,7 @@ export const Careers = () => {
             <Cards />
           </S.CenterDiv>
           <S.Center>
-            <BtnDetail version={true} />
+            <BtnDetail href={'/error'} version={true} />
           </S.Center>
         </S.ContentCareer>
       </G.Container>

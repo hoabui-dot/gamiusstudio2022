@@ -9,7 +9,7 @@ import 'swiper/css/effect-fade';
 import { Autoplay, Pagination } from 'swiper';
 import { SectionTitle } from '../../SectionTitle/SectionTitle';
 import { OurWorkData } from '../../../utils/dataConfig';
-import { FlashBackground } from './Components/Flash/Flash';
+import { FlashBackground } from './components/Flash/Flash';
 
 export const OurWork = () => {
   return (
