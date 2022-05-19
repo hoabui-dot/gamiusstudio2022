@@ -29,6 +29,7 @@ module.exports = {
       },
       backgroundImage: {
         error: "url('/img/bgError.png')",
+        'core-team': "url('/img/coreTeamBg.png')",
       },
     },
     screens: {
