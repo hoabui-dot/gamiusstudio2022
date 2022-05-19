@@ -55,8 +55,8 @@ export const GreenTitle = styled.p<{ activeTitle: boolean }>`
 `;
 
 //Subtitle
-export const SubTitleWrap = styled.div<{ textCenter?: boolean }>`
-  ${tw`w-full lg:flex lg:flex-col lg:text-left text-center`}
+export const SubTitleWrap = styled.div<{ textCenter: boolean }>`
+  ${tw`w-full lg:flex lg:flex-col`}
   ${({ textCenter }) => {
     return textCenter ? `${tw`text-center`}` : '';
   }}

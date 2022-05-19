@@ -216,11 +216,11 @@ export const BannerAbout = () => {
                 ))}
               </S.BannerStatus>
             </S.Title>
-            <S.SubTitleWrap className='lg:mt-[60px] mt-[20px]'>
+            <p className='lg:mt-[60px] mt-[20px] text-base font-medium text-white lg:text-left text-center'>
               Gamius is is a full-service design agency, based in Ho Chi Minh
               city, Vietnam. We produce creative designs tailor-made for your
               vision to keep you at the top of your game.
-            </S.SubTitleWrap>
+            </p>
           </S.Content>
           <S.ImageWrap>
             {HomeBannerData.map((data, index) => (
