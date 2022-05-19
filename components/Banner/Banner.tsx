@@ -16,9 +16,9 @@ export interface BannerProps {
 export const Banner = ({Banner, SubTitle}: BannerProps) => {
   const [state, setState] = useState(0);
 
-  // setTimeout(() => {
-  //   state >= HomeBannerData.length - 1 ? setState(0) : setState(state + 1);
-  // }, 2000);
+  setTimeout(() => {
+    state >= HomeBannerData.length - 1 ? setState(0) : setState(state + 1);
+  }, 2000);
 
   return (
     <S.BannerWrap>
