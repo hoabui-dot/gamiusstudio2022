@@ -7,8 +7,8 @@ module.exports = {
     extend: {
       keyframes: {
         zoomIn: {
-          '0%': {transform: 'scale(0.5)'},
-          '100%': {transform: 'scale(1)'},
+          '0%': { transform: 'scale(0.5)' },
+          '100%': { transform: 'scale(1)' },
         },
       },
       animation: {
@@ -30,7 +30,6 @@ module.exports = {
       },
       backgroundImage: {
         error: "url('/img/bgError.png')",
-        'core-team': "url('/img/coreTeamBg.png')",
       },
     },
     screens: {
