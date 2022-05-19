@@ -13,9 +13,9 @@ import location from '../public/img/location.png';
 export const MDHeader = {
   navigation: [
     { title: 'Home', url: '/', name: 'home' },
-    { title: 'Works', url: '/', name: 'works' },
-    { title: 'About Us', url: '/', name: 'about' },
-    { title: 'Contact Now', url: '/', name: 'contact' },
+    { title: 'Works', url: '/work', name: 'works' },
+    { title: 'About Us', url: '/about', name: 'about' },
+    { title: 'Contact Now', url: '/contact', name: 'contact' },
   ],
 };
 
