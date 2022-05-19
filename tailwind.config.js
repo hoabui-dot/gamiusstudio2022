@@ -18,12 +18,17 @@ module.exports = {
         green: '#C8FC03',
         black: '#070911',
         'black-light': '#111827',
+        'black-75': 'rgba(0, 0, 0, 0.75)',
+        'black-70': 'rgba(0, 0, 0, 0.70)',
         gray: '#9CA3AF',
         'gray-light': '#F9FAFB',
         'gray-dark': '#1F2937',
       },
       transitionDuration: {
         250: '250ms',
+      },
+      backgroundImage: {
+        error: "url('/img/bgError.png')",
       },
     },
     screens: {

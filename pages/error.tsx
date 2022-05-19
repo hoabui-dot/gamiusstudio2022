@@ -1,7 +1,8 @@
-import {NextPage} from 'next';
+import { NextPage } from 'next';
 import Head from 'next/head';
 import React from 'react';
-import {Layout} from '../components/Layout/Layout';
+import { ErrorSection } from '../components/ComponentError/ErrorSection/ErrorSection';
+import { Layout } from '../components/Layout/Layout';
 
 const Error: NextPage = () => {
   return (
@@ -12,7 +13,7 @@ const Error: NextPage = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Layout>
-        <h1>Error Page</h1>
+        <ErrorSection />
       </Layout>
     </>
   );
