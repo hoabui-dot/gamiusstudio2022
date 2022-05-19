@@ -4,31 +4,6 @@ import OurCustomer3 from '../public/img/OurCustomer3.png';
 import OurCustomer4 from '../public/img/OurCustomer4.png';
 import OurCustomer5 from '../public/img/OurCustomer5.png';
 import OurCustomer6 from '../public/img/OurCustomer6.png';
-import work1 from '../public/img/ourWork1.png';
-import work2 from '../public/img/ourWork2.png';
-import work3 from '../public/img/ourWork3.png';
-import calender from '../public/img/calendar.png';
-import location from '../public/img/location.png';
-import projectList1 from '../public/img/ProjectList1.png';
-import projectList2 from '../public/img/ProjectList2.png';
-import projectList3 from '../public/img/ProjectList3.png';
-import projectList4 from '../public/img/ProjectList4.png';
-import projectList5 from '../public/img/ProjectList5.png';
-import projectList6 from '../public/img/ProjectList6.png';
-import projectList7 from '../public/img/ProjectList7.png';
-import projectList8 from '../public/img/ProjectList8.png';
-import projectList9 from '../public/img/ProjectList9.png';
-import projectList10 from '../public/img/ProjectList10.png';
-import BigProjectList1 from '../public/img/BigProjectList1.png';
-import BigProjectList2 from '../public/img/BigProjectList2.png';
-import BigProjectList3 from '../public/img/BigProjectList3.png';
-import BigProjectList4 from '../public/img/BigProjectList4.png';
-import BigProjectList5 from '../public/img/BigProjectList5.png';
-import BigProjectList6 from '../public/img/BigProjectList6.png';
-import BigProjectList7 from '../public/img/BigProjectList7.png';
-import BigProjectList8 from '../public/img/BigProjectList8.png';
-import BigProjectList9 from '../public/img/BigProjectList9.png';
-import BigProjectList10 from '../public/img/BigProjectList10.png';
 
 export const MDHeader = {
   navigation: [
@@ -207,15 +182,15 @@ export const ApproachData = [
 
 export const OurWorkData = [
   {
-    image: work1,
+    image: '/img/ourWork1.png',
     alt: 'work1',
   },
   {
-    image: work2,
+    image: '/img/ourWork2.png',
     alt: 'work2',
   },
   {
-    image: work3,
+    image: '/img/ourWork3.png',
     alt: 'work3',
   },
 ];
@@ -226,12 +201,12 @@ export const CardsData = [
     subTitle: '01. 3D',
     content: [
       {
-        src: calender,
+        src: '/img/calendar.png',
         alt: 'calender',
         content: 'Parttime',
       },
       {
-        src: location,
+        src: '/img/location.png',
         alt: 'location',
         content: 'Hồ Chí Minh',
       },
@@ -242,12 +217,12 @@ export const CardsData = [
     subTitle: '01. 3D',
     content: [
       {
-        src: calender,
+        src: '/img/calendar.png',
         alt: 'calender',
         content: 'Parttime',
       },
       {
-        src: location,
+        src: '/img/location.png',
         alt: 'location',
         content: 'Hồ Chí Minh',
       },
@@ -258,12 +233,12 @@ export const CardsData = [
     subTitle: '01. 3D',
     content: [
       {
-        src: calender,
+        src: '/img/calendar.png',
         alt: 'calender',
         content: 'Parttime',
       },
       {
-        src: location,
+        src: '/img/location.png',
         alt: 'location',
         content: 'Hồ Chí Minh',
       },
@@ -310,7 +285,7 @@ export const WorkingProcessData = [
 ];
 export const ProjectListData = [
   {
-    imgSrc: projectList1,
+    imgSrc: '/img/ProjectList1.png',
     imgAlt: 'project 1',
     bigImgSrc: '/img/BigProjectList1.png',
     bigImgAlt: 'Big project 1',
@@ -318,7 +293,7 @@ export const ProjectListData = [
     subTitle: 'Illustration - Storyboard',
   },
   {
-    imgSrc: projectList2,
+    imgSrc: '/img/ProjectList2.png',
     imgAlt: 'project 2',
     bigImgSrc: '/img/BigProjectList2.png',
     bigImgAlt: 'Big project 2',
@@ -326,7 +301,7 @@ export const ProjectListData = [
     subTitle: 'Illustration - Keyvisual',
   },
   {
-    imgSrc: projectList3,
+    imgSrc: '/img/ProjectList3.png',
     imgAlt: 'project 3',
     bigImgSrc: '/img/BigProjectList3.png',
     bigImgAlt: 'Big project 3',
@@ -334,15 +309,15 @@ export const ProjectListData = [
     subTitle: 'Illustration - Storyboard',
   },
   {
-    imgSrc: projectList4,
+    imgSrc: '/img/ProjectList4.png',
     imgAlt: 'project 4',
-    bigImgSrc: '/img/BigProjectList3.png',
+    bigImgSrc: '/img/BigProjectList4.png',
     bigImgAlt: 'Big project 4',
     title: 'Brand name',
     subTitle: 'Art concept',
   },
   {
-    imgSrc: projectList5,
+    imgSrc: '/img/ProjectList5.png',
     imgAlt: 'project 5',
     bigImgSrc: '/img/BigProjectList5.png',
     bigImgAlt: 'Big project 5',
@@ -350,7 +325,7 @@ export const ProjectListData = [
     subTitle: 'Art concept - Game',
   },
   {
-    imgSrc: projectList6,
+    imgSrc: '/img/ProjectList6.png',
     imgAlt: 'project 6',
     bigImgSrc: '/img/BigProjectList6.png',
     bigImgAlt: 'Big project 6',
@@ -358,7 +333,7 @@ export const ProjectListData = [
     subTitle: 'Game concept - 3D modeling',
   },
   {
-    imgSrc: projectList7,
+    imgSrc: '/img/ProjectList7.png',
     imgAlt: 'project 7',
     bigImgSrc: '/img/BigProjectList7.png',
     bigImgAlt: 'Big project 7',
@@ -366,7 +341,7 @@ export const ProjectListData = [
     subTitle: 'Game concept - 3D modeling',
   },
   {
-    imgSrc: projectList8,
+    imgSrc: '/img/ProjectList8.png',
     imgAlt: 'project 8',
     bigImgSrc: '/img/BigProjectList8.png',
     bigImgAlt: 'Big project 8',
@@ -374,7 +349,7 @@ export const ProjectListData = [
     subTitle: 'Game concept - 3D modeling',
   },
   {
-    imgSrc: projectList9,
+    imgSrc: '/img/ProjectList9.png',
     imgAlt: 'project 9',
     bigImgSrc: '/img/BigProjectList9.png',
     bigImgAlt: 'Big project 9',
@@ -382,7 +357,7 @@ export const ProjectListData = [
     subTitle: 'Illustration - Artwork',
   },
   {
-    imgSrc: projectList10,
+    imgSrc: '/img/ProjectList10.png',
     imgAlt: 'project 10',
     bigImgSrc: '/img/BigProjectList10.png',
     bigImgAlt: 'Big project 10',

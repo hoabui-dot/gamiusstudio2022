@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 interface ProjectItemProps {
   data: {
-    imgSrc: StaticImageData;
+    imgSrc: string;
     imgAlt: string;
     title: string;
     subTitle: string;

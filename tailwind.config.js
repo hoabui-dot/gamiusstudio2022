@@ -22,6 +22,7 @@ module.exports = {
         'black-70': 'rgba(0, 0, 0, 0.70)',
         gray: '#9CA3AF',
         'gray-light': '#F9FAFB',
+        'gray-lighter': '#F3F4F6',
         'gray-dark': '#1F2937',
       },
       transitionDuration: {
