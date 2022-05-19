@@ -14,16 +14,10 @@ export const SectionTitle = ({
 }: SectionTitleProps) => {
   return (
     <S.titleSection>
-      {descriptionColor ? (
-        <S.Title2>{title}</S.Title2>
-      ) : (
-        <S.Title>{title}</S.Title>
-      )}
-      {descriptionColor ? (
-        <S.DescriptionColor>{subTitle}</S.DescriptionColor>
-      ) : (
-        <S.Description>{subTitle}</S.Description>
-      )}
+      <S.Title textColor={descriptionColor ? true : false}>{title}</S.Title>
+      <S.Description textColor={descriptionColor ? true : false}>
+        {subTitle}
+      </S.Description>
     </S.titleSection>
   );
 };
