@@ -3,8 +3,6 @@ import Image from 'next/image';
 import * as S from './Banner.styled';
 import * as G from '../../styles/global.styled';
 import { HomeBannerData } from '../../utils/dataConfig';
-import { WorkBannerData } from '../../utils/dataConfig';
-import { BannerImage } from './components/BannerImage/BannerImage';
 import { StatusIcon } from './components/StatusIcon/StatusIcon';
 
 export const Banner = () => {
