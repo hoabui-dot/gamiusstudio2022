@@ -2,13 +2,10 @@ import React from 'react';
 import * as S from './OurWork.styled';
 import * as G from '../../../styles/global.styled';
 import { SectionTitle } from '../../SectionTitle/SectionTitle';
-
 import { ProjectListData } from '../../../utils/dataConfig';
 import { ProjectItem } from './components/ProjectItem/ProjectItem';
 
-export interface OurWorkProps {}
-
-export const OurWork = ({}: OurWorkProps) => {
+export const OurWork = () => {
   return (
     <S.OurWork>
       <G.Container>
