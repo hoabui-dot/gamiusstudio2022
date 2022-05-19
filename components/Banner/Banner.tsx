@@ -1,24 +1,24 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import Image from 'next/image';
 import * as S from './Banner.styled';
 import * as G from '../../styles/global.styled';
-import { HomeBannerData } from '../../utils/dataConfig';
-import { WorkBannerData } from '../../utils/dataConfig';
+import {HomeBannerData} from '../../utils/dataConfig';
+import {WorkBannerData} from '../../utils/dataConfig';
 import Home from '../../pages';
-import { BannerImage } from './components/BannerImage/BannerImage';
-import { StatusIcon } from './components/StatusIcon/StatusIcon';
+import {BannerImage} from './components/BannerImage/BannerImage';
+import {StatusIcon} from './components/StatusIcon/StatusIcon';
 
 export interface BannerProps {
   Banner?: boolean;
   SubTitle?: string;
 }
 
-export const Banner = ({ Banner, SubTitle }: BannerProps) => {
+export const Banner = ({Banner, SubTitle}: BannerProps) => {
   const [state, setState] = useState(0);
 
-  setTimeout(() => {
-    state >= HomeBannerData.length - 1 ? setState(0) : setState(state + 1);
-  }, 2000);
+  // setTimeout(() => {
+  //   state >= HomeBannerData.length - 1 ? setState(0) : setState(state + 1);
+  // }, 2000);
 
   return (
     <S.BannerWrap>

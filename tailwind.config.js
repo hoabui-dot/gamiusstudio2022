@@ -7,8 +7,8 @@ module.exports = {
     extend: {
       keyframes: {
         zoomIn: {
-          '0%': { transform: 'scale(0.5)' },
-          '100%': { transform: 'scale(1)' },
+          '0%': {transform: 'scale(0.5)'},
+          '100%': {transform: 'scale(1)'},
         },
       },
       animation: {
@@ -48,7 +48,7 @@ module.exports = {
         sm: '2rem',
         lg: '4rem',
         xl: '5rem',
-        '2xl': '6rem',
+        '2xl': '5rem',
       },
     },
   },

@@ -65,7 +65,7 @@ export const MDService = {
       title: 'Illustration',
       description:
         'Digital painting and illustrations for posters, advertising campaigns, magazines, book covers,...',
-      url: '/',
+      url: '/work',
     },
     {
       imgSrc: '/img/Shooting2.png',
@@ -73,7 +73,7 @@ export const MDService = {
       title: 'Shooting',
       description:
         'Concept definition, art direction, photo processing for artistic, commercial or corporate photo.',
-      url: '/',
+      url: '/work',
     },
     {
       imgSrc: '/img/3DModelling.png',
@@ -81,7 +81,7 @@ export const MDService = {
       title: '3D Modelling',
       description:
         '3D characters, eviroments, creature for games, movies and 3D printing technologies.',
-      url: '/',
+      url: '/work',
     },
     {
       imgSrc: '/img/Animation.png',
@@ -89,7 +89,7 @@ export const MDService = {
       title: 'Animation - VFX',
       description:
         'Animation and visual effects for feature films and television.',
-      url: '/',
+      url: '/work',
     },
   ],
 };

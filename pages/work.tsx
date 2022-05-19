@@ -19,8 +19,8 @@ const Work: NextPage = () => {
           Banner={true}
           SubTitle='A diversity of expertise to solve challenges in a unique way with creative courage'
         />
-        <WorkingProcess />
         <OurWork />
+        <WorkingProcess />
       </Layout>
     </>
   );

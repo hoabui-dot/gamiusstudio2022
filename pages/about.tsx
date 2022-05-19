@@ -1,10 +1,10 @@
-import { NextPage } from 'next';
+import {NextPage} from 'next';
 import Head from 'next/head';
 import React from 'react';
-import { Story } from '../components/_About/Story/Story';
-import { CoreTeam } from '../components/CoreTeam/CoreTeam';
-import { BannerAbout } from '../components/Banner/Banner';
-import { Layout } from '../components/Layout/Layout';
+import {Story} from '../components/_About/Story/Story';
+import {CoreTeam} from '../components/CoreTeam/CoreTeam';
+import {BannerAbout} from '../components/Banner/Banner';
+import {Layout} from '../components/Layout/Layout';
 
 const About: NextPage = () => {
   return (
@@ -15,9 +15,9 @@ const About: NextPage = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Layout>
+        <BannerAbout />
         <Story />
         <CoreTeam />
-        <BannerAbout />
       </Layout>
     </>
   );
