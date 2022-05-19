@@ -1,5 +1,5 @@
 import * as S from './CoreTeam.styled';
-import * as G from '../../styles/global.styled';
+import * as G from '../../../styles/global.styled';
 import Image from 'next/image';
 export const CoreTeam = () => {
   return (

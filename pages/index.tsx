@@ -1,11 +1,11 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { Service } from '../components/Service/Service';
+import { Service } from '../components/Home/Service/Service';
 import { Banner } from '../components/Banner/Banner';
 import { OurCustomer } from '../components/OurCustomer/OurCustomer';
-import { Layout } from '../components/Layout/Layout';
 import { KeyMessage } from '../components/Global/KeyMessage/KeyMessage';
 import { OurWork } from '../components/Home/OurWork/OurWork';
+import { Layout } from '../components/Global/Layout/Layout';
 import { Approach } from '../components/Approach/Approach';
 import { Careers } from '../components/Home/Careers/Careers';
 import styled, { keyframes } from 'styled-components';

@@ -1,11 +1,10 @@
-import { NextPage } from 'next';
+import {NextPage} from 'next';
 import Head from 'next/head';
 import React from 'react';
-import { WorkingProcess } from '../components/WorkingProcess/WorkingProcess';
-import { Banner } from '../components/Banner/Banner';
-import { Layout } from '../components/Layout/Layout';
-import { OurWork } from '../components/Home/OurWork/OurWork'
-import { WorkBanner } from '../components/_Work/WorkBanner/WorkBanner';
+import {WorkingProcess} from '../components/WorkingProcess/WorkingProcess';
+import {WorkBanner} from '../components/_Work/WorkBanner/WorkBanner';
+import {OurWork} from '../components/Work/OurWork/OurWork';
+import {Layout} from '../components/Global/Layout/Layout';
 
 const Work: NextPage = () => {
   return (

@@ -2,8 +2,9 @@ import {NextPage} from 'next';
 import Head from 'next/head';
 import React from 'react';
 import {Story} from '../components/_About/Story/Story';
-import {CoreTeam} from '../components/CoreTeam/CoreTeam';
-import {Layout} from '../components/Layout/Layout';
+import {CoreTeam} from '../components/About/CoreTeam/CoreTeam';
+import {Banner} from '../components/About/Banner/Banner';
+import {Layout} from '../components/Global/Layout/Layout';
 
 const About: NextPage = () => {
   return (

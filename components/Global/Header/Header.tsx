@@ -1,11 +1,11 @@
 import * as S from './Header.styled';
-import * as G from '../../styles/global.styled';
+import * as G from '../../../styles/global.styled';
 import Image from 'next/image';
 import Link from 'next/link';
 import { NavItem } from './components/NavItem/NavItem';
 import { useState } from 'react';
 import { MenuIcon } from '../MenuIcon/MenuIcon';
-import { MDHeader } from '../../utils/dataConfig';
+import { MDHeader } from '../../../utils/dataConfig';
 
 export const Header = () => {
   const [mobileNav, setMobileNav] = useState(false);

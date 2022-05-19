@@ -1,8 +1,8 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
 import React from 'react';
-import { ErrorSection } from '../components/ComponentError/ErrorSection/ErrorSection';
-import { Layout } from '../components/Layout/Layout';
+import { ErrorSection } from '../components/Error/ErrorSection/ErrorSection';
+import { Layout } from '../components/Global/Layout/Layout';
 
 const Error: NextPage = () => {
   return (
