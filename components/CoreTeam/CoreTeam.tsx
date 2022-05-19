@@ -1,5 +1,6 @@
 import * as S from './CoreTeam.styled';
 import * as G from '../../styles/global.styled';
+import Image from 'next/image';
 export const CoreTeam = () => {
   return (
     <S.CoreTeam>
@@ -14,7 +15,15 @@ export const CoreTeam = () => {
           </S.SubTitle>
         </S.SectionTitle>
         <S.CoreTeamInner>
-          <S.CoreTeamBackground></S.CoreTeamBackground>
+          <S.CoreTeamBackground>
+            <Image
+              src='/img/coreTeam.png'
+              alt='Gaming Team'
+              width={1280}
+              height={600}
+              layout='responsive'
+            ></Image>
+          </S.CoreTeamBackground>
           <S.SubTitle>
             Begin with freeing mind, unlock with creativity and fulfill through
             collaboration

@@ -10,7 +10,7 @@ export const CoreTeamInner = styled.div`
 `;
 
 export const CoreTeamBackground = styled.div`
-  ${tw`bg-core-team bg-center bg-no-repeat bg-cover min-h-[500px]`}
+  ${tw`relative w-full`}
 `;
 
 export const SectionTitle = styled.div`
