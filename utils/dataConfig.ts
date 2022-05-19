@@ -7,10 +7,10 @@ import OurCustomer6 from '../public/img/OurCustomer6.png';
 
 export const MDHeader = {
   navigation: [
-    {title: 'Home', url: '/', name: 'home'},
-    {title: 'Works', url: '/work', name: 'works'},
-    {title: 'About Us', url: '/about', name: 'about'},
-    {title: 'Contact Now', url: '/contact', name: 'contact'},
+    { title: 'Home', url: '/', name: 'home' },
+    { title: 'Works', url: '/work', name: 'works' },
+    { title: 'About Us', url: '/about', name: 'about' },
+    { title: 'Contact Now', url: '/contact', name: 'contact' },
   ],
 };
 
@@ -140,11 +140,11 @@ export const HomeBannerData = [
 ];
 
 export const WorkBannerData = [
-  {title: 'illustration'},
-  {title: 'shooting'},
-  {title: 'create 3d modeling'},
-  {title: 'animation/vfx'},
-  {title: 'ui/ux'},
+  { title: 'illustration' },
+  { title: 'shooting' },
+  { title: 'create 3d modeling' },
+  { title: 'animation/vfx' },
+  { title: 'ui/ux' },
 ];
 
 export const ApproachData = [
