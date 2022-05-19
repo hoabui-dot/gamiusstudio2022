@@ -3,6 +3,7 @@ import Head from 'next/head';
 import React from 'react';
 import { Story } from '../components/_About/Story/Story';
 import { CoreTeam } from '../components/CoreTeam/CoreTeam';
+import { BannerAbout } from '../components/Banner/Banner';
 import { Layout } from '../components/Layout/Layout';
 
 const About: NextPage = () => {
@@ -16,6 +17,7 @@ const About: NextPage = () => {
       <Layout>
         <Story />
         <CoreTeam />
+        <BannerAbout />
       </Layout>
     </>
   );
