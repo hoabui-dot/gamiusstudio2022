@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
 
-const greenMint = '#C8FC03';
-
 export const KeyMessage = styled.div`
   ${tw`py-[40px]`}
 `;
@@ -30,6 +28,6 @@ export const Text = styled.div<{ type?: boolean; story?: boolean }>`
   }}
 
   span {
-    ${tw`text-[${greenMint}] `}
+    ${tw`text-green `}
   }
 `;
