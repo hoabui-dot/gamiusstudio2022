@@ -9,7 +9,7 @@ export interface KeyMessageProps {
   story?: boolean;
 }
 
-export const KeyMessage = ({ type, story }: KeyMessageProps) => {
+export const KeyMessage = ({type, story}: KeyMessageProps) => {
   return (
     <S.KeyMessage>
       <G.Container>
@@ -42,10 +42,10 @@ export const KeyMessage = ({ type, story }: KeyMessageProps) => {
             <S.Text type={false} story={true}>
               <span>Gamius </span>
               is <span>developed </span>with a dimension to
-              <span>create work </span>which is as <span>effective </span>as it
+              <span> create work </span>which is as <span>effective </span>as it
               is beautiful. We specialize in <span>design </span>and
-              <span>illustraton </span>with a focus on{' '}
-              <span>innovative concepts</span>. We apply a<span>customer</span>{' '}
+              <span> illustraton </span>with a focus on{' '}
+              <span>innovative concepts</span>. We apply a<span> customer</span>{' '}
               and user centered methodology to gain insights but have great
               holistic perspective to <span>spark creativity</span>. It is our
               way to turn <span>ideas into reality</span>.

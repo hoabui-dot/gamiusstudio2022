@@ -4,18 +4,13 @@ import OurCustomer3 from '../public/img/OurCustomer3.png';
 import OurCustomer4 from '../public/img/OurCustomer4.png';
 import OurCustomer5 from '../public/img/OurCustomer5.png';
 import OurCustomer6 from '../public/img/OurCustomer6.png';
-import work1 from '../public/img/ourWork1.png';
-import work2 from '../public/img/ourWork2.png';
-import work3 from '../public/img/ourWork3.png';
-import calender from '../public/img/calendar.png';
-import location from '../public/img/location.png';
 
 export const MDHeader = {
   navigation: [
-    { title: 'Home', url: '/', name: 'home' },
-    { title: 'Works', url: '/work', name: 'works' },
-    { title: 'About Us', url: '/about', name: 'about' },
-    { title: 'Contact Now', url: '/contact', name: 'contact' },
+    {title: 'Home', url: '/', name: 'home'},
+    {title: 'Works', url: '/work', name: 'works'},
+    {title: 'About Us', url: '/about', name: 'about'},
+    {title: 'Contact Now', url: '/contact', name: 'contact'},
   ],
 };
 
@@ -70,7 +65,7 @@ export const MDService = {
       title: 'Illustration',
       description:
         'Digital painting and illustrations for posters, advertising campaigns, magazines, book covers,...',
-      url: '/',
+      url: '/work',
     },
     {
       imgSrc: '/img/Shooting2.png',
@@ -78,7 +73,7 @@ export const MDService = {
       title: 'Shooting',
       description:
         'Concept definition, art direction, photo processing for artistic, commercial or corporate photo.',
-      url: '/',
+      url: '/work',
     },
     {
       imgSrc: '/img/3DModelling.png',
@@ -86,7 +81,7 @@ export const MDService = {
       title: '3D Modelling',
       description:
         '3D characters, eviroments, creature for games, movies and 3D printing technologies.',
-      url: '/',
+      url: '/work',
     },
     {
       imgSrc: '/img/Animation.png',
@@ -94,7 +89,7 @@ export const MDService = {
       title: 'Animation - VFX',
       description:
         'Animation and visual effects for feature films and television.',
-      url: '/',
+      url: '/work',
     },
   ],
 };
@@ -145,11 +140,11 @@ export const HomeBannerData = [
 ];
 
 export const WorkBannerData = [
-  { title: 'illustration' },
-  { title: 'shooting' },
-  { title: 'create 3d modeling' },
-  { title: 'animation/vfx' },
-  { title: 'ui/ux' },
+  {title: 'illustration'},
+  {title: 'shooting'},
+  {title: 'create 3d modeling'},
+  {title: 'animation/vfx'},
+  {title: 'ui/ux'},
 ];
 
 export const ApproachData = [
@@ -187,15 +182,15 @@ export const ApproachData = [
 
 export const OurWorkData = [
   {
-    image: work1,
+    image: '/img/ourWork1.png',
     alt: 'work1',
   },
   {
-    image: work2,
+    image: '/img/ourWork2.png',
     alt: 'work2',
   },
   {
-    image: work3,
+    image: '/img/ourWork3.png',
     alt: 'work3',
   },
 ];
@@ -207,12 +202,12 @@ export const CardsData = [
     href: '/error',
     content: [
       {
-        src: calender,
+        src: '/img/calendar.png',
         alt: 'calender',
         content: 'Parttime',
       },
       {
-        src: location,
+        src: '/img/location.png',
         alt: 'location',
         content: 'Hồ Chí Minh',
       },
@@ -224,12 +219,12 @@ export const CardsData = [
     href: '/error',
     content: [
       {
-        src: calender,
+        src: '/img/calendar.png',
         alt: 'calender',
         content: 'Parttime',
       },
       {
-        src: location,
+        src: '/img/location.png',
         alt: 'location',
         content: 'Hồ Chí Minh',
       },
@@ -241,12 +236,12 @@ export const CardsData = [
     href: '/error',
     content: [
       {
-        src: calender,
+        src: '/img/calendar.png',
         alt: 'calender',
         content: 'Parttime',
       },
       {
-        src: location,
+        src: '/img/location.png',
         alt: 'location',
         content: 'Hồ Chí Minh',
       },
@@ -289,5 +284,87 @@ export const WorkingProcessData = [
     title: 'Aftercare',
     subTitle:
       'We provides support throughout and after each project for your greatest satisfaction and experience.',
+  },
+];
+export const ProjectListData = [
+  {
+    imgSrc: '/img/ProjectList1.png',
+    imgAlt: 'project 1',
+    bigImgSrc: '/img/BigProjectList1.png',
+    bigImgAlt: 'Big project 1',
+    title: 'Brand name',
+    subTitle: 'Illustration - Storyboard',
+  },
+  {
+    imgSrc: '/img/ProjectList2.png',
+    imgAlt: 'project 2',
+    bigImgSrc: '/img/BigProjectList2.png',
+    bigImgAlt: 'Big project 2',
+    title: 'Brand name',
+    subTitle: 'Illustration - Keyvisual',
+  },
+  {
+    imgSrc: '/img/ProjectList3.png',
+    imgAlt: 'project 3',
+    bigImgSrc: '/img/BigProjectList3.png',
+    bigImgAlt: 'Big project 3',
+    title: 'Brand name',
+    subTitle: 'Illustration - Storyboard',
+  },
+  {
+    imgSrc: '/img/ProjectList4.png',
+    imgAlt: 'project 4',
+    bigImgSrc: '/img/BigProjectList4.png',
+    bigImgAlt: 'Big project 4',
+    title: 'Brand name',
+    subTitle: 'Art concept',
+  },
+  {
+    imgSrc: '/img/ProjectList5.png',
+    imgAlt: 'project 5',
+    bigImgSrc: '/img/BigProjectList5.png',
+    bigImgAlt: 'Big project 5',
+    title: 'Brand name',
+    subTitle: 'Art concept - Game',
+  },
+  {
+    imgSrc: '/img/ProjectList6.png',
+    imgAlt: 'project 6',
+    bigImgSrc: '/img/BigProjectList6.png',
+    bigImgAlt: 'Big project 6',
+    title: 'Brand name',
+    subTitle: 'Game concept - 3D modeling',
+  },
+  {
+    imgSrc: '/img/ProjectList7.png',
+    imgAlt: 'project 7',
+    bigImgSrc: '/img/BigProjectList7.png',
+    bigImgAlt: 'Big project 7',
+    title: 'Brand name',
+    subTitle: 'Game concept - 3D modeling',
+  },
+  {
+    imgSrc: '/img/ProjectList8.png',
+    imgAlt: 'project 8',
+    bigImgSrc: '/img/BigProjectList8.png',
+    bigImgAlt: 'Big project 8',
+    title: 'Brand name',
+    subTitle: 'Game concept - 3D modeling',
+  },
+  {
+    imgSrc: '/img/ProjectList9.png',
+    imgAlt: 'project 9',
+    bigImgSrc: '/img/BigProjectList9.png',
+    bigImgAlt: 'Big project 9',
+    title: 'Brand name',
+    subTitle: 'Illustration - Artwork',
+  },
+  {
+    imgSrc: '/img/ProjectList10.png',
+    imgAlt: 'project 10',
+    bigImgSrc: '/img/BigProjectList10.png',
+    bigImgAlt: 'Big project 10',
+    title: 'Brand name',
+    subTitle: 'Illustration - Comic character',
   },
 ];

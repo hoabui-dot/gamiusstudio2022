@@ -1,15 +1,23 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import * as S from './ContactForm.styled';
 import * as Yup from 'yup';
-import { useFormik } from 'formik';
+import {useFormik} from 'formik';
+import emailjs from '@emailjs/browser';
+import {
+  YOUR_PUBLIC_KEY,
+  YOUR_SERVICE_ID,
+  YOUR_TEMPLATE_ID,
+} from '../../../../utils/constants';
 
 export const ContactForm = () => {
+  const form = useRef<any>();
+
   const formik = useFormik({
     initialValues: {
       name: '',
       email: '',
       subject: '',
-      yourMessage: '',
+      message: '',
     },
     validationSchema: Yup.object({
       name: Yup.string()
@@ -19,17 +27,34 @@ export const ContactForm = () => {
         .min(10, 'Subject must be 10 characters or less')
         .required('Required'),
       email: Yup.string().email('Invalid email address').required('Required'),
-      yourMessage: Yup.string()
+      message: Yup.string()
         .min(10, 'Your message must be 10 characters or less')
         .required('Required'),
     }),
-    onSubmit: (values) => {
-      console.log('JSON', JSON.stringify(values, null, 2));
+    onSubmit: values => {
+      console.log(values);
+      emailjs
+        .sendForm(
+          YOUR_SERVICE_ID,
+          YOUR_TEMPLATE_ID,
+          form.current,
+          YOUR_PUBLIC_KEY
+        )
+        .then(
+          (result: any) => {
+            console.log(result.text);
+            alert('We will contact you soon!');
+            formik.resetForm();
+          },
+          (error: any) => {
+            console.log(error.text);
+          }
+        );
     },
   });
   return (
     <>
-      <form onSubmit={formik.handleSubmit}>
+      <form ref={form} onSubmit={formik.handleSubmit}>
         <S.Form>
           <S.Input>
             <input
@@ -79,14 +104,14 @@ export const ContactForm = () => {
           <S.Input>
             <textarea
               className='formItem message'
-              name='yourMessage'
+              name='message'
               placeholder='Message'
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              value={formik.values.yourMessage}
+              value={formik.values.message}
             />
-            {formik.touched.yourMessage && formik.errors.yourMessage ? (
-              <S.Required>{formik.errors.yourMessage}</S.Required>
+            {formik.touched.message && formik.errors.message ? (
+              <S.Required>{formik.errors.message}</S.Required>
             ) : null}
           </S.Input>
 

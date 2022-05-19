@@ -1,17 +1,19 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import Image from 'next/image';
 import * as S from './Banner.styled';
 import * as G from '../../styles/global.styled';
-import { HomeBannerData } from '../../utils/dataConfig';
-import { WorkBannerData } from '../../utils/dataConfig';
+import {HomeBannerData} from '../../utils/dataConfig';
+import {WorkBannerData} from '../../utils/dataConfig';
 import Home from '../../pages';
+import {BannerImage} from './components/BannerImage/BannerImage';
+import {StatusIcon} from './components/StatusIcon/StatusIcon';
 
 export interface BannerProps {
   Banner?: boolean;
   SubTitle?: string;
 }
 
-export const Banner = ({ Banner, SubTitle }: BannerProps) => {
+export const Banner = ({Banner, SubTitle}: BannerProps) => {
   const [state, setState] = useState(0);
 
   setTimeout(() => {
@@ -183,5 +185,50 @@ export const Banner = ({ Banner, SubTitle }: BannerProps) => {
         </S.Item>
       </G.Container>
     </S.BannerWrap>
+  );
+};
+
+export const BannerAbout = () => {
+  const [state, setState] = useState(0);
+
+  setTimeout(() => {
+    state >= HomeBannerData.length - 1 ? setState(0) : setState(state + 1);
+  }, 2000);
+
+  return (
+    <S.BannerAbout>
+      <G.Container>
+        <S.Item>
+          <S.Content>
+            <S.Title>
+              <S.WhiteTitle className='mt-2'>WE WERE HERE FOR</S.WhiteTitle>
+              {HomeBannerData.map((data, index) => (
+                <S.GreenTitle
+                  key={index}
+                  activeTitle={state === index ? true : false}
+                >
+                  {data.title}
+                </S.GreenTitle>
+              ))}
+              <S.BannerStatus inline={true}>
+                {[...Array(HomeBannerData.length)].map((item, index) => (
+                  <StatusIcon key={index} active={state === index} />
+                ))}
+              </S.BannerStatus>
+            </S.Title>
+            <p className='lg:mt-[60px] mt-[20px] text-base font-medium text-white lg:text-left text-center'>
+              Gamius is is a full-service design agency, based in Ho Chi Minh
+              city, Vietnam. We produce creative designs tailor-made for your
+              vision to keep you at the top of your game.
+            </p>
+          </S.Content>
+          <S.ImageWrap>
+            {HomeBannerData.map((data, index) => (
+              <BannerImage key={index} data={data} active={state === index} />
+            ))}
+          </S.ImageWrap>
+        </S.Item>
+      </G.Container>
+    </S.BannerAbout>
   );
 };

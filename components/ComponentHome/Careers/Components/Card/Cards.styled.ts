@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
 
-const greenMint = '#C8FC03';
-const textGray = '#F3F4F6';
+const cardBG = '#070911BF';
+const cardHover = '#ffffff73';
 
 export const WrapperCard = styled.div`
-  ${tw`bg-[#070911BF] duration-200 border rounded-[6px] border-[${greenMint}] text-[white] p-6`}
+  ${tw`bg-[${cardBG}] duration-200 border rounded-[6px] border-green text-white p-6`}
 
   &:hover {
-    ${tw`bg-[#ffffff73]`}
+    ${tw`bg-[${cardHover}]`}
   }
 `;
 
@@ -17,7 +17,7 @@ export const Title = styled.p`
 `;
 
 export const SubTitle = styled.p`
-  ${tw`text-[${textGray}]`}
+  ${tw`text-gray-lighter`}
 `;
 
 export const WrapperInfo = styled.div`
@@ -29,5 +29,5 @@ export const Info = styled.div`
 `;
 
 export const P__Info = styled.p`
-  ${tw`ml-1 mr-5 text-[${textGray}]`}
+  ${tw`ml-1 mr-5 text-gray-lighter`}
 `;
