@@ -1,6 +1,7 @@
 import * as S from './NavItem.styled';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 interface NavItemProps {
   tab: {
@@ -8,13 +9,12 @@ interface NavItemProps {
     url: string;
     name?: string;
   };
-  active: string;
 }
 
-export const NavItem = ({
-  tab: { title, url, name },
-  active,
-}: NavItemProps) => {
+export const NavItem = ({ tab: { title, url, name } }: NavItemProps) => {
+  const router = useRouter();
+  const currentPath = router.pathname;
+
   return (
     <S.NavItem>
       <Link href={url}>
@@ -32,7 +32,7 @@ export const NavItem = ({
             </S.FlashIcon>
           </S.NavContact>
         ) : (
-          <S.NavUrl className={`${active === name && 'active'}`}>
+          <S.NavUrl className={`${currentPath === url ? 'active' : ''}`}>
             {title}
           </S.NavUrl>
         )}
