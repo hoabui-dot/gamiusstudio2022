@@ -38,7 +38,7 @@ export const ProjectItem = ({
         active={active}
         setActive={setActive}
       />
-      <S.Title>{title}</S.Title>
+      <S.Title onClick={() => setActive(true)}>{title}</S.Title>
       <S.SubTitle>{subTitle}</S.SubTitle>
     </S.ProjectItem>
   );
