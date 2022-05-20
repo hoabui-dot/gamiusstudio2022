@@ -18,7 +18,7 @@ export const Banner = () => {
         <S.BannerInner>
           <S.MainContent>
             <S.Title>
-              <S.WhiteTitle className='mt-2'>WE WERE HERE FOR</S.WhiteTitle>
+              <S.WhiteTitle>WE WERE HERE FOR</S.WhiteTitle>
               {AboutBannerData.map((data, index) => (
                 <S.GreenTitle
                   key={index}

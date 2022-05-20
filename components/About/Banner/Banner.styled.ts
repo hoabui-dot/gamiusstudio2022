@@ -15,14 +15,14 @@ export const MainContent = styled.div`
 
 //Title
 export const Title = styled.h1<{ textCenterTitle?: boolean }>`
-  ${tw`flex flex-wrap justify-center items-center text-center xl:text-[43px] lg:text-[34px] sm:text-3xl text-3xl font-bold gap-y-2`}
+  ${tw`flex flex-wrap justify-center items-center text-center xl:text-[43px] lg:text-[34px] sm:text-3xl text-3xl font-bold gap-2`}
   ${({ textCenterTitle }) => {
     return textCenterTitle ? '' : tw`lg:justify-start`;
   }}
 `;
 
 export const WhiteTitle = styled.p`
-  ${tw`text-white uppercase mr-2`}
+  ${tw`text-white uppercase`}
 `;
 
 export const GreenTitle = styled.p<{ activeTitle: boolean }>`
@@ -39,7 +39,7 @@ export const SubTitle = styled.p`
 export const BannerStatus = styled.ul<{ inline: boolean }>`
   ${tw`absolute flex top-[-15px] xl:right-[85px] lg:right-[60px] right-0 z-[70]`}
   ${({ inline }) => {
-    return inline && tw`static ml-3`;
+    return inline && tw`static`;
   }}
 `;
 
