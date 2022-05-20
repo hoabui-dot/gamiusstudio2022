@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 export const Service = styled.div`
-  ${tw`md:pt-[80px] md:pb-[30px] py-[30px] relative`}
+  ${tw`md:pt-[80px] md:pb-[20px] pt-[30px] pb-5 relative`}
 `;
 
 export const FlashTheme = styled.figure`
