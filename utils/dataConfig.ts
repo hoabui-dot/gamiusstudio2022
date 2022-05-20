@@ -367,6 +367,38 @@ export const ProjectListData = [
     title: 'Brand name',
     subTitle: 'Illustration - Comic character',
   },
+  {
+    imgSrc: '/img/ProjectList11.png',
+    imgAlt: 'project 11',
+    bigImgSrc: '/img/BigProjectList11.png',
+    bigImgAlt: 'Big project 11',
+    title: 'Brand name',
+    subTitle: 'Illustration - Artwork',
+  },
+  {
+    imgSrc: '/img/ProjectList12.png',
+    imgAlt: 'project 12',
+    bigImgSrc: '/img/BigProjectList12.png',
+    bigImgAlt: 'Big project 12',
+    title: 'Brand name',
+    subTitle: 'Illustration - Comic character',
+  },
+  {
+    imgSrc: '/img/ProjectList13.png',
+    imgAlt: 'project 13',
+    bigImgSrc: '/img/BigProjectList13.png',
+    bigImgAlt: 'Big project 13',
+    title: 'Brand name',
+    subTitle: 'Illustration - Artwork',
+  },
+  {
+    imgSrc: '/img/ProjectList14.png',
+    imgAlt: 'project 14',
+    bigImgSrc: '/img/BigProjectList14.png',
+    bigImgAlt: 'Big project 14',
+    title: 'Brand name',
+    subTitle: 'Illustration - Comic character',
+  },
 ];
 
 export const AboutBannerData = [
