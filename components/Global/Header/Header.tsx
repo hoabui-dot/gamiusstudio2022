@@ -38,7 +38,9 @@ export const Header = () => {
               <NavItem tab={item} key={index} />
             ))}
           </S.HeaderNav>
-          <S.ContactButton>CONTACT NOW</S.ContactButton>
+          <Link href='/contact'>
+            <S.ContactButton>CONTACT NOW</S.ContactButton>
+          </Link>
         </S.HeaderInner>
       </G.Container>
     </S.Header>

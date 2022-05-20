@@ -27,11 +27,11 @@ export const MDFooter = {
       content: [
         {
           label: 'Introduce',
-          url: '/',
+          url: '/about',
         },
         {
           label: 'Contact us',
-          url: '/',
+          url: '/about',
         },
       ],
     },
@@ -40,15 +40,15 @@ export const MDFooter = {
       content: [
         {
           label: 'Design 2D',
-          url: '/',
+          url: '/work',
         },
         {
           label: '3d Modeling',
-          url: '/',
+          url: '/work',
         },
         {
           label: 'Videos/VFX',
-          url: '/',
+          url: '/work',
         },
       ],
     },
