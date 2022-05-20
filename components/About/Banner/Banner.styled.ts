@@ -33,7 +33,7 @@ export const GreenTitle = styled.p<{ activeTitle: boolean }>`
 `;
 
 export const SubTitle = styled.p`
-  ${tw`lg:mt-[60px] mt-[20px] font-medium text-white lg:text-left text-center text-base md:text-xl`}
+  ${tw`lg:mt-[60px] mt-[20px] font-medium text-white lg:text-left text-center text-base lg:text-lg xl:text-xl`}
 `;
 
 export const BannerStatus = styled.ul<{ inline: boolean }>`
