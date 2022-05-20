@@ -11,7 +11,7 @@ export const Content = styled.div`
   ${tw`px-[15px]`}
 `;
 export const Title = styled.div`
-  ${tw`text-green text-lg text-center font-bold`}
+  ${tw`text-green text-[16px] text-center font-bold`}
 `;
 export const SubTitle = styled.div`
   ${tw`text-white text-[15px] leading-[18px] mt-[16px]`}
