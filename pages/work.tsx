@@ -4,7 +4,7 @@ import React from 'react';
 import { WorkingProcess } from '../components/WorkingProcess/WorkingProcess';
 import { Banner } from '../components/Banner/Banner';
 import { Layout } from '../components/Layout/Layout';
-import { OurWork } from '../components/_Work/OurWork/OurWork';
+import { OurWork } from '../components/Home/OurWork/OurWork'
 import { WorkBanner } from '../components/_Work/WorkBanner/WorkBanner';
 
 const Work: NextPage = () => {

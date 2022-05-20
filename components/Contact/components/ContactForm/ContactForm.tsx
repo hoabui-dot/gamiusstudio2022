@@ -1,7 +1,7 @@
-import React, {useRef} from 'react';
+import React, { useRef } from 'react';
 import * as S from './ContactForm.styled';
 import * as Yup from 'yup';
-import {useFormik} from 'formik';
+import { useFormik } from 'formik';
 import emailjs from '@emailjs/browser';
 import {
   YOUR_PUBLIC_KEY,
@@ -21,17 +21,17 @@ export const ContactForm = () => {
     },
     validationSchema: Yup.object({
       name: Yup.string()
-        .min(10, 'Name must be 10 characters or less')
+        .min(10, 'Name must be 10 characters or more')
         .required('Required'),
       subject: Yup.string()
-        .min(10, 'Subject must be 10 characters or less')
+        .min(10, 'Subject must be 10 characters or more')
         .required('Required'),
       email: Yup.string().email('Invalid email address').required('Required'),
       message: Yup.string()
-        .min(10, 'Your message must be 10 characters or less')
+        .min(10, 'Your message must be 10 characters or more')
         .required('Required'),
     }),
-    onSubmit: values => {
+    onSubmit: (values) => {
       console.log(values);
       emailjs
         .sendForm(

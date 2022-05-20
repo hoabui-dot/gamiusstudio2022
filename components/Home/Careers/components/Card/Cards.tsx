@@ -25,7 +25,7 @@ export const Cards = () => {
               </S.Info>
             ))}
           </S.WrapperInfo>
-          <BtnDetail />
+          <BtnDetail href={_data.href} />
         </S.WrapperCard>
       ))}
     </>
