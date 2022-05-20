@@ -32,14 +32,6 @@ export const Service = () => {
           objectFit='contain'
         ></Image>
       </S.FlashTheme>
-      <S.FlashTheme className='third'>
-        <Image
-          src='/img/bigFlash.png'
-          alt='Gaming Icon'
-          layout='fill'
-          objectFit='contain'
-        ></Image>
-      </S.FlashTheme>
       <G.Container>
         <S.SectionTitle>
           <S.Title>{title}</S.Title>
