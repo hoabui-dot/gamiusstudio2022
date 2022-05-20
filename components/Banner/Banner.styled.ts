@@ -28,7 +28,7 @@ export const BannerWrap = styled.div`
 `;
 
 export const Item = styled.div`
-  ${tw`flex lg:flex-row flex-col-reverse justify-center items-center gap-x-10`}
+  ${tw`flex lg:flex-row flex-col-reverse justify-center items-center`}
 `;
 
 export const Content = styled.div`
@@ -36,48 +36,36 @@ export const Content = styled.div`
 `;
 
 //Title
-export const Title = styled.h1<{ textCenterTitle?: boolean }>`
-  ${tw`flex flex-wrap justify-center items-center text-center xl:text-[43px] lg:text-[34px] sm:text-3xl text-3xl font-bold gap-y-2`}
-  ${({ textCenterTitle }) => {
-    return textCenterTitle ? '' : tw`lg:justify-start`;
-  }}
+export const Title = styled.h1`
+  ${tw`flex flex-wrap lg:justify-start justify-center items-center text-center xl:text-[43px] lg:text-[34px] sm:text-3xl text-3xl font-bold`}
 `;
 
 export const WhiteTitle = styled.p`
-  ${tw`text-white uppercase mr-2`}
+  ${tw`text-white inline-block uppercase mr-2`}
 `;
 
 export const GreenTitle = styled.p<{ activeTitle: boolean }>`
-  ${tw`uppercase text-green duration-[250ms]`}
+  ${tw`uppercase text-green duration-250`}
   ${({ activeTitle }) => {
     return activeTitle ? tw`opacity-100 block` : tw`opacity-0 hidden`;
   }}
 `;
 
 //Subtitle
-export const SubTitleWrap = styled.div<{ textCenter: boolean }>`
+export const SubTitleWrap = styled.div`
   ${tw`w-full lg:flex lg:flex-col`}
-  ${({ textCenter }) => {
-    return textCenter ? `${tw`text-center`}` : '';
-  }}
 `;
 
-export const SubTitle = styled.div<{ textCenter: boolean }>`
-  ${tw`relative text-center xl:text-2xl text-xl lg:mt-[55px] mt-[20px]`}
-  ${({ textCenter }) => {
-    return textCenter ? tw`lg:text-center` : tw`lg:text-left`;
-  }}
+export const SubTitle = styled.div`
+  ${tw`relative lg:text-left text-center xl:text-2xl text-xl lg:mt-[55px] mt-[20px]`}
 `;
 
 export const GreenWord = styled.span`
   ${tw`text-green`}
 `;
 
-export const BannerIcon = styled.div<{ hiddenIcon: boolean }>`
+export const BannerIcon = styled.div`
   ${tw`absolute lg:w-[93px] w-[70px] lg:left-[-75px] left-[-57px] sm:top-[-30px] top-[-20px]`}
-  ${({ hiddenIcon }) => {
-    return hiddenIcon ? tw`hidden` : '';
-  }}
 `;
 
 export const SubTitleLine = styled.span``;
@@ -90,37 +78,10 @@ export const Image = styled.figure<{ activeImage: boolean }>`
   }}
 `;
 
-export const BannerStatus = styled.ul<{
-  hiddenStatus?: boolean;
-  inline?: boolean;
-}>`
-  ${tw`absolute flex top-[-15px] xl:right-[85px] lg:right-[60px] right-0 z-[70]`}
-  ${({ hiddenStatus }) => {
-    return hiddenStatus ? tw`invisible` : '';
-  }}
-  ${({ inline }) => {
-    return inline && tw`static ml-3`;
-  }}
-`;
-
-export const StatusIcon = styled.li`
-  ${tw`relative w-[17.76px] z-[90]`}
-`;
-
-export const StatusIconLight = styled.div<{ activeIconLight: boolean }>`
-  ${tw`absolute top-0 left-0 w-[17.76px] hidden`}
-  ${({ activeIconLight }) => {
-    return activeIconLight ? tw`block` : '';
-  }}
-  &.active {
-    ${tw`block`}
-  }
-`;
-
-export const BannerAbout = styled.div`
-  ${tw`py-[60px] duration-250`}
-`;
-
-export const ImageWrap = styled.div`
-  ${tw`lg:w-[45%] w-full min-h-[200px] sm:min-h-[400px] md:min-h-[500px] lg:min-h-[350px] relative  duration-250`}
+export const BannerStatus = styled.ul`
+  ${tw`absolute flex top-[-15px] 
+  xl:right-[90px] 
+  lg:right-[50px] 
+  md:right-[60px] 
+  right-0 z-[70]`}
 `;

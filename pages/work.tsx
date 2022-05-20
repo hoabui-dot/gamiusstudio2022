@@ -4,7 +4,8 @@ import React from 'react';
 import { WorkingProcess } from '../components/WorkingProcess/WorkingProcess';
 import { Banner } from '../components/Banner/Banner';
 import { Layout } from '../components/Layout/Layout';
-import { OurWork } from '../components/Work/OurWork/OurWork';
+import { OurWork } from '../components/Home/OurWork/OurWork'
+import { WorkBanner } from '../components/_Work/WorkBanner/WorkBanner';
 
 const Work: NextPage = () => {
   return (
@@ -15,10 +16,7 @@ const Work: NextPage = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Layout>
-        <Banner
-          Banner={true}
-          SubTitle='A diversity of expertise to solve challenges in a unique way with creative courage'
-        />
+        <WorkBanner />
         <OurWork />
         <WorkingProcess />
       </Layout>
