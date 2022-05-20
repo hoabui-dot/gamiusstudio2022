@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import { useState } from 'react';
-import { MDService } from '../../utils/dataConfig';
+import { MDService } from '../../../utils/dataConfig';
 import { ServiceImage } from './components/ServiceImage/ServiceImage';
 import { ServiceItem } from './components/ServiceItem/ServiceItem';
 import * as S from './Service.styled';
-import * as G from '../../styles/global.styled';
+import * as G from '../../../styles/global.styled';
 
 export const Service = () => {
   const { title, subTitle, mainContent } = MDService;

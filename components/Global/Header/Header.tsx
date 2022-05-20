@@ -1,11 +1,11 @@
 import * as S from './Header.styled';
-import * as G from '../../styles/global.styled';
+import * as G from '../../../styles/global.styled';
 import Image from 'next/image';
 import Link from 'next/link';
 import { NavItem } from './components/NavItem/NavItem';
 import { useState } from 'react';
 import { MenuIcon } from '../MenuIcon/MenuIcon';
-import { MDHeader } from '../../utils/dataConfig';
+import { MDHeader } from '../../../utils/dataConfig';
 
 export const Header = () => {
   const [mobileNav, setMobileNav] = useState(false);
@@ -38,7 +38,9 @@ export const Header = () => {
               <NavItem tab={item} key={index} />
             ))}
           </S.HeaderNav>
-          <S.ContactButton>CONTACT NOW</S.ContactButton>
+          <Link href='/contact'>
+            <S.ContactButton>CONTACT NOW</S.ContactButton>
+          </Link>
         </S.HeaderInner>
       </G.Container>
     </S.Header>

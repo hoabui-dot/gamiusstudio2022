@@ -1,9 +1,9 @@
 import React from 'react';
 import * as S from './Footer.styled';
-import * as G from '../../styles/global.styled';
+import * as G from '../../../styles/global.styled';
 import Image from 'next/image';
 import { FooterList } from './components/FooterList/FooterList';
-import { MDFooter } from '../../utils/dataConfig';
+import { MDFooter } from '../../../utils/dataConfig';
 import Link from 'next/link';
 
 export const Footer = () => {

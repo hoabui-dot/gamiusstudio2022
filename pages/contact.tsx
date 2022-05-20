@@ -1,8 +1,8 @@
-import {NextPage} from 'next';
+import { NextPage } from 'next';
 import Head from 'next/head';
 import React from 'react';
-import {Layout} from '../components/Layout/Layout';
-import {ContactPage} from '../components/Contact/Contact';
+import { Layout } from '../components/Global/Layout/Layout';
+import { ContactPage } from '../components/Contact/Contact';
 
 const Contact: NextPage = () => {
   return (

@@ -27,11 +27,11 @@ export const MDFooter = {
       content: [
         {
           label: 'Introduce',
-          url: '/',
+          url: '/about',
         },
         {
           label: 'Contact us',
-          url: '/',
+          url: '/about',
         },
       ],
     },
@@ -40,15 +40,15 @@ export const MDFooter = {
       content: [
         {
           label: 'Design 2D',
-          url: '/',
+          url: '/work',
         },
         {
           label: '3d Modeling',
-          url: '/',
+          url: '/work',
         },
         {
           label: 'Videos/VFX',
-          url: '/',
+          url: '/work',
         },
       ],
     },
@@ -366,5 +366,33 @@ export const ProjectListData = [
     bigImgAlt: 'Big project 10',
     title: 'Brand name',
     subTitle: 'Illustration - Comic character',
+  },
+];
+
+export const AboutBannerData = [
+  {
+    title: 'design game',
+    image: '/img/BannerImg1.png',
+    subImage: 'About Gaming',
+  },
+  {
+    title: 'create character',
+    image: '/img/BannerImg2.png',
+    subImage: 'About Gaming',
+  },
+  {
+    title: 'create animation/vfx',
+    image: '/img/BannerImg3.png',
+    subImage: 'About Gaming',
+  },
+  {
+    title: 'EVERYTHING YOU NEED',
+    image: '/img/BannerImg1.png',
+    subImage: 'About Gaming',
+  },
+  {
+    title: 'do ui/ux',
+    image: '/img/BannerImg2.png',
+    subImage: 'About Gaming',
   },
 ];
