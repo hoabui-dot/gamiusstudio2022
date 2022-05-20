@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 export const Service = styled.div`
-  ${tw`pt-[80px] pb-[60px] relative`}
+  ${tw`md:pt-[80px] md:pb-[30px] py-[30px] relative`}
 `;
 
 export const FlashTheme = styled.figure`
@@ -48,7 +48,7 @@ export const ServiceImageWrap = styled.div`
     flex-shrink-0 flex-grow
     lg:w-1/2 lg:min-h-[600px]
     sm:min-h-[500px]
-    w-full min-h-[400px]
+    w-full min-h-[350px]
   `}
 `;
 
