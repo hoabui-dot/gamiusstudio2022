@@ -3,7 +3,7 @@ import { SectionTitle } from '../SectionTitle/SectionTitle';
 import { ApproachItem } from './components/ApproachItem';
 import * as S from './Approach.styled';
 import * as G from '../../styles/global.styled';
-import { KeyMessage } from '../KeyMessage/KeyMessage';
+import { KeyMessage } from '../Global/KeyMessage/KeyMessage';
 import { ApproachData } from '../../utils/dataConfig';
 
 export const Approach = () => {

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 export const WrapperImageUpLeft = styled.figure`
-  ${tw`absolute w-[13vw] top-[-100px] left-[10%] `}
+  ${tw`absolute w-[13vw] sm:top-[-100px] top-[-60px] left-[10%] `}
 `;
 
 export const WrapperImageBottomRight = styled.figure`

@@ -1,7 +1,7 @@
 import React from 'react';
 import * as S from './Story.styled';
 import * as G from '../../../styles/global.styled';
-import { KeyMessage } from '../../KeyMessage/KeyMessage';
+import { KeyMessage } from '../../Global/KeyMessage/KeyMessage';
 import { FlashBackgroundStory } from './components/Flash/Flash';
 import { SectionTitle } from '../../SectionTitle/SectionTitle';
 

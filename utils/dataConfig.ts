@@ -199,6 +199,7 @@ export const CardsData = [
   {
     title: '3D Modeling',
     subTitle: '01. 3D',
+    href: '/error',
     content: [
       {
         src: '/img/calendar.png',
@@ -215,6 +216,7 @@ export const CardsData = [
   {
     title: '3D Modeling',
     subTitle: '01. 3D',
+    href: '/error',
     content: [
       {
         src: '/img/calendar.png',
@@ -231,6 +233,7 @@ export const CardsData = [
   {
     title: '3D Modeling',
     subTitle: '01. 3D',
+    href: '/error',
     content: [
       {
         src: '/img/calendar.png',

@@ -1,15 +1,15 @@
 import React from 'react';
 import * as S from './KeyMessage.styled';
-import * as G from '../../styles/global.styled';
+import * as G from '../../../styles/global.styled';
 import Image from 'next/image';
-import decor from '../../public/img/Decor.png';
+import decor from '../../../public/img/Decor.png';
 
 export interface KeyMessageProps {
   type?: boolean;
   story?: boolean;
 }
 
-export const KeyMessage = ({type, story}: KeyMessageProps) => {
+export const KeyMessage = ({ type, story }: KeyMessageProps) => {
   return (
     <S.KeyMessage>
       <G.Container>
