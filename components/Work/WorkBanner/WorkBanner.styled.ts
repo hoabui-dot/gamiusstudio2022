@@ -38,11 +38,14 @@ export const WhiteTitle = styled.p`
   ${tw`text-white uppercase mr-2`}
 `;
 
-export const GreenTitle = styled.p<{ activeTitle: boolean }>`
-  ${tw`uppercase text-green duration-[250ms]`}
+export const GreenTitleWrap = styled.div<{ activeTitle: boolean }>`
   ${({ activeTitle }) => {
     return activeTitle ? tw`opacity-100 block` : tw`opacity-0 hidden`;
   }}
+`;
+
+export const GreenTitle = styled.p`
+  ${tw`uppercase text-green duration-[250ms]`}
 `;
 export const SubTitle = styled.p`
   ${tw`text-center xl:text-2xl text-xl lg:mt-[55px] mt-[20px]`}

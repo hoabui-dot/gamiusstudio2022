@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import {
   YOUR_PUBLIC_KEY,
@@ -13,8 +13,6 @@ function ContactUsExample({}: Props) {
 
   const sendEmail = (e: any) => {
     e.preventDefault();
-
-    // console.log(form.current);
 
     emailjs
       .sendForm(

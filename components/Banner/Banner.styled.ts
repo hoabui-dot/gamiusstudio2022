@@ -24,7 +24,7 @@ export const Linear = styled.div`
 
 //Slide wrap
 export const BannerWrap = styled.div`
-  ${tw`relative flex justify-center items-center xl:py-[94px] lg:py-[50px] py-[35px]`}
+  ${tw`relative flex justify-center items-center xl:py-[94px] lg:py-[50px] py-[35px] overflow-hidden`}
 `;
 
 export const Item = styled.div`
@@ -44,11 +44,14 @@ export const WhiteTitle = styled.p`
   ${tw`text-white inline-block uppercase mr-2`}
 `;
 
-export const GreenTitle = styled.p<{ activeTitle: boolean }>`
-  ${tw`uppercase text-green duration-250`}
+export const GreenTitleWrap = styled.div<{ activeTitle: boolean }>`
   ${({ activeTitle }) => {
     return activeTitle ? tw`opacity-100 block` : tw`opacity-0 hidden`;
   }}
+`;
+
+export const GreenTitle = styled.p`
+  ${tw`uppercase text-green duration-250`}
 `;
 
 //Subtitle
@@ -71,6 +74,7 @@ export const BannerIcon = styled.div`
 export const SubTitleLine = styled.span``;
 
 //Slide Image
+
 export const Image = styled.figure<{ activeImage: boolean }>`
   ${tw`relative duration-[250ms] lg:w-[45%] w-full h-auto z-10`}
   ${({ activeImage }) => {

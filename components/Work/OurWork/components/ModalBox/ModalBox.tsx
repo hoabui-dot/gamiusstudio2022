@@ -1,24 +1,15 @@
 import * as S from './ModalBox.styled';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import { MouseEvent, useEffect } from 'react';
 
 interface ModalBoxProps {
-  src: string;
+  src: StaticImageData;
   alt: string;
-  height: number;
-  width: number;
   active: boolean;
   setActive: (value: boolean) => void;
 }
 
-export const ModalBox = ({
-  src,
-  alt,
-  width,
-  height,
-  active,
-  setActive,
-}: ModalBoxProps) => {
+export const ModalBox = ({ src, alt, active, setActive }: ModalBoxProps) => {
   const handleActive = (e: MouseEvent) => {
     if ((e.target as Element).id === 'modalBox') setActive(false);
   };
@@ -35,13 +26,7 @@ export const ModalBox = ({
       onClick={(e) => handleActive(e)}
     >
       <S.ModalContent className='modal-content'>
-        <Image
-          src={src}
-          alt={alt}
-          width={width}
-          height={height}
-          layout='responsive'
-        />
+        <Image src={src} alt={alt} layout='responsive' />
       </S.ModalContent>
     </S.ModalBox>
   );

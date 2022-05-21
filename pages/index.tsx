@@ -10,7 +10,6 @@ import { Approach } from '../components/Approach/Approach';
 import { Careers } from '../components/Home/Careers/Careers';
 import styled, { keyframes } from 'styled-components';
 import { bounceInUp } from 'react-animations';
-import { useEffect } from 'react';
 
 const bounceAnimation = keyframes`${bounceInUp}`;
 
@@ -23,25 +22,6 @@ const BounceInUpDiv = styled.div`
 `;
 
 const Home: NextPage = () => {
-  2;
-  useEffect(() => {
-    const inViewport = (entries: any, observer: any) => {
-      entries.forEach((entry: any) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('active', entry.isIntersecting);
-        }
-      });
-    };
-
-    const Obs = new IntersectionObserver(inViewport);
-
-    // Attach observer to every [data-inviewport] element:
-    const ELs_inViewport = document.querySelectorAll('[data-inviewport]');
-    ELs_inViewport.forEach((EL) => {
-      Obs.observe(EL);
-    });
-  }, []);
-
   return (
     <>
       <Head>

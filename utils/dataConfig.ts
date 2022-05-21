@@ -5,6 +5,21 @@ import OurCustomer4 from '../public/img/OurCustomer4.png';
 import OurCustomer5 from '../public/img/OurCustomer5.png';
 import OurCustomer6 from '../public/img/OurCustomer6.png';
 
+import BigProjectList1 from '../public/img/BigProjectList1.png';
+import BigProjectList2 from '../public/img/BigProjectList2.png';
+import BigProjectList3 from '../public/img/BigProjectList3.png';
+import BigProjectList4 from '../public/img/BigProjectList4.png';
+import BigProjectList5 from '../public/img/BigProjectList5.png';
+import BigProjectList6 from '../public/img/BigProjectList6.png';
+import BigProjectList7 from '../public/img/BigProjectList7.png';
+import BigProjectList8 from '../public/img/BigProjectList8.png';
+import BigProjectList9 from '../public/img/BigProjectList9.png';
+import BigProjectList10 from '../public/img/BigProjectList10.png';
+import BigProjectList11 from '../public/img/BigProjectList11.png';
+import BigProjectList12 from '../public/img/BigProjectList12.png';
+import BigProjectList13 from '../public/img/BigProjectList13.png';
+import BigProjectList14 from '../public/img/BigProjectList14.png';
+
 export const MDHeader = {
   navigation: [
     { title: 'Home', url: '/', name: 'home' },
@@ -60,7 +75,7 @@ export const MDService = {
   subTitle: 'You can find your own solution with our expertise',
   mainContent: [
     {
-      imgSrc: '/img/Shooting1.png',
+      imgSrc: '/img/Illustration.png',
       imgAlt: 'gaming',
       title: 'Illustration',
       description:
@@ -68,7 +83,7 @@ export const MDService = {
       url: '/work',
     },
     {
-      imgSrc: '/img/Shooting2.png',
+      imgSrc: '/img/Shooting.png',
       imgAlt: 'gaming',
       title: 'Shooting',
       description:
@@ -290,7 +305,7 @@ export const ProjectListData = [
   {
     imgSrc: '/img/ProjectList1.png',
     imgAlt: 'project 1',
-    bigImgSrc: '/img/BigProjectList1.png',
+    bigImgSrc: BigProjectList1,
     bigImgAlt: 'Big project 1',
     title: 'Brand name',
     subTitle: 'Illustration - Storyboard',
@@ -298,7 +313,7 @@ export const ProjectListData = [
   {
     imgSrc: '/img/ProjectList2.png',
     imgAlt: 'project 2',
-    bigImgSrc: '/img/BigProjectList2.png',
+    bigImgSrc: BigProjectList2,
     bigImgAlt: 'Big project 2',
     title: 'Brand name',
     subTitle: 'Illustration - Keyvisual',
@@ -306,7 +321,7 @@ export const ProjectListData = [
   {
     imgSrc: '/img/ProjectList3.png',
     imgAlt: 'project 3',
-    bigImgSrc: '/img/BigProjectList3.png',
+    bigImgSrc: BigProjectList3,
     bigImgAlt: 'Big project 3',
     title: 'Brand name',
     subTitle: 'Illustration - Storyboard',
@@ -314,7 +329,7 @@ export const ProjectListData = [
   {
     imgSrc: '/img/ProjectList4.png',
     imgAlt: 'project 4',
-    bigImgSrc: '/img/BigProjectList4.png',
+    bigImgSrc: BigProjectList4,
     bigImgAlt: 'Big project 4',
     title: 'Brand name',
     subTitle: 'Art concept',
@@ -322,7 +337,7 @@ export const ProjectListData = [
   {
     imgSrc: '/img/ProjectList5.png',
     imgAlt: 'project 5',
-    bigImgSrc: '/img/BigProjectList5.png',
+    bigImgSrc: BigProjectList5,
     bigImgAlt: 'Big project 5',
     title: 'Brand name',
     subTitle: 'Art concept - Game',
@@ -330,7 +345,7 @@ export const ProjectListData = [
   {
     imgSrc: '/img/ProjectList6.png',
     imgAlt: 'project 6',
-    bigImgSrc: '/img/BigProjectList6.png',
+    bigImgSrc: BigProjectList6,
     bigImgAlt: 'Big project 6',
     title: 'Brand name',
     subTitle: 'Game concept - 3D modeling',
@@ -338,7 +353,7 @@ export const ProjectListData = [
   {
     imgSrc: '/img/ProjectList7.png',
     imgAlt: 'project 7',
-    bigImgSrc: '/img/BigProjectList7.png',
+    bigImgSrc: BigProjectList7,
     bigImgAlt: 'Big project 7',
     title: 'Brand name',
     subTitle: 'Game concept - 3D modeling',
@@ -346,7 +361,7 @@ export const ProjectListData = [
   {
     imgSrc: '/img/ProjectList8.png',
     imgAlt: 'project 8',
-    bigImgSrc: '/img/BigProjectList8.png',
+    bigImgSrc: BigProjectList8,
     bigImgAlt: 'Big project 8',
     title: 'Brand name',
     subTitle: 'Game concept - 3D modeling',
@@ -354,7 +369,7 @@ export const ProjectListData = [
   {
     imgSrc: '/img/ProjectList9.png',
     imgAlt: 'project 9',
-    bigImgSrc: '/img/BigProjectList9.png',
+    bigImgSrc: BigProjectList9,
     bigImgAlt: 'Big project 9',
     title: 'Brand name',
     subTitle: 'Illustration - Artwork',
@@ -362,8 +377,40 @@ export const ProjectListData = [
   {
     imgSrc: '/img/ProjectList10.png',
     imgAlt: 'project 10',
-    bigImgSrc: '/img/BigProjectList10.png',
+    bigImgSrc: BigProjectList10,
     bigImgAlt: 'Big project 10',
+    title: 'Brand name',
+    subTitle: 'Illustration - Comic character',
+  },
+  {
+    imgSrc: '/img/ProjectList11.png',
+    imgAlt: 'project 11',
+    bigImgSrc: BigProjectList11,
+    bigImgAlt: 'Big project 11',
+    title: 'Brand name',
+    subTitle: 'Illustration - Artwork',
+  },
+  {
+    imgSrc: '/img/ProjectList12.png',
+    imgAlt: 'project 12',
+    bigImgSrc: BigProjectList12,
+    bigImgAlt: 'Big project 12',
+    title: 'Brand name',
+    subTitle: 'Illustration - Comic character',
+  },
+  {
+    imgSrc: '/img/ProjectList13.png',
+    imgAlt: 'project 13',
+    bigImgSrc: BigProjectList13,
+    bigImgAlt: 'Big project 13',
+    title: 'Brand name',
+    subTitle: 'Illustration - Artwork',
+  },
+  {
+    imgSrc: '/img/ProjectList14.png',
+    imgAlt: 'project 14',
+    bigImgSrc: BigProjectList14,
+    bigImgAlt: 'Big project 14',
     title: 'Brand name',
     subTitle: 'Illustration - Comic character',
   },
