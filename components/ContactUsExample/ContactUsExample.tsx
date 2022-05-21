@@ -37,9 +37,9 @@ function ContactUsExample({}: Props) {
       ref={form}
       onSubmit={sendEmail}
     >
-      <label className='text-white'>Name</label>
+      <label className='text-white'>Name2</label>
       <input type='text' name='name' />
-      <label className='text-white'>Email</label>
+      <label className='text-white'>Email2</label>
       <input type='email' name='email' />
       <label className='text-white'>Phone</label>
       <input type='number' name='phone' />
