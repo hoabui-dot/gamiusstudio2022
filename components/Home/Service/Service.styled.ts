@@ -17,9 +17,6 @@ export const FlashTheme = styled.figure`
     ${tw`top-[4%] left-[4%]`}
   }
   &.second {
-    ${tw`top-[4%] right-[4%]`}
-  }
-  &.third {
     ${tw`bottom-[4%] right-[4%]`}
   }
 `;
