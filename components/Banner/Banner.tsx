@@ -1,9 +1,25 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import * as S from './Banner.styled';
 import * as G from '../../styles/global.styled';
-import {HomeBannerData} from '../../utils/dataConfig';
-import {StatusIcon} from './components/StatusIcon/StatusIcon';
+import { HomeBannerData } from '../../utils/dataConfig';
+import { StatusIcon } from './components/StatusIcon/StatusIcon';
+import { fadeInUp, fadeInLeft, fadeInRight } from 'react-animations';
+import styled, { keyframes } from 'styled-components';
+
+const fadeInLeftAnimation = keyframes`${fadeInLeft}`;
+const fadeInRightAnimation = keyframes`${fadeInRight}`;
+const fadeInUpAnimation = keyframes`${fadeInUp}`;
+
+const FadeInLeft = styled.div`
+  animation: 1s ${fadeInLeftAnimation};
+`;
+const FadeInRight = styled.div`
+  animation: 1s ${fadeInRightAnimation};
+`;
+const FadeInUp = styled.div`
+  animation: 1s ${fadeInUpAnimation};
+`;
 
 export const Banner = () => {
   const [state, setState] = useState(0);
@@ -36,12 +52,14 @@ export const Banner = () => {
               {HomeBannerData &&
                 !!HomeBannerData.length &&
                 HomeBannerData.map((data, index) => (
-                  <S.GreenTitle
+                  <S.GreenTitleWrap
                     key={index}
                     activeTitle={state === index ? true : false}
                   >
-                    {data.title}
-                  </S.GreenTitle>
+                    <FadeInLeft>
+                      <S.GreenTitle>{data.title}</S.GreenTitle>
+                    </FadeInLeft>
+                  </S.GreenTitleWrap>
                 ))}
             </S.Title>
             <S.SubTitle>
@@ -74,13 +92,15 @@ export const Banner = () => {
             !!HomeBannerData.length &&
             HomeBannerData.map((data, index) => (
               <S.Image key={index} activeImage={state === index ? true : false}>
-                <Image
-                  layout='responsive'
-                  width={1}
-                  height={0.8}
-                  src={data.image}
-                  alt={data.subImage}
-                />
+                <FadeInRight>
+                  <Image
+                    layout='responsive'
+                    width={1}
+                    height={0.8}
+                    src={data.image}
+                    alt={data.subImage}
+                  />
+                </FadeInRight>
               </S.Image>
             ))}
         </S.Item>

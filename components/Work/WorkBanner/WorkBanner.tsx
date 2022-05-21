@@ -3,10 +3,16 @@ import Image from 'next/image';
 import * as S from './WorkBanner.styled';
 import * as G from '../../../styles/global.styled';
 import { WorkBannerData } from '../../../utils/dataConfig';
+import { fadeInUp } from 'react-animations';
+import styled, { keyframes } from 'styled-components';
 
-type Props = {};
+const fadeInUptAnimation = keyframes`${fadeInUp}`;
 
-export const WorkBanner = (props: Props) => {
+const FadeInUp = styled.div`
+  animation: 1s ${fadeInUptAnimation};
+`;
+
+export const WorkBanner = () => {
   const [state, setState] = useState(0);
 
   setTimeout(() => {
@@ -34,12 +40,14 @@ export const WorkBanner = (props: Props) => {
             {WorkBannerData &&
               !!WorkBannerData.length &&
               WorkBannerData.map((data, index) => (
-                <S.GreenTitle
+                <S.GreenTitleWrap
                   key={index}
                   activeTitle={state === index ? true : false}
                 >
-                  {data.title}
-                </S.GreenTitle>
+                  <FadeInUp>
+                    <S.GreenTitle>{data.title}</S.GreenTitle>
+                  </FadeInUp>
+                </S.GreenTitleWrap>
               ))}
           </S.Title>
           <S.SubTitle>
