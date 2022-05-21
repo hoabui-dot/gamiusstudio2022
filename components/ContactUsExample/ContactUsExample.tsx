@@ -37,13 +37,13 @@ function ContactUsExample({}: Props) {
       ref={form}
       onSubmit={sendEmail}
     >
-      <label className='text-white'>Name2</label>
+      <label className='text-white'>Name</label>
       <input type='text' name='name' />
-      <label className='text-white'>Email2</label>
+      <label className='text-white'>Email</label>
       <input type='email' name='email' />
-      <label className='text-white'>Phone</label>
+      <label className='text-white'>Phone2</label>
       <input type='number' name='phone' />
-      <label className='text-white'>Message</label>
+      <label className='text-white'>Message2</label>
       <textarea name='message' />
       <input
         className='bg-slate-600 text-white my-6 cursor-pointer hover:bg-slate-400'
