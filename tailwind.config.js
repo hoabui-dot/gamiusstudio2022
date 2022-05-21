@@ -13,12 +13,42 @@ module.exports = {
       },
       animation: {
         zoomIn: 'zoomIn 250ms',
-        fadeIn: 'fadeIn 2500ms',
       },
+      colors: {
+        green: '#C8FC03',
+        black: '#070911',
+        'black-light': '#111827',
+        'black-75': 'rgba(0, 0, 0, 0.75)',
+        'black-70': 'rgba(0, 0, 0, 0.70)',
+        gray: '#9CA3AF',
+        'gray-light': '#F9FAFB',
+        'gray-lighter': '#F3F4F6',
+        'gray-dark': '#1F2937',
+      },
+      transitionDuration: {
+        250: '250ms',
+      },
+      backgroundImage: {
+        error: "url('/img/bgError.png')",
+      },
+    },
+    screens: {
+      xs: '475px',
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      '2xl': '1280px',
     },
     container: {
       center: true,
-      padding: '15px',
+      padding: {
+        DEFAULT: '1rem',
+        sm: '2rem',
+        lg: '4rem',
+        xl: '5rem',
+        '2xl': '5rem',
+      },
     },
   },
 };

@@ -1,158 +1,110 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
-import BannerImg from '../../public/img/bannerSlide.png';
-import BannerBackground from '../../public/img/bannerBackground.png';
-import ImageTest1 from '../../public/img/ourWork2.png';
-import ImageTest2 from '../../public/img/ourWork3.png';
-import BannerIcon from '../../public/img/BannerIcon.png';
-import Ticket from '../../public/img/Ticket.png';
-import TicketLight from '../../public/img/TicketLight.png';
-import * as B from './Banner.styled';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/effect-fade';
-import { Autoplay, Pagination, EffectFade } from 'swiper';
+import * as S from './Banner.styled';
+import * as G from '../../styles/global.styled';
+import { HomeBannerData } from '../../utils/dataConfig';
+import { StatusIcon } from './components/StatusIcon/StatusIcon';
+import { fadeInUp, fadeInLeft, fadeInRight } from 'react-animations';
+import styled, { keyframes } from 'styled-components';
 
-export interface BannerProps {}
+const fadeInLeftAnimation = keyframes`${fadeInLeft}`;
+const fadeInRightAnimation = keyframes`${fadeInRight}`;
+const fadeInUpAnimation = keyframes`${fadeInUp}`;
 
-export const BannerData = [
-  {
-    titleWhite: 'we',
-    titleGreen: 'design game',
-    image: BannerImg,
-    background: BannerBackground,
-  },
-  {
-    titleWhite: 'we',
-    titleGreen: 'create game',
-    image: ImageTest1,
-    background: ImageTest1,
-  },
-  {
-    titleWhite: 'we',
-    titleGreen: 'test game',
-    image: ImageTest2,
-    background: ImageTest2,
-  },
-];
+const FadeInLeft = styled.div`
+  animation: 1s ${fadeInLeftAnimation};
+`;
+const FadeInRight = styled.div`
+  animation: 1s ${fadeInRightAnimation};
+`;
+const FadeInUp = styled.div`
+  animation: 1s ${fadeInUpAnimation};
+`;
 
-export const Banner = (props: BannerProps) => {
+export const Banner = () => {
+  const [state, setState] = useState(0);
+
+  setTimeout(() => {
+    state >= HomeBannerData.length - 1 ? setState(0) : setState(state + 1);
+  }, 2000);
+
   return (
-    <Swiper
-      loop={true}
-      effect={'fade'}
-      autoplay={{
-        delay: 2000,
-        disableOnInteraction: false,
-      }}
-      modules={[Autoplay, EffectFade]}
-      className='mySwiper'
-    >
-      {BannerData &&
-        !!BannerData.length &&
-        BannerData.map((data, index) => (
-          <SwiperSlide key={index}>
-            <B.Banner>
-              <B.Background>
-                <B.BackgroundDark />
+    <S.BannerWrap>
+      <S.Linear></S.Linear>
+      {HomeBannerData &&
+        !!HomeBannerData.length &&
+        HomeBannerData.map((data, index) => (
+          <S.Background key={index} activeBg={state === index ? true : false}>
+            <S.BackgroundDark />
+            <Image
+              src={data.background}
+              layout='fill'
+              objectFit='cover'
+              alt={data.subBackground}
+            />
+          </S.Background>
+        ))}
+      <G.Container>
+        <S.Item>
+          <S.Content>
+            <S.Title>
+              <S.WhiteTitle>we</S.WhiteTitle>
+              {HomeBannerData &&
+                !!HomeBannerData.length &&
+                HomeBannerData.map((data, index) => (
+                  <S.GreenTitleWrap
+                    key={index}
+                    activeTitle={state === index ? true : false}
+                  >
+                    <FadeInLeft>
+                      <S.GreenTitle>{data.title}</S.GreenTitle>
+                    </FadeInLeft>
+                  </S.GreenTitleWrap>
+                ))}
+            </S.Title>
+            <S.SubTitle>
+              <S.BannerStatus>
+                {[...Array(HomeBannerData.length)].map((item, index) => (
+                  <StatusIcon key={index} active={state === index} />
+                ))}
+              </S.BannerStatus>
+              <S.BannerIcon>
                 <Image
-                  src={data.background}
-                  layout='fill'
-                  objectFit='cover'
-                  alt='Banner Slide'
+                  src='/img/BannerIcon.png'
+                  layout='responsive'
+                  width={0.76}
+                  height={1}
+                  alt='Banner Icon'
                 />
-              </B.Background>
-              <B.BannerItem>
-                <B.BannerContent>
-                  <B.BannerStatus>
-                    <B.Sticked>
-                      <Image
-                        src={Ticket}
-                        layout='responsive'
-                        width={1}
-                        height={1}
-                        alt='Ticket Icon'
-                      />
-                      <B.StickedLight className={index === 0 ? 'active' : ''}>
-                        <Image
-                          src={TicketLight}
-                          layout='responsive'
-                          width={1}
-                          height={1}
-                          alt='Ticket Icon'
-                        />
-                      </B.StickedLight>
-                    </B.Sticked>
-                    <B.Sticked>
-                      <Image
-                        src={Ticket}
-                        layout='responsive'
-                        width={1}
-                        height={1}
-                        alt='Ticket Icon'
-                      />
-                      <B.StickedLight className={index === 1 ? 'active' : ''}>
-                        <Image
-                          src={TicketLight}
-                          layout='responsive'
-                          width={1}
-                          height={1}
-                          alt='Ticket Icon'
-                        />
-                      </B.StickedLight>
-                    </B.Sticked>
-                    <B.Sticked>
-                      <Image
-                        src={Ticket}
-                        layout='responsive'
-                        width={1}
-                        height={1}
-                        alt='Ticket Icon'
-                      />
-                      <B.StickedLight className={index === 2 ? 'active' : ''}>
-                        <Image
-                          src={TicketLight}
-                          layout='responsive'
-                          width={1}
-                          height={1}
-                          alt='Ticket Icon'
-                        />
-                      </B.StickedLight>
-                    </B.Sticked>
-                  </B.BannerStatus>
-                  <B.BannerIcon>
-                    <Image
-                      src={BannerIcon}
-                      layout='responsive'
-                      width={1}
-                      height={1}
-                      alt='Banner Icon'
-                    />
-                  </B.BannerIcon>
-                  <B.BannerTitle>
-                    <B.TitleWhite>{data.titleWhite}</B.TitleWhite>
-                    <B.TitleGreen>{data.titleGreen}</B.TitleGreen>
-                  </B.BannerTitle>
-                  <B.BannerSubTitle>
-                    We embrace <B.GreenColor>challenges</B.GreenColor>, incite{' '}
-                    <B.GreenColor>creativity</B.GreenColor> & deliver{' '}
-                    <B.GreenColor>powerful designs.</B.GreenColor>
-                  </B.BannerSubTitle>
-                </B.BannerContent>
-                <B.BannerImage>
+              </S.BannerIcon>
+              <S.SubTitleWrap>
+                <S.SubTitleLine>
+                  We embrace <S.GreenWord>challenges</S.GreenWord>, incite{' '}
+                  <S.GreenWord>creativity</S.GreenWord> & deliver{' '}
+                </S.SubTitleLine>
+                <S.SubTitleLine>
+                  <S.GreenWord>powerful designs.</S.GreenWord>
+                </S.SubTitleLine>
+              </S.SubTitleWrap>
+            </S.SubTitle>
+          </S.Content>
+          {HomeBannerData &&
+            !!HomeBannerData.length &&
+            HomeBannerData.map((data, index) => (
+              <S.Image key={index} activeImage={state === index ? true : false}>
+                <FadeInRight>
                   <Image
-                    src={data.image}
                     layout='responsive'
                     width={1}
                     height={0.8}
-                    alt='Banner Slide'
+                    src={data.image}
+                    alt={data.subImage}
                   />
-                </B.BannerImage>
-              </B.BannerItem>
-            </B.Banner>
-          </SwiperSlide>
-        ))}
-    </Swiper>
+                </FadeInRight>
+              </S.Image>
+            ))}
+        </S.Item>
+      </G.Container>
+    </S.BannerWrap>
   );
 };
