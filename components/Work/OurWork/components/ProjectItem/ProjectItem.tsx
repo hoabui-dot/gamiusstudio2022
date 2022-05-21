@@ -11,7 +11,7 @@ interface ProjectItemProps {
     imgAlt: string;
     title: string;
     subTitle: string;
-    bigImgSrc: string;
+    bigImgSrc: StaticImageData;
     bigImgAlt: string;
   };
 }
@@ -45,8 +45,6 @@ export const ProjectItem = ({
       <ModalBox
         src={bigImgSrc}
         alt={bigImgAlt}
-        height={4096}
-        width={1059}
         active={active}
         setActive={setActive}
       />
